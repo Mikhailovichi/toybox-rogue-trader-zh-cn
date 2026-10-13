@@ -35,7 +35,7 @@ python -m venv .venv
 .\.venv\Scripts\python.exe -X utf8 dictionary-localization/tools/package.py
 ```
 
-打包脚本会先校验，再创建 `release/toybox-zh-cn-v1.0.zip`。生成的 ZIP 用作 GitHub Release 附件或 Nexus 下载文件，不提交到 Git 历史。
+打包脚本会先校验，再创建 `release/toybox-zh-cn-v1.0.zip`。包内共七个文件：词表、中文 `README.md`、更新记录、署名、许可及 README 使用的两张截图。生成的 ZIP 用作 GitHub Release 附件或 Nexus 下载文件，不提交到 Git 历史。
 
 ## 可选：重新提取源码键
 

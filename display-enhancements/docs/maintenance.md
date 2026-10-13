@@ -23,7 +23,7 @@ Invoke-WebRequest https://dot.net/v1/dotnet-install.ps1 -OutFile reference/dotne
 
 默认 UMM 路径为当前用户 `AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue Trader\UnityModManager`；非默认安装时用 `-ModManagerDirectory` 指定。可用 `-DotNetPath` 指定现有 SDK 的 `dotnet.exe`。
 
-构建输出：`release/toybox-chinese-display-enhancements-v0.2.zip`，不覆盖原有 0.1 ZIP。只允许八个安装文件进入包：附加模组 DLL、Info、特性与剧情状态两份中文对照 JSON、双语 README、许可、署名。游戏／UMM／Harmony／测试程序集及用户设置不进入安装包。
+构建输出：`release/toybox-chinese-display-enhancements-v0.2.zip`，不覆盖原有 0.1 ZIP。只允许十一个安装文件进入包：附加模组 DLL、Info、特性与剧情状态两份中文对照 JSON、中文 `README.md`、许可、署名及 README 使用的四张截图。游戏／UMM／Harmony／测试程序集及用户设置不进入安装包。
 
 ## 代码入口
 

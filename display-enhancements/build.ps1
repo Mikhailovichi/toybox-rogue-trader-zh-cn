@@ -39,9 +39,12 @@ try {
         'feature-aliases.zh-CN.json' = Join-Path $project 'feature-aliases.zh-CN.json'
         'story-aliases.zh-CN.json' = Join-Path $project 'story-aliases.zh-CN.json'
         'README.md' = Join-Path $project 'README.md'
-        'README.zh-CN.md' = Join-Path $project 'README.zh-CN.md'
         'LICENSE.txt' = Join-Path $project 'LICENSE.txt'
         'CREDITS.md' = Join-Path $project 'CREDITS.md'
+        'docs/images/dialogue-recruitment.png' = Join-Path $project 'docs/images/dialogue-recruitment.png'
+        'docs/images/dialogue-story-conditions.png' = Join-Path $project 'docs/images/dialogue-story-conditions.png'
+        'docs/images/dialogue-quote-conditions.png' = Join-Path $project 'docs/images/dialogue-quote-conditions.png'
+        'docs/images/feature-notes.png' = Join-Path $project 'docs/images/feature-notes.png'
     }
     Add-Type -AssemblyName System.IO.Compression
     Add-Type -AssemblyName System.IO.Compression.FileSystem
@@ -71,7 +74,7 @@ try {
             } finally { $buffer.Dispose() }
         }
     } finally { $zip.Dispose() }
-    Write-Output "PASS: eight-file addon package verified: $zipPath"
+    Write-Output "PASS: $($files.Count)-file addon package verified: $zipPath"
 } finally {
     foreach ($key in $old.Keys) { [Environment]::SetEnvironmentVariable($key, $old[$key], 'Process') }
 }

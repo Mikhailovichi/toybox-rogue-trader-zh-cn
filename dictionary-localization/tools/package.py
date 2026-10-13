@@ -5,7 +5,10 @@ from zipfile import ZIP_DEFLATED, ZipFile
 
 from validate import PROJECT, validate
 
-FILES = ("Localization/zh-CN.json", "README.md", "README.zh-CN.md", "CHANGELOG.md", "CREDITS.md", "LICENSE.txt")
+FILES = (
+    "Localization/zh-CN.json", "README.md", "CHANGELOG.md", "CREDITS.md", "LICENSE.txt",
+    "docs/images/common-actions.png", "docs/images/interface-settings.png",
+)
 
 
 def package():

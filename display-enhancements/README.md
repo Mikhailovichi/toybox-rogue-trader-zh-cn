@@ -1,22 +1,18 @@
-[English](README.md) | [简体中文](README.zh-CN.md)
+# ToyBox 中文显示增强
 
-# ToyBox Chinese Display Enhancements
+让《战锤 40,000：行商浪人》中 ToyBox 的对话提示更容易读懂：任务结果显示目标名称，对话条件引用相关台词，招募要求说明利润因子门槛。角色特性列表中的八个内部条目也有了中文名称或说明，方便辨认它们的用途。
 
-An optional companion mod for ToyBox's Simplified Chinese interface in **Warhammer 40,000: Rogue Trader**. It makes supported dialogue previews easier to understand and adds Chinese display names or explanatory notes to eight internal feature entries.
+## 版本与依赖
 
-This addon changes display text only. It does not replace ToyBox, change feature effects, modify blueprints or saves, or execute dialogue actions.
+- 附加模组：**0.2 候选版**，UMM 中显示为 `0.2.0`。
+- 适用版本：**ToyBox 1.7.34**，游戏 **1.6.1.514**。
+- 需要原版 [ToyBox for Rogue Trader](https://www.nexusmods.com/warhammer40kroguetrader/mods/1) 和 Unity Mod Manager（UMM）。
+- 可与 **ToyBox 简体中文词表修订 1.0** 一起使用，两者分别安装。
 
-## Version and Requirements
+## 安装
 
-- Addon: **0.2** (UMM version `0.2.0`), candidate release.
-- Requires the original **ToyBox 1.7.34** and Unity Mod Manager; build target: game **1.6.1.514**.
-- Select **Simplified Chinese (`zh-CN`)** in ToyBox. Use Simplified Chinese as the game language to display official Chinese quest and objective titles.
-- The dictionary-only Chinese localization **1.0** is a separate package. This addon can be used alongside it and does not install or overwrite that dictionary.
-
-## Installation
-
-1. Close the game. Install the original ToyBox first.
-2. Extract this addon's ZIP into the existing game's UMM mod directory. Keep the `ToyBoxChineseDisplayEnhancements` folder intact, alongside `0ToyBox0`, **not inside it**. The default Windows directory is:
+1. 安装原版 ToyBox 1.7.34，关闭游戏。
+2. 将安装包解压到现有 UMM 模组目录，使 **`ToyBoxChineseDisplayEnhancements` 与 `0ToyBox0` 并列**。Windows 默认位置为：
 
    ```text
    %USERPROFILE%\AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue Trader\UnityModManager\
@@ -28,45 +24,74 @@ This addon changes display text only. It does not replace ToyBox, change feature
        └── story-aliases.zh-CN.json
    ```
 
-3. Start the game and enable **ToyBox Chinese Display Enhancements** in UMM. Its panel reports whether the display patches loaded.
-4. Select ToyBox's Simplified Chinese interface. Enable ToyBox's own dialogue result/condition previews to see the enhanced summaries; the addon does not turn those options on automatically.
-5. Compact display is the default. Enable **Show technical details** in this addon's UMM panel to include original captions, internal identifiers and source depth. The preference saves automatically. Already displayed dialogue updates when the game refreshes it; do not advance the story just to force a refresh.
+3. 启动游戏，在 UMM 中启用 **ToyBox Chinese Display Enhancements**。
+4. 将 ToyBox 界面设为简体中文（`zh-CN`），在“实用工具”的“预览”一栏开启“对话结果”和“对话条件”。游戏语言也选择简体中文后，任务与目标名称会显示官方中文。
+5. 默认显示简短中文。需要查看原摘要、内部名称、GUID 和来源层级时，在本附加模组的 UMM 面板开启“显示技术详情”。选择会自动保存，提示随界面刷新更新。
 
-## Improvements
+## 相对原版的改进
 
-### Dialogue Results and Conditions
+### 对话结果：直接说明将打开什么、改变哪个目标
 
-- Supported quest objectives are shown as "start objective", "complete objective" or "objective failed", using the game's localized objective and quest titles instead of blueprint IDs. The screenshot's three objectives resolve to **返回着陆区域**, **与总督谈谈** and **探寻星站，寻找答案**.
-- **出现条件** (appearance conditions) and **选择要求** (selection requirements) distinguish when an option appears from when it can be chosen. Single conditions are stated directly; multiple conditions use indented "all conditions" or "any group" lists. Supported AND/OR groups are expanded, preserving whole-group negation.
-- The specific `Heresy` story state receives the addon-provided alias **异端**, for example "the story state is not running". This does not mean it was never triggered or identify the player's conviction route. States without a registered alias retain their internal names.
-- Current-depth summaries use **结果预览** (result preview); later depths use **后续可能涉及** (possible later outcomes). Numeric depths appear only in technical details. The long warning is no longer repeated on every option: previews follow ToyBox's branch collection rules, and later outcomes depend on branches and checks rather than being guaranteed.
-- Chinese summaries cover merchant selection, the custom companion creation flow and its Profit Factor requirement. They do not evaluate whether the requirement is currently met or describe the threshold as a guaranteed deduction.
-- "Dialogue already shown" conditions quote up to 40 characters of official dialogue where available, distinguishing the current conversation from prior records. Missing text falls back to the original identifier; "shown" is not described as "chosen".
-- Conviction changes show localized direction names and signed values. Supported point requirements show their threshold; checks show the skill, difficulty and hidden-check status. The same formatting is used by the game's ToyBox previews and ToyBox's dialogue editor.
+原来显示 `Open vendor selecting window` 的地方，改为“打开商人选择界面”；`Create custom companion` 改为“进入自定义队友创建流程”。提示直接说明动作的用途。
 
-### Internal Feature Entries
+![商人结果预览及自定义队友招募要求](docs/images/dialogue-recruitment.png)
 
-- The three `SoulMark_Base` entries are identified as internal records for **异端主义 / 自由主义 / 教条主义**, rather than ordinary selectable talents.
-- Chinese aliases cover the base-character feature bundle, post-combat reload entry and custom character-creation path. Supplemental notes appear in the existing description area and are labeled **【汉化说明】** (localization note), not official game text.
-- `IsPlayer_Feature` and `FeatProgressionTest` keep their internal names: notes describe confirmed structure without inventing effects. Existing valid official names and descriptions always take priority.
-- Search supports the Chinese alias, original internal name and GUID. Enable **Search Descriptions** to search supplemental notes. **Show Internal Names** retains the original identifier beside translated aliases; sorting follows the displayed name.
+图中的关键提示为：
 
-## Disable, Remove and Update
+> 结果预览：打开商人选择界面
+>
+> 选择要求：利润因子达到招募自定义队友所需的门槛
+>
+> 后续可能涉及：进入自定义队友创建流程
 
-Disable this addon in UMM to restore native text. Refresh the ToyBox list after toggling the addon or changing language; if a previously opened list retains its order, close and reopen it. To uninstall, close the game and remove only `ToyBoxChineseDisplayEnhancements` from the UMM directory. Do not remove or replace `0ToyBox0`.
+任务提示也会使用目标与所属任务的名称。例如，`Obj6_GoToLandingZone` 对应“返回着陆区域”，并附上任务名“终末黎明之光”；动作则区分“开启目标”“完成目标”和“目标失败”。
 
-After updating ToyBox, use a compatible addon release. If the required ToyBox version or patch methods do not match, enhancements stay inactive and UMM logs the reason. Your existing dictionary localization is unaffected.
+提示用 **“结果预览”** 标出当前层的结果，用 **“后续可能涉及”** 标出后续内容。后续提示帮助查看可能涉及的结果，实际走向取决于所选分支与检定。信念变化会显示“教条主义”“自由主义”“异端主义”和带正负号的数值，检定提示会显示技能、难度及隐藏检定说明。
 
-To upgrade from 0.1, close the game and overwrite this addon's files in the same `ToyBoxChineseDisplayEnhancements` folder with 0.2. Do not enable two copies. To roll back, close the game and overwrite the addon files with the retained 0.1 package. Version 0.2's `display-settings.json` contains display preferences only; it is not distributed or overwritten by the ZIP. Version 0.1 ignores it.
+### 对话条件：看相关台词和要求，而不是猜内部编号
 
-## Scope and Limitations
+**“出现条件”** 说明选项何时会出现在对话中，**“选择要求”** 说明选择它需要具备什么条件。例如，`Has enough money for custom companion` 现在说明的是招募所需的利润因子门槛。
 
-Version 0.2 covers the supported dialogue cases and eight feature entries described above, not every action, condition or blueprint. Unsupported types, dynamic story-state evaluation, rank-based conviction requirements and quests/objectives without usable official titles retain ToyBox's original summary. Some English internal identifiers therefore remain intentional.
+单条条件直接写成一句话，多条条件按“以下条件都成立”或“满足以下任一组”分行显示。原来的 `And[2]`、`And[3]` 会展开具体条件，方便看清它们之间的关系。
 
-The addon preserves ToyBox's existing preview traversal and branch decisions; it does not evaluate extra conditions or predict all possible outcomes. Official content names follow the game's language. Feature notes describe internal records and are not instructions to add or remove them. The 0.2 candidate's layout still needs confirmation in the game UI.
+![海因里希对白中的单条件和多条件分组](docs/images/dialogue-story-conditions.png)
 
-## Credits and License
+图中第一条选项显示“出现条件：剧情状态‘异端’未在运行”；第二条列出此前显示过的对白和剧情状态要求。“异端”是本包为 `Heresy` 提供的中文别名，“未在运行”描述的是该状态当前的运行情况。
 
-Addon by **mitcheese**, built for ToyBox by Narria, ADDB and the upstream contributors. Original Chinese localization contributors are acknowledged in [CREDITS.md](CREDITS.md).
+`Cue Seen [Cue_0019]` 这类提示会引用关联对白的开头，玩家可以直接辨认是哪段话。提示还会区分本次对话与此前记录，较长的台词显示前 40 个字符。
 
-Distributed under the MIT license; see [LICENSE.txt](LICENSE.txt) and [CREDITS.md](CREDITS.md). Game assemblies and full game localization files are not included.
+![卡西娅对白条件引用相关台词](docs/images/dialogue-quote-conditions.png)
+
+例如，图中的“此前已显示过对白”引用了“这是帝皇赐予我的祝福……”这段台词；剧情状态仍以“正在运行”等中文说明显示。保留的内部名称可以配合技术详情用于定位。
+
+### 特性说明与搜索：辨认内部条目的用途
+
+角色的特性列表中，部分条目原来只有内部名称。现在名称和描述区域提供以下说明：
+
+| 原名称 | 中文显示或说明 |
+| --- | --- |
+| `CorruptionSoulMark_Base`、`HopeSoulMark_Base`、`FaithSoulMark_Base` | 异端主义、自由主义、教条主义的内部信念条目，说明列表数值记录的是内部等级。 |
+| `BaseCharacterFeatures` | 基础角色特性，说明它包含多个关联特性。 |
+| `ReloadAfterCombat_Feature` | 战斗后装填，说明它关联的战斗结束装填逻辑。 |
+| `CustomCharacterChargenPath` | 自定义角色创建路径，说明它记录角色创建时的关联特性。 |
+| `IsPlayer_Feature`、`FeatProgressionTest` | 保留名称，在描述区域补充关联状态项或旧版职业进度类型的说明。 |
+
+![特性列表中的中文名称与附加说明](docs/images/feature-notes.png)
+
+游戏已有的名称和描述优先显示，本包补充的内容标为 **“汉化说明”**。搜索可以使用中文名称、原内部名或 GUID；开启“搜索描述”后，还可以搜索说明文字。“显示内部名称”可在中文名称旁保留原标识，便于对照查找。
+
+当前覆盖任务目标、剧情状态、对白记录、商人及自定义队友等提示，以及上表中的八个特性条目；其余类型沿用 ToyBox 原摘要。
+
+## 更新与恢复
+
+从 0.1 升级时，关闭游戏，将 0.2 文件覆盖到同一个 `ToyBoxChineseDisplayEnhancements` 文件夹。显示偏好会保留。
+
+在 UMM 中关闭本附加模组，即可恢复 ToyBox 原显示。切换后重新打开相关列表或对话界面。回退到 0.1 时，关闭游戏并用 0.1 安装包覆盖该文件夹；卸载时移除这个文件夹即可。
+
+更新 ToyBox 后，选择与新版本对应的显示增强包。
+
+## 署名与许可
+
+附加模组作者：**mitcheese**。ToyBox 由 Narria、ADDB 及上游贡献者开发，完整署名见 [CREDITS.md](CREDITS.md)。
+
+采用 MIT 许可，详见 [LICENSE.txt](LICENSE.txt)。
