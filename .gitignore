@@ -1,0 +1,19 @@
+# Local source, game terminology, snapshots and installation backups.
+/reference/*
+!/reference/baseline-zh-CN.json
+!/reference/extracted-keys.json
+!/reference/finite-keys.json
+!/reference/game-enums.json
+
+# Reproducible packages and local validation/installation records.
+/release/
+/docs/installation.json
+/docs/local-acceptance.md
+/docs/validation.json
+/docs/translation-review.json
+
+# Python dependencies and caches.
+/tools/vendor/
+.venv/
+__pycache__/
+*.py[cod]
