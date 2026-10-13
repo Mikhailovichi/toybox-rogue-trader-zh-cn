@@ -1,85 +1,25 @@
-# ToyBox 简体中文汉化修订
-
 [English](README.md) | [简体中文](README.zh-CN.md)
 
-《战锤 40,000：行商浪人》ToyBox 简体中文汉化修订。
+# ToyBox 行商浪人中文汉化
 
-在原版简体中文词表的基础上，修正不准确的译文、统一游戏术语，并补充多个功能页面的中文说明。
+面向《**战锤 40,000：行商浪人**》ToyBox 简体中文界面的两个互补项目，均适用于 **ToyBox 1.7.34**，分别安装。
 
-## 版本与依赖
+| 项目 | 版本 | 改进内容 | 安装方式 |
+| --- | --- | --- | --- |
+| [简体中文词表修订](dictionary-localization/README.zh-CN.md) | 1.0 | 修正译文、统一游戏术语，补充界面标签与功能说明。 | 替换现有 `0ToyBox0` 目录内的 `Localization/zh-CN.json`。 |
+| [中文显示增强](display-enhancements/README.zh-CN.md) | 0.2 候选版 | 改善已支持的对话条件与结果预览，为八个内部特性条目补充中文名称或说明。 | 作为独立 UMM 模组安装，与 `0ToyBox0` 并列。 |
 
-- 汉化包版本：**1.0**
-- 对应 ToyBox：**1.7.34**
-- 需要先安装原版 ToyBox；本包仅替换中文词表，不包含原模组。
+两个项目都需要先安装原版 ToyBox，可以同时使用：显示增强不会安装或覆盖中文词表。两种安装包均不包含原版 ToyBox DLL。
 
-## 安装
+## 安装说明
 
-1. 先安装 [ToyBox for Rogue Trader](https://www.nexusmods.com/warhammer40kroguetrader/mods/1)，确认版本为 1.7.34，然后关闭游戏。
-2. 找到现有 ToyBox 的模组目录。默认路径为：
+- **词表汉化：**[English](dictionary-localization/README.md) | [简体中文](dictionary-localization/README.zh-CN.md)
+- **显示增强：**[English](display-enhancements/README.md) | [简体中文](display-enhancements/README.zh-CN.md)
 
-   ```text
-   %USERPROFILE%\AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue Trader\UnityModManager\0ToyBox0
-   ```
-
-3. 将该目录原有的 `Localization\zh-CN.json` 复制到自己指定的备份位置。
-4. 将本项目的 `Localization\zh-CN.json` 覆盖到该目录的同名位置。使用 ZIP 安装包时，解压目标为 **`0ToyBox0` 模组目录**，不要再嵌套一层 `Localization`。
-5. 启动游戏，在 ToyBox 的“设置”页选择简体中文（`zh-CN`）。若当前已为简体中文，重新启动后即可载入新词表。
-
-本包不包含 ToyBox DLL，不适合作为独立模组导入 Unity Mod Manager。安装只需覆盖一个 JSON 文件。
-
-## 主要改进
-
-### 界面导航与常用操作
-
-- 统一“剧情状态”“搜索与添加”等页面名称，减少不同位置用词不一致的情况。
-- 修正把《行商浪人》误译为“正义之怒”的作品名称错误。
-- 补充或修订设置、联网、更新提示及常用操作按钮的译文。
-
-### 角色、职业与重置加点
-
-- 将 Archetypes 统一译为“职业”，修正“社交”“弹道技能”“意志”等属性和技能名称。
-- 完善从 0／15／35 级开始重置加点的说明，以及职业选择的相关警告。
-- 优化头像、外观及角色编辑选项的中文标签。
-
-### 灵能与战斗机制
-
-- 统一“士气”“灵能等级”“障壁恶化”等机制术语。
-- 补译灵能异象、轻微／严重亚空间威胁及相关控制选项，包括设置或固定障壁恶化值的说明。
-
-### 剧情状态与信念
-
-- 将 Etudes 从容易引起误解的“研究”改为“剧情状态”，明确其层级、条件和状态说明。
-- 按游戏用语统一“教条主义”“自由主义”“异端主义”等信念名称。
-
-### 蓝图搜索与补丁管理
-
-- 完善搜索分类和显示选项的译文。
-- 补充补丁管理器、字段类型及编辑操作的中文标签和说明。
-- 明确高风险修改、保留备份以及创建补丁后重启游戏的提示。
-
-### 战锤专名与显示选项
-
-- 统一派系、虚空舰及装备名称，例如“亚空间引擎”“盖勒力场装置”“伺服头骨”。
-- 更清晰地区分体型等级，完善稀有度及带颜色选项的中文名称。
-
-## 恢复与更新
-
-关闭游戏，将备份的 `zh-CN.json` 复制回原位置即可恢复旧汉化。未保留备份时，可从原版 ToyBox 1.7.34 安装包提取其 `Localization\zh-CN.json`。
-
-ToyBox 自动更新或重新安装可能覆盖本汉化。更新后先确认汉化与新版本兼容，再重新覆盖词表。不要将本包的汉化版本 1.0 与 ToyBox 的版本 1.7.34 混淆。
-
-## 汉化范围与限制
-
-部分对话与角色页开关、升级说明、补丁编辑器的操作状态仍可能显示英文，这些内容不在本词表能够替换的范围内。
-
-蓝图 ID、内部名称、字段名、类型名、GUID、路径和异常信息保留原样，便于在编辑工具中识别和使用。ToyBox、Unity、GitHub 等品牌名，Ctrl、Shift、F11 等按键名，以及坐标轴 X/Y/Z 也不作翻译。
-
-本包不负责翻译 Unity Mod Manager 自身的界面。游戏对象的名称和描述由游戏语言设置决定；如需显示中文，请同时将游戏语言设为简体中文。
+请在 ToyBox 中选择简体中文（`zh-CN`）。游戏内容的官方名称与描述取决于游戏自身的语言设置。各项目说明包含依赖、安装、更新及适用范围。
 
 ## 署名与许可
 
-ToyBox：Narria、ADDB，以及上游贡献者。上游 MIT 声明还保留 Hsinyu 署名。
+ToyBox 由 Narria、ADDB 及上游贡献者开发。**mitcheese** 在原汉化贡献者工作的基础上修订中文词表，并开发显示增强附加模组。
 
-原简体中文贡献者：ohZbs、Kirie、lhr7324925。汉化修订：mitcheese。
-
-采用 MIT 许可，详见 [LICENSE.txt](LICENSE.txt) 和 [CREDITS.md](CREDITS.md)。
+采用 MIT 许可，详见 [LICENSE.txt](LICENSE.txt) 与 [CREDITS.md](CREDITS.md)。

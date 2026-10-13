@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net481</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>ToyBoxChineseDisplayEnhancements.Tests</AssemblyName>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <ProjectReference Include="../ToyBoxChineseDisplayEnhancements.csproj" />
+    <ProjectReference Include="Shim/ToyBoxShim.csproj" />
+    <Reference Include="0Harmony" HintPath="$(GameManagedDir)/0Harmony.dll" />
+    <Reference Include="UnityModManager" HintPath="$(ModManagerDir)/UnityModManager.dll" />
+    <Reference Include="UnityEngine" HintPath="$(GameManagedDir)/UnityEngine.dll" />
+    <Reference Include="UnityEngine.CoreModule" HintPath="$(GameManagedDir)/UnityEngine.CoreModule.dll" />
+    <Reference Include="UnityEngine.IMGUIModule" HintPath="$(GameManagedDir)/UnityEngine.IMGUIModule.dll" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+</Project>

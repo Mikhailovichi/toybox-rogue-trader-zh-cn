@@ -1,0 +1,42 @@
+{
+  "175d1fd853b24f188a4078306ca066ad": {
+    "InternalName": "CorruptionSoulMark_Base",
+    "Name": "异端主义〔内部信念条目〕",
+    "Description": "异端主义信念的内部记录，包含按等级变化触发的关联逻辑。这里的数值是该内部条目的等级，并非普通可选天赋；不建议仅根据列表名称增删。"
+  },
+  "676567cf7bb8459abded7ee617d1625e": {
+    "InternalName": "HopeSoulMark_Base",
+    "Name": "自由主义〔内部信念条目〕",
+    "Description": "自由主义信念的内部记录，包含按等级变化触发的关联逻辑。这里的数值是该内部条目的等级，并非普通可选天赋；不建议仅根据列表名称增删。"
+  },
+  "1aa7cb5ae17c4ed19aa2596b6bcca9d3": {
+    "InternalName": "FaithSoulMark_Base",
+    "Name": "教条主义〔内部信念条目〕",
+    "Description": "教条主义信念的内部记录，包含按等级变化触发的关联逻辑。这里的数值是该内部条目的等级，并非普通可选天赋；不建议仅根据列表名称增删。"
+  },
+  "f7cb6da6f8424aacb7414aa35cb06824": {
+    "InternalName": "BaseCharacterFeatures",
+    "Name": "基础角色特性〔内部条目〕",
+    "Description": "基础特性的组合条目，包含添加状态项和在升级时添加特性的组件。具体效果来自多个关联蓝图，不是单一可选天赋。"
+  },
+  "314d7be4a98249438db05b517213e810": {
+    "InternalName": "ReloadAfterCombat_Feature",
+    "Name": "战斗后装填〔内部条目〕",
+    "Description": "战斗结束时触发 ReloadAfterCombatAbility，该能力包含武器装填动作。此条目用于内部自动装填逻辑，并非玩家主动施放的能力。"
+  },
+  "9fd7e5142622424d9686b7f27e2e05d4": {
+    "InternalName": "IsPlayer_Feature",
+    "Name": "IsPlayer_Feature",
+    "Description": "内部特性，包含添加关联状态项的组件。尚未确认其完整作用，保留内部名称；不能仅据名称判断修改或删除的后果。"
+  },
+  "45181a40472441a8904a5282f83693f4": {
+    "InternalName": "CustomCharacterChargenPath",
+    "Name": "自定义角色创建路径〔内部条目〕",
+    "Description": "角色创建路径蓝图，包含多组在升级时添加特性的组件。这里的等级属于内部路径记录，不应视为某一独立天赋的等级。"
+  },
+  "25a98d3901c0426f87d2e85930fc1cd7": {
+    "InternalName": "FeatProgressionTest",
+    "Name": "FeatProgressionTest",
+    "Description": "属于旧版职业进度蓝图类型，包含添加状态项的组件。尚未确认其完整作用；名称带有 Test 不代表此条目可以安全删除。"
+  }
+}

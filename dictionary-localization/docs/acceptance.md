@@ -4,7 +4,7 @@
 
 目标为 ToyBox 1.7.34 的简体中文词表修订，汉化包版本 1.0。2026-10-13 已完成词表制作、静态校验和候选包，并在游戏 1.6.1.514 环境完成本机词表替换。**游戏界面验收仍待完成**，当前没有全界面显示正常的实测结论。
 
-安装和恢复步骤见根目录 [README](../README.md)。个人安装路径及备份记录保留在本机的 `docs/local-acceptance.md` 和 `docs/installation.json`，不进入 Git。
+安装和恢复步骤见本子项目 [README](../README.md)。本文件的其他相对路径以 `dictionary-localization/` 为基准；个人安装路径及备份记录保留在本机的 `docs/local-acceptance.md` 和 `docs/installation.json`，不进入 Git。
 
 ## 静态检查结果
 
@@ -36,7 +36,7 @@
 
 只查看标签、说明和下拉选项即可检查多数汉化，无需为了验收执行重置加点、剧情改动或创建补丁。发现问题时提供所在页签、英文原文或截图；加载异常可提供本机 `Player.log` 或 `GameLog.txt` 的相关部分。
 
-如已有词表导出，可保存在 Git 排除的 `reference/` 目录供定位。关闭游戏后再修改／覆盖汉化，避免 ToyBox 保存时重写文件。
+如已有词表导出，可保存在仓库根目录被 Git 排除的 `reference/` 目录供定位。关闭游戏后再修改／覆盖汉化，避免 ToyBox 保存时重写文件。
 
 ## 后续动作
 
@@ -46,4 +46,4 @@
 
 ## 恢复
 
-关闭游戏，将安装前自行保存的词表备份复制回 ToyBox 模组目录的 `Localization/zh-CN.json`。本机项目的原始快照和安装备份保留在 `reference/` 中，不随仓库分发。
+关闭游戏，将安装前自行保存的词表备份复制回 ToyBox 模组目录的 `Localization/zh-CN.json`。本机项目的原始快照和安装备份保留在仓库根目录 `reference/` 中，不随仓库分发。

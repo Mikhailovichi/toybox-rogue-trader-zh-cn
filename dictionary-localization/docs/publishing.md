@@ -10,7 +10,7 @@
 - 类型／标签：按汉化附加包发布，使用 `Translation` 标记。依据当前制作过程，同时使用 `AI-Generated Content`；页面文案如沿用本项目的 AI 生成草稿，添加 `AI Media`。
 - 关联原模组并填写依赖：[ToyBox](https://www.nexusmods.com/warhammer40kroguetrader/mods/1)。
 - 页面文本：`nexus-description-zh.md`、`nexus-description-en.md`。
-- 当前候选 ZIP：`../release/toybox-zh-cn-v1.0.zip`。
+- 当前候选 ZIP：`../../release/toybox-zh-cn-v1.0.zip`。
 
 ## 上传前的实际待办
 

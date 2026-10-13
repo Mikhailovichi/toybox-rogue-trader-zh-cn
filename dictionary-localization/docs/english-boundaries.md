@@ -1,6 +1,6 @@
 # 英文保留范围与源码依据
 
-依据：ToyBox `v1.7.34`，提交 `f044d0ccc90c4800aef0142fdd5147abaf7f5a4e`。以下行号相对于 `reference/source/ToyBox/`。
+依据：ToyBox `v1.7.34`，提交 `f044d0ccc90c4800aef0142fdd5147abaf7f5a4e`。以下行号相对于仓库根目录 `reference/source/ToyBox/`。
 
 ## 已覆盖的动态显示名称
 

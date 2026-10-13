@@ -10,7 +10,7 @@ from tree_sitter import Language, Parser
 import tree_sitter_c_sharp
 
 PROJECT = Path(__file__).resolve().parents[1]
-SOURCE = PROJECT / "reference/source/ToyBox"
+SOURCE = PROJECT.parent / "reference/source/ToyBox"
 PARSER = Parser(Language(tree_sitter_c_sharp.language()))
 COLORS = dict(
     White="#ededed", Grey="#A0A0A0FF", DarkGrey="#505050FF",
@@ -23,8 +23,8 @@ RGBA = {}
 def require_source():
     if not (SOURCE / "Classes/ModKit/UI/RichText.cs").is_file():
         raise FileNotFoundError(
-            "Optional ToyBox source is missing from reference/source. "
-            "See docs/maintenance.md; ordinary build and validation use the tracked key files."
+            "Optional ToyBox source is missing from the repository's reference/source. "
+            "See dictionary-localization/docs/maintenance.md; ordinary build and validation use the tracked key files."
         )
 
 

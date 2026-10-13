@@ -10,7 +10,7 @@ FILES = ("Localization/zh-CN.json", "README.md", "README.zh-CN.md", "CHANGELOG.m
 
 def package():
     report = validate()
-    target = PROJECT / "release/toybox-zh-cn-v1.0.zip"
+    target = PROJECT.parent / "release/toybox-zh-cn-v1.0.zip"
     target.parent.mkdir(parents=True, exist_ok=True)
     with ZipFile(target, "w", compression=ZIP_DEFLATED, compresslevel=9) as archive:
         for name in FILES:
