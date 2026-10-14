@@ -6,6 +6,14 @@ using dnlib.DotNet;
 internal static class Program {
     private static void Main(string[] args) {
         if (args.Length == 3 && args[0] == "--verify") { Verify.Run(args[1], args[2]); return; }
+        if (args.Length == 4 && args[0] == "--method") {
+            using var module = ModuleDefMD.Load(args[1]);
+            foreach (var method in module.GetTypes().Where(t => t.FullName == args[2]).SelectMany(t => t.Methods).Where(m => m.Name == args[3])) {
+                Console.WriteLine(method.FullName);
+                if (method.HasBody) foreach (var instruction in method.Body.Instructions) Console.WriteLine(instruction);
+            }
+            return;
+        }
         foreach (var path in args) {
             using var module = ModuleDefMD.Load(path);
             Console.WriteLine("ASSEMBLY " + Path.GetFileName(path));

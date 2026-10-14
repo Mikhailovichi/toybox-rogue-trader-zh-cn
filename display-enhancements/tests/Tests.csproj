@@ -3,12 +3,12 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net481</TargetFramework>
     <LangVersion>latest</LangVersion>
-    <AssemblyName>ToyBoxChineseDisplayEnhancements.Tests</AssemblyName>
+    <AssemblyName>ToyBoxDisplayEnhancements.Tests</AssemblyName>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
-    <ProjectReference Include="../ToyBoxChineseDisplayEnhancements.csproj" />
+    <ProjectReference Include="../ToyBoxDisplayEnhancements.csproj" />
     <ProjectReference Include="Shim/ToyBoxShim.csproj" />
     <Reference Include="0Harmony" HintPath="$(GameManagedDir)/0Harmony.dll" />
     <Reference Include="UnityModManager" HintPath="$(ModManagerDir)/UnityModManager.dll" />

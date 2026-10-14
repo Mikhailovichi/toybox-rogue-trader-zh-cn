@@ -6,23 +6,23 @@ from zipfile import ZIP_DEFLATED, ZipFile
 from validate import PROJECT, validate
 
 FILES = (
-    "Localization/zh-CN.json", "README.md", "CHANGELOG.md", "CREDITS.md", "LICENSE.txt",
-    "docs/images/common-actions.png", "docs/images/interface-settings.png",
+    "Localization/zh-CN_lang.json", "README.md", "CHANGELOG.md", "CREDITS.md", "LICENSE.txt",
 )
 
 
 def package():
     report = validate()
-    target = PROJECT.parent / "release/toybox-zh-cn-v1.0.zip"
+    target = PROJECT.parent / "release/toybox-zh-cn-v2.0.zip"
     target.parent.mkdir(parents=True, exist_ok=True)
     with ZipFile(target, "w", compression=ZIP_DEFLATED, compresslevel=9) as archive:
         for name in FILES:
             archive.write(PROJECT / name, name)
     with ZipFile(target) as archive:
         assert set(archive.namelist()) == set(FILES), "Unexpected archive content"
-        assert archive.read("Localization/zh-CN.json") == (PROJECT / "Localization/zh-CN.json").read_bytes()
-        archive_data = json.loads(archive.read("Localization/zh-CN.json"))
-        assert len(archive_data["Strings"]) == report["total_entries"]
+        for name in FILES:
+            assert archive.read(name) == (PROJECT / name).read_bytes(), name
+        archive_data = json.loads(archive.read("Localization/zh-CN_lang.json"))
+        assert len(archive_data) == report["total_entries"]
     print(f"Created {target} ({target.stat().st_size} bytes)")
 
 

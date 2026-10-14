@@ -1,3 +1,3 @@
 using System.Runtime.CompilerServices;
 
-[assembly: InternalsVisibleTo("ToyBoxChineseDisplayEnhancements.Tests")]
+[assembly: InternalsVisibleTo("ToyBoxDisplayEnhancements.Tests")]

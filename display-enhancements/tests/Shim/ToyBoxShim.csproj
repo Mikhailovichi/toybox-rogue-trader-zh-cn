@@ -3,9 +3,12 @@
     <TargetFramework>net481</TargetFramework>
     <LangVersion>latest</LangVersion>
     <AssemblyName>ToyBox</AssemblyName>
-    <Version>1.7.34</Version>
+    <Version>2.0.16</Version>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityModManager" HintPath="$(ModManagerDir)/UnityModManager.dll" />
   </ItemGroup>
 </Project>

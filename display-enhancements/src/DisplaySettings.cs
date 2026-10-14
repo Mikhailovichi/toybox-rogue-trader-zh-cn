@@ -2,7 +2,7 @@ using System;
 using System.IO;
 using Newtonsoft.Json;
 
-namespace ToyBoxChineseDisplayEnhancements {
+namespace ToyBoxDisplayEnhancements {
     internal sealed class DisplaySettings {
         public bool ShowTechnicalDetails { get; set; }
         internal static DisplaySettings Load(string directory) {

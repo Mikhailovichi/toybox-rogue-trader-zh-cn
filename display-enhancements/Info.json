@@ -1,10 +1,10 @@
 {
-  "Id": "ToyBoxChineseDisplayEnhancements",
-  "DisplayName": "ToyBox Chinese Display Enhancements",
+  "Id": "ToyBoxDisplayEnhancements",
+  "DisplayName": "ToyBox Display Enhancements",
   "Author": "mitcheese",
-  "Version": "0.2.0",
+  "Version": "0.4.0",
   "ManagerVersion": "0.23.0",
   "Requirements": ["0ToyBox0"],
-  "AssemblyName": "ToyBoxChineseDisplayEnhancements.dll",
-  "EntryMethod": "ToyBoxChineseDisplayEnhancements.Main.Load"
+  "AssemblyName": "ToyBoxDisplayEnhancements.dll",
+  "EntryMethod": "ToyBoxDisplayEnhancements.Main.Load"
 }

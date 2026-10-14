@@ -1,0 +1,88 @@
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+
+namespace ToyBoxDisplayEnhancements {
+    internal static class UiText {
+        internal static bool Chinese => string.Equals(Runtime.Culture, "zh-CN", StringComparison.OrdinalIgnoreCase);
+        private static readonly Dictionary<string, string[]> entries = new Dictionary<string, string[]> {
+            { "NotLoaded", new[] { "尚未加载", "Not loaded yet" } },
+            { "Ready", new[] { "已安装 {0} 个显示补丁；支持 ToyBox 简体中文和英文界面。", "{0} display patches installed; supports ToyBox's Simplified Chinese and English UI." } },
+            { "Unavailable", new[] { "未启用增强，保留原显示：{0}", "Enhancements unavailable; original displays retained: {0}" } },
+            { "TechnicalSetting", new[] { "显示技术详情", "Show technical details" } },
+            { "PreviewNote", new[] { "增强说明跟随 ToyBox，官方名称和对白跟随游戏语言。预览沿用 ToyBox 的分支收集规则，后续结果可能取决于分支与检定，不保证全部发生。技术详情显示原始摘要、内部标识和来源深度。", "Addon text follows ToyBox's language; official names and dialogue follow the game's language. Previews follow ToyBox's branch traversal. Later results depend on branches and checks and are not guaranteed. Technical details show original captions, identifiers and source depth." } },
+            { "Details", new[] { "{0}\n〔{1}〕", "{0}\n[{1}]" } },
+            { "Objective", new[] { "{0}：{1}", "{0}: {1}" } },
+            { "ObjectiveQuest", new[] { "{0}：{1}〔{2}〕", "{0}: {1} [{2}]" } },
+            { "QuestNone", new[] { "未开始", "not started" } },
+            { "ObjectiveNone", new[] { "未开启", "not started" } },
+            { "Started", new[] { "进行中", "in progress" } },
+            { "Completed", new[] { "已完成", "completed" } },
+            { "Updated", new[] { "已更新", "updated" } },
+            { "Postponed", new[] { "已推迟", "postponed" } },
+            { "Failed", new[] { "已失败", "failed" } },
+            { "Result", new[] { "结果预览：{0}", "Result preview: {0}" } },
+            { "LaterResult", new[] { "后续可能涉及：{0}", "Possible later results: {0}" } },
+            { "Depth", new[] { "来源深度：{0}", "Source depth: {0}" } },
+            { "Shift", new[] { "信念变化：{0} {1}", "Conviction change: {0} {1}" } },
+            { "Required", new[] { "信念要求：{0}点数 ≥ {1}", "Conviction requirement: {0} points >= {1}" } },
+            { "Description", new[] { "{0}（{1}）", "{0} ({1})" } },
+            { "Check", new[] { "检定：{0}，难度 {1}", "Check: {0}, difficulty {1}" } },
+            { "HiddenCheck", new[] { "检定：{0}，难度 {1}（隐藏检定）", "Check: {0}, difficulty {1} (hidden check)" } },
+            { "Vendor", new[] { "打开商人选择界面", "Open vendor selection" } },
+            { "Companion", new[] { "进入自定义队友创建流程", "Begin custom companion creation" } },
+            { "GiveObjective", new[] { "开启目标", "Start objective" } },
+            { "CompleteObjective", new[] { "完成目标", "Complete objective" } },
+            { "FailObjective", new[] { "目标失败", "Fail objective" } },
+            { "StartIfNone", new[] { "{0}（未开启时先开启目标）", "{0} (start the objective first if it has not started)" } },
+            { "StartEtude", new[] { "启动剧情状态：{0}", "Start story state: {0}" } },
+            { "CompleteEtude", new[] { "完成剧情状态：{0}", "Complete story state: {0}" } },
+            { "Immediately", new[] { "{0}（立即启动）", "{0} (start immediately)" } },
+            { "NullChecker", new[] { "条件引用为空", "Missing condition reference" } },
+            { "Cycle", new[] { "循环条件引用，未展开", "Cyclic condition reference; not expanded" } },
+            { "UnknownOperation", new[] { "未知条件组合：{0}", "Unknown condition grouping: {0}" } },
+            { "EmptyGroup", new[] { "空条件组，保留原摘要", "Empty condition group; original caption retained" } },
+            { "NullCondition", new[] { "空条件引用", "Missing condition reference" } },
+            { "FallbackReason", new[] { "{0}〔{1}〕", "{0} [{1}]" } },
+            { "QuestStatus", new[] { "任务状态", "Quest status" } },
+            { "ObjectiveStatus", new[] { "目标状态", "Objective status" } },
+            { "StateIs", new[] { "{0}为“{1}”", "{0} is \"{1}\"" } },
+            { "StateIsNot", new[] { "{0}不是“{1}”", "{0} is not \"{1}\"" } },
+            { "EtudeNotStarted", new[] { "未启动", "not started" } },
+            { "EtudeStarted", new[] { "已启动（包括运行中或完成处理中）", "started (including running or completion in progress)" } },
+            { "EtudePlaying", new[] { "运行中", "running" } },
+            { "EtudeCompleting", new[] { "完成处理中", "completion in progress" } },
+            { "EtudeTitle", new[] { "剧情状态“{0}”", "Story state \"{0}\"" } },
+            { "EtudeState", new[] { "{0}{1}", "{0} is {1}" } },
+            { "EtudeNotState", new[] { "{0}不是“{1}”状态", "{0} is not in the state \"{1}\"" } },
+            { "EtudeRunning", new[] { "{0}正在运行", "{0} is running" } },
+            { "EtudeNotRunning", new[] { "{0}未在运行", "{0} is not running" } },
+            { "EtudeAnyState", new[] { "{0}处于以下任一状态：{1}", "{0} is in any of these states: {1}" } },
+            { "EtudeNoState", new[] { "{0}不处于以下任何状态：{1}", "{0} is in none of these states: {1}" } },
+            { "StateSeparator", new[] { "／", " / " } },
+            { "EnoughProfit", new[] { "利润因子达到招募自定义队友所需的门槛", "Profit Factor meets the requirement for recruiting a custom companion" } },
+            { "NotEnoughProfit", new[] { "利润因子未达到招募自定义队友所需的门槛", "Profit Factor does not meet the requirement for recruiting a custom companion" } },
+            { "CueSeenCurrent", new[] { "本次对话中已显示过对白：“{0}”", "Dialogue shown in this conversation: \"{0}\"" } },
+            { "CueNotSeenCurrent", new[] { "本次对话中未显示过对白：“{0}”", "Dialogue not shown in this conversation: \"{0}\"" } },
+            { "CueSeenBefore", new[] { "此前已显示过对白：“{0}”", "Dialogue shown previously: \"{0}\"" } },
+            { "CueNotSeenBefore", new[] { "此前未显示过对白：“{0}”", "Dialogue not shown previously: \"{0}\"" } },
+            { "Original", new[] { "原始：{0}", "Original: {0}" } },
+            { "Identity", new[] { "{0}；内部名：{1}；GUID：{2}", "{0}; internal name: {1}; GUID: {2}" } },
+            { "AliasSource", new[] { "{0}；中文名为本包别名", "{0}; name is a registered addon alias" } },
+            { "NotSatisfied", new[] { "不满足（{0}）", "Not satisfied ({0})" } },
+            { "AllConditions", new[] { "以下条件都成立", "All of the following must be true" } },
+            { "AnyConditions", new[] { "满足以下任一组", "At least one of the following must be true" } },
+            { "Group", new[] { "{0}：\n{1}", "{0}:\n{1}" } },
+            { "NotGroup", new[] { "以下组合不成立：\n  {0}", "The following group must not be true:\n  {0}" } },
+            { "Availability", new[] { "出现条件：{0}", "Availability conditions: {0}" } },
+            { "Selection", new[] { "选择要求：{0}", "Selection requirements: {0}" } },
+            { "CueResult", new[] { "\n<size=75%>结果预览：</size>{0}", "\n<size=75%>Result preview: </size>{0}" } },
+            { "AddonNote", new[] { "【汉化说明】{0}", "[Addon note] {0}" } },
+            { "NullCaption", new[] { "空条件", "Missing condition" } }
+        };
+        internal static string Get(string key, params object[] args) {
+            var template = entries[key][Chinese ? 0 : 1];
+            return args.Length == 0 ? template : string.Format(CultureInfo.InvariantCulture, template, args);
+        }
+    }
+}

@@ -1,0 +1,866 @@
+{
+  "ToyBox_Features_BagOfTricks_BagOfTricksFeatureTab_m_CameraLocalizedText": {
+    "Translated": "视角",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_AllowMouse3DraggingToAimCameraFeature_Name": {
+    "Translated": "允许拖动鼠标中键调整视角",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_AllowZoomOnAllMapsAndCutscenesFeature_Description": {
+    "Translated": "始终允许视角缩放，忽略缩放锁定。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_FOVMultiplierFeature_Name": {
+    "Translated": "视野角度",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_FOVMultiplierFeature_Description": {
+    "Translated": "调整视野角度的最小／最大值，使滚轮可以进一步拉近或拉远视角。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_FreeCamFeature_Name": {
+    "Translated": "自由视角",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_ResetCameraAimToDefaultFeature_Name": {
+    "Translated": "重置视角",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_CompleteUnlimitedActionsPerTurnFeature_Name": {
+    "Translated": "行动不消耗行动点",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_HighlightHiddenObjectsFeature_Description": {
+    "Translated": "高亮通常需要通过警觉检定等条件才能发现的物体；还可选择高亮战争迷雾中的物体和隐藏陷阱。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_PartialUnlimitedActionsPerTurnFeature_Name": {
+    "Translated": "行动不消耗行动点（部分）",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_PartialUnlimitedActionsPerTurnFeature_Description": {
+    "Translated": "除一次性消耗全部行动点的能力外，其他行动均不消耗行动点。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Combat_LobotomizeEnemiesFeature_Name": {
+    "Translated": "禁用敌人行动逻辑",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Common_GiveAllItemsFeature_Description": {
+    "Translated": "向背包添加每种物品蓝图各 1 件物品。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Common_RerollPerceptionFeature_Name": {
+    "Translated": "重新进行警觉检定",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Common_RerollPerceptionFeature_Description": {
+    "Translated": "重置地图物体已保存的警觉检定结果。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_ExCompanionDialogFeature_Name": {
+    "Translated": "未随队同伴对话包含已离队同伴",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_ExCompanionDialogFeature_Description": {
+    "Translated": "让未随队同伴参与对话的功能也包含已离队的同伴。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_IgnoreDialogRestrictionsSoulMarkFeature_Name": {
+    "Translated": "忽略对话中的信念限制",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_IgnoreDialogRestrictionsSoulMarkFeature_Description": {
+    "Translated": "使因信念限制而不可选的对话选项可供选择。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_OverrideStoryOccupationFeature_Description": {
+    "Translated": "让游戏按指定的剧情职业识别角色，例如“合法灵能者”，而不是实际选择的职业。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_RemoteCompanionDialogFeature_Name": {
+    "Translated": "允许未随队同伴参与对话",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_RemoteCompanionDialogFeature_Description": {
+    "Translated": "允许未在当前队伍中的同伴参与正在进行的对话评论。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_NeverRoll1LocalizedText": {
+    "Translated": "永不掷出 1",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_Initiative_AlwaysRoll10LocalizedText": {
+    "Translated": "先攻掷骰固定为 10",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_Initiative_AlwaysRoll5LocalizedText": {
+    "Translated": "先攻掷骰固定为 5",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_Initiative_AlwaysRoll1LocalizedText": {
+    "Translated": "先攻掷骰固定为 1",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_OtherMultipliers_VisionRangeFeature_Name": {
+    "Translated": "视野揭示范围倍率",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_BagOfTricks_OtherMultipliers_VisionRangeFeature_Description": {
+    "Translated": "调整队伍成员、宠物及玩家舰船揭开战争迷雾的范围倍率。",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_DialogPreviewUtilities_m_RunActionHolderLocalizedText": {
+    "Translated": "执行动作容器",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_DialogPreviewUtilities_m_ShowCheck__0_DC__1__LocalizedText": {
+    "Translated": "出现检定（{0}，难度：{1}）",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_DialogPreviewUtilities_m_ShowConditionsLocalizedText": {
+    "Translated": "出现条件",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_DialogPreviewUtilities_m_SelectConditionsLocalizedText": {
+    "Translated": "选择要求",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_DialogPreviewUtilities_m_EmptyActionLocalizedText": {
+    "Translated": "空动作",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_DialogPreviewUtilities_m_SoulMarkShift_0_By_1__DescriptioLocalizedText": {
+    "Translated": "信念变化：{0}，数值 {1}；说明：{2}",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_DialogPreviewUtilities_m_SoulMarkRequiredLocalizedText": {
+    "Translated": "信念要求",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_DialogPreviewUtilities_m_SoulMarkShiftLocalizedText": {
+    "Translated": "信念变化",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_PreviewDialogConditionsFeature_Description": {
+    "Translated": "显示对话选项的出现条件与选择要求。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_EnableAchievementsFeature_AllowAchievementsWhileUsingModsT": {
+    "Translated": "使用模组时仍可解锁成就",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_EnableAchievementsFeature_ThisIsIntendedForYouToBeAbleToEn": {
+    "Translated": "让使用便利类模组的玩家仍可正常解锁成就。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_GameTimeScaleFeature_Description": {
+    "Translated": "加快或减慢整个游戏，包括移动、动画等。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_LoadingWithBlueprintErrorsFeature_Name": {
+    "Translated": "允许读取含蓝图错误的存档",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_LoadingWithBlueprintErrorsFeature_Description": {
+    "Translated": "即使缺少提供蓝图的模组也允许读取存档，可能造成问题。此功能可能用于恢复存档，但至少需要重新为角色重置加点。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_CustomizePsychicPhenomenaFeature_m_PsychicPhenomenaLocalizedText": {
+    "Translated": "灵能异象",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_CustomizePsychicPhenomenaFeature_m_MinorPerilsLocalizedText": {
+    "Translated": "轻微亚空间威胁",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_CustomizePsychicPhenomenaFeature_m_MajorPerilsLocalizedText": {
+    "Translated": "严重亚空间威胁",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_CustomizePsychicPhenomenaFeature_Name": {
+    "Translated": "自定义灵能异象／亚空间威胁",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_CustomizePsychicPhenomenaFeature_Description": {
+    "Translated": "允许禁用指定的灵能异象或亚空间威胁。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_CustomizePsychicPhenomenaFeature_m_RefreshAvailablePhenomenas_PerilLocalizedText": {
+    "Translated": "刷新可用灵能异象／亚空间威胁（用于模组兼容）",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_Description": {
+    "Translated": "允许修改废料、利润因子、导航者洞察，以及可用时的当前障壁恶化值。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_m_CurrentNavigatorInsightLocalizedText": {
+    "Translated": "当前导航者洞察",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_m_AdjustNavigatorInsightByTheFolloLocalizedText": {
+    "Translated": "按以下数值调整导航者洞察",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_m_CurrentProfitFactorLocalizedText": {
+    "Translated": "当前利润因子",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_m_AdjustProfitFactorByTheFollowingLocalizedText": {
+    "Translated": "按以下数值调整利润因子",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_m_CurrentVeilThicknessLocalizedText": {
+    "Translated": "当前障壁恶化值",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_m_SetVeilThicknessToTheFollowingAmLocalizedText": {
+    "Translated": "将障壁恶化值设为以下数值",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_PreventPsychicPhenomenaFeature_Name": {
+    "Translated": "禁用灵能异象",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_PreventPsychicPhenomenaFeature_Description": {
+    "Translated": "防止灵能者能力引发任何灵能异象，包括“黑暗祈祷”能力和“混沌之剑”等。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_PreventVeilThicknessFromChangingFeature_Name": {
+    "Translated": "阻止障壁恶化值变化",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_PreventVeilThicknessFromChangingFeature_Description": {
+    "Translated": "将当前障壁恶化值强制保持为 0。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_DialogAndNpc_DialogAndNpcFeatureTab_Name": {
+    "Translated": "对话与 NPC",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_DialogAndNpc_DialogEditorFeature_m_NoActiveDialogText": {
+    "Translated": "当前没有进行中的对话",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_DialogAndNpc_DialogEditorFeature_m_CueText": {
+    "Translated": "对话节点",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_EtudeStatusText": {
+    "Translated": "剧情状态",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_Etudes_EtudesFeatureTab_Name": {
+    "Translated": "剧情状态",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_Etudes_LegacyEtudesEditorFeature_Name": {
+    "Translated": "剧情状态编辑器",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_Etudes_LegacyEtudesEditorFeature_Description": {
+    "Translated": "通过树状视图查看游戏中的剧情状态、标记及元素。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_Name": {
+    "Translated": "剧情状态编辑器",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_Description": {
+    "Translated": "以树状视图浏览游戏中的剧情状态，并查看状态和关联关系。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_LoadingText": {
+    "Translated": "正在加载剧情状态……",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_NoEtudesText": {
+    "Translated": "没有剧情状态",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_FeatureSearch_FeatureSearchFeature_FeatureSearchNotImplementedForTh": {
+    "Translated": "此页面暂不支持功能搜索！",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_IgnoreArchetypePrerequisitesFeature_Name": {
+    "Translated": "忽略职业前置条件",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_IgnoreArchetypePrerequisitesFeature_Description": {
+    "Translated": "界面可能有轻微异常。允许在每个阶段无视前置条件选择任意一个职业。警告：将“典范”选为第二职业会导致问题，因为没有可升级的第二职业能力。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_IgnoreTalentPrerequisitesFeature_Description": {
+    "Translated": "自动通过要求拥有或不得拥有某项状态项（如特性）的前置条件检查。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_Name": {
+    "Translated": "从指定等级重置加点",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_Description": {
+    "Translated": "可设置单位（包括同伴）重置加点的起始等级。设为 35 级可重选第三职业；设为 15 级可重选第二、第三职业；设为 0 级可重选全部三个职业。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_m_IfAUnitIsRespeccedWhileThisFeatuLocalizedText": {
+    "Translated": "在此功能启用时重置加点，随后关闭该功能或 ToyBox，升级界面可能出现轻微异常。升级时游戏会使用单位的基础副本；ToyBox 需要在副本创建时重置其加点，而这仅在功能启用时发生。否则，游戏可能误认为角色仍拥有基础副本中的特性。这并非必须持续启用的依赖：关闭此功能或 ToyBox 后，再次重置加点即可修复。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_m_CurrentRespecLevelOverrideLocalizedText": {
+    "Translated": "当前重置加点起始等级",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_m_RespecFromLevel0LocalizedText": {
+    "Translated": "从 0 级重置加点",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_m_RespecFromLevel15LocalizedText": {
+    "Translated": "从 15 级重置加点",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_m_RespecFromLevel35LocalizedText": {
+    "Translated": "从 35 级重置加点",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_m_RespecFromCustomLevelLocalizedText": {
+    "Translated": "从自定义等级重置加点",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_Loot_OpenMassLootAction_Name": {
+    "Translated": "打开集中搜刮窗口",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_Loot_OpenMassLootAction_Description": {
+    "Translated": "随时打开当前区域的集中搜刮界面。该界面通常只在离开区域时显示；没有可搜刮战利品时不会打开。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Actions_RespecUnitAction_Name": {
+    "Translated": "为单位重置加点",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Actions_RespecUnitAction_Description": {
+    "Translated": "为指定单位重置加点，并关闭模组界面。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Actions_RespecUnitAction_m_Can_tRespecUnitLocalizedText": {
+    "Translated": "无法重置加点：单位可能已死亡、属于宠物，或等级低于其原始等级下限（如同伴的招募等级）。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Actions_RespecUnitAction_m_RespecLocalizedText": {
+    "Translated": "重置加点",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_PartyBrowseMechadendritesFeature_Name": {
+    "Translated": "浏览单位机械触须",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_PartyBrowseMechadendritesFeature_Description": {
+    "Translated": "浏览该单位的全部机械触须，并可移除现有条目或添加新条目。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitBrowseVoicesFeature_m_TheButton_1_WillPlayTryToPlayARaLocalizedText": {
+    "Translated": "按钮“{0}”会尝试随机播放一条队友昏迷语音（PartyMemberUnconscious）。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitModifySoulMarksFeature_Name": {
+    "Translated": "修改信念",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitModifySoulMarksFeature_Description": {
+    "Translated": "修改角色的信念倾向。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitModifySoulMarksFeature_m_UnitsOtherThanTheMainCharacterDoLocalizedText": {
+    "Translated": "除主角外的单位实际上没有信念倾向。可赋予 SoulMarkCorruption2_Feature 等信念里程碑特性，但它们在其他单位身上可能不起作用。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitModifySoulMarksFeature_m_SoulMarksLocalizedText": {
+    "Translated": "信念",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PatchTool_PatchToolApplyPatchesFeature_Name": {
+    "Translated": "加载蓝图时应用补丁",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolApplyPatchesFeature_Description": {
+    "Translated": "启用后，在游戏加载蓝图时应用补丁工具创建的补丁。关闭后可使用未修改的蓝图，无需删除补丁文件。",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolDangerousPatchesFeature_Name": {
+    "Translated": "允许高风险蓝图补丁",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolDangerousPatchesFeature_Description": {
+    "Translated": "高风险补丁的总开关。这类补丁会全局修改共享预制体或游戏对象，不建议使用。默认关闭；仅在清楚影响时启用。",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolFeatureTab_Name": {
+    "Translated": "补丁工具",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_WarningLabel": {
+    "Translated": "警告：",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_NoteLabel": {
+    "Translated": "说明：",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_PowerfulFeatureWarning": {
+    "Translated": "这是一个功能很强的工具。仅修改武器伤害通常不会损坏游戏，",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_PowerfulFeatureWarning2": {
+    "Translated": "但它允许进行许多可能引发问题的修改。",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_KeepABackup": {
+    "Translated": "请留意这些影响，并始终保留备份。",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_RestartAdvised": {
+    "Translated": "完成补丁后，建议先重启游戏，再读取正式游玩的存档。",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_NewFeatureWarning": {
+    "Translated": "此功能较新。如发现异常或遇到问题，请向模组作者反馈。",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ManageExistingPatches": {
+    "Translated": "管理现有补丁",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Tabs": {
+    "Translated": "标签页",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_CreateNewTab": {
+    "Translated": "创建标签页",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_NewTab": {
+    "Translated": "新标签页",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Close": {
+    "Translated": "关闭",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_NoTabsOpen": {
+    "Translated": "没有打开的标签页。",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_PatchesNotLoaded": {
+    "Translated": "补丁尚未加载……",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Blueprint": {
+    "Translated": "蓝图",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_PatchId": {
+    "Translated": "补丁 ID",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Applied": {
+    "Translated": "已应用？",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Yes": {
+    "Translated": "是",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_No": {
+    "Translated": "否",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Failed": {
+    "Translated": "失败！",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Enable": {
+    "Translated": "启用",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Disable": {
+    "Translated": "禁用",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_OpenInTab": {
+    "Translated": "在标签页中打开",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Delete": {
+    "Translated": "删除",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowBrowserPicker": {
+    "Translated": "显示浏览器选取面板",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowBrowser": {
+    "Translated": "显示浏览器（开始加载所选类型的全部蓝图）",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_BpCategory": {
+    "Translated": "蓝图类别",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowPatchManager": {
+    "Translated": "显示补丁管理器",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ApplyChanges": {
+    "Translated": "应用更改",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_CurrentPatchInfo": {
+    "Translated": "当前补丁针对蓝图：{0}（{1}），包含 {2} 项操作。",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_OperationRow": {
+    "Translated": "操作：{0}",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_FieldRow": {
+    "Translated": "字段：{0}",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ConfigureFieldsToShow": {
+    "Translated": "选择要显示的字段类型：",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Primitives": {
+    "Translated": "基础类型",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Enums": {
+    "Translated": "枚举",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_BlueprintReferences": {
+    "Translated": "蓝图引用",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Collections": {
+    "Translated": "集合",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ComplexTypes": {
+    "Translated": "复杂类型",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowUnityObjects": {
+    "Translated": "显示 Unity 对象",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_OtherSettings": {
+    "Translated": "其他设置：",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowDeleteButton": {
+    "Translated": "显示删除按钮",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowCreateButton": {
+    "Translated": "显示创建按钮",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_CollapseOnPatch": {
+    "Translated": "应用补丁后折叠所有已展开字段",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_EnableDangerousForThisPatch": {
+    "Translated": "对此补丁允许高风险修改",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowFieldsEditor": {
+    "Translated": "显示字段编辑器",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_AlreadyOpenedElsewhere": {
+    "Translated": "已在另一层级展开！",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Create": {
+    "Translated": "创建",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_NewItem": {
+    "Translated": "新条目：",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowValues": {
+    "Translated": "显示值",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Change": {
+    "Translated": "更改",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_UnityObject": {
+    "Translated": "Unity 对象",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_DumpToToyBoxFolder": {
+    "Translated": "导出到 ToyBox 文件夹",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_EditReference": {
+    "Translated": "编辑引用",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_NonGenericReference": {
+    "Translated": "非泛型引用。如看到此信息，请向模组作者报告！",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Null": {
+    "Translated": "空引用",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_NullValue": {
+    "Translated": "空值",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Entries": {
+    "Translated": "条目",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowEntries": {
+    "Translated": "显示条目",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_AddItem": {
+    "Translated": "添加条目",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_AddBefore": {
+    "Translated": "在前面添加",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_AddAfter": {
+    "Translated": "在后面添加",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowFields": {
+    "Translated": "显示字段",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_AddAsNewEntry": {
+    "Translated": "添加为新条目",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ExceptionInToString": {
+    "Translated": "转换为文本时发生异常",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_FailedToParse": {
+    "Translated": "无法将值 {0} 解析为类型 {1}",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ExchangeUnityObject": {
+    "Translated": "替换",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_AssetGuid": {
+    "Translated": "资源 GUID",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_AssetFileId": {
+    "Translated": "文件 ID",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_CurrentAsset": {
+    "Translated": "当前资源：guid={0} fileid={1}",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_CurrentAssetUnknown": {
+    "Translated": "当前资源未在资源列表中登记，其 ID 未知。",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_CouldNotResolveAsset": {
+    "Translated": "无法根据指定的 guid／fileid 找到 Unity 资源。",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_IncompatibleAssetType": {
+    "Translated": "找到的资源类型为 {0}，无法赋给类型为 {1} 的字段。",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ComponentsHeader": {
+    "Translated": "组件：",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ChildrenHeader": {
+    "Translated": "子对象：",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ComponentRow": {
+    "Translated": "组件：{0} [{1}]",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ChildRow": {
+    "Translated": "子对象 [{0}]：{1}",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolTabUI_m_ShowBlueprintPickerLocalizedText": {
+    "Translated": "显示蓝图选取面板",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_Saves_ChangeSaveIdFeature_m_N_ALocalizedText": {
+    "Translated": "不适用",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_SearchAndPick_SearchAndPickFeature_m_ActionParameterLocalizedText": {
+    "Translated": "数值参数（例如要添加的物品数量）",
+    "Reason": "补齐新版缺译"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_BPIdCacheFeature_Name": {
+    "Translated": "启用蓝图 ID 缓存",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_BPIdCacheFeature_Description": {
+    "Translated": "启用后，为各类蓝图 ID 创建缓存。“搜索与选取”等菜单会只加载所选类型的蓝图（如 BlueprintFeature），缩短加载时间。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_BPIdCacheFeature_ResetCache_inCaseOfIssues_Text": {
+    "Translated": "重置蓝图 ID 缓存（出现问题时）",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_ShowBlueprintAssetIdsSetting_Name": {
+    "Translated": "显示蓝图 GUID",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_ShowDisplayAndInternalNamesSetting_Name": {
+    "Translated": "同时显示界面名称与内部名称",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_ShowDisplayAndInternalNamesSetting_Description": {
+    "Translated": "蓝图具有界面名称和内部名称。默认优先使用界面名称，缺失或无效时使用内部名称；此选项会同时显示两者。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SettingsFeatures_SettingsFeaturesTab_BlueprintsCategory": {
+    "Translated": "蓝图",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_CompleteEtudeBA_Name": {
+    "Translated": "完成剧情状态",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_CompleteEtudeBA_EtudeIsNotStartedText": {
+    "Translated": "剧情状态尚未启动",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_StartEtudeBA_Name": {
+    "Translated": "启动剧情状态",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_StartEtudeBA_Description": {
+    "Translated": "启动指定的剧情状态蓝图（BlueprintEtude）。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_StartEtudeBA_EtudeIsAlreadyStartedOrCompleted": {
+    "Translated": "剧情状态已启动或已完成",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_UnstartEtudeBA_Name": {
+    "Translated": "撤销剧情状态启动",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_UnstartEtudeBA_Description": {
+    "Translated": "撤销指定剧情状态蓝图（BlueprintEtude）的启动。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_UnstartEtudeBA_EtudeIsNotStartedText": {
+    "Translated": "剧情状态未启动或已完成",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddMechadendriteBA_Name": {
+    "Translated": "添加机械触须",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddMechadendriteBA_Description": {
+    "Translated": "为指定单位添加指定的机械触须。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddMechadendriteBA_m_AddLocalizedText": {
+    "Translated": "装备机械触须",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddMechadendriteBA_m_UnitAlreadyHasThisMechadendriteLocalizedText": {
+    "Translated": "单位已拥有该机械触须",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddMechanicEntityFactBA_Name": {
+    "Translated": "添加状态项",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddMechanicEntityFactBA_Description": {
+    "Translated": "为所选单位添加指定的机制状态项蓝图（BlueprintMechanicEntityFact）。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddMechanicEntityFactBA_UnitAlreadyHasThisFactText": {
+    "Translated": "单位已拥有该状态项",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Classes_Infrastructure_Blueprints_BlueprintActions_Units_PlayVoiceBA_Description": {
+    "Translated": "使用指定语音播放队友昏迷音效（PartyMemberUnconscious）。若没有对应音效，则不会播放。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveMechadendriteBA_Name": {
+    "Translated": "移除机械触须",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveMechadendriteBA_Description": {
+    "Translated": "从指定单位移除指定的机械触须。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveMechadendriteBA_m_RemoveLocalizedText": {
+    "Translated": "卸下机械触须",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveMechadendriteBA_m_UnitDoesn_tHaveThisMechadendriteLocalizedText": {
+    "Translated": "单位没有该机械触须",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveMechanicEntityFactBA_Name": {
+    "Translated": "移除状态项",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveMechanicEntityFactBA_Description": {
+    "Translated": "从所选单位移除指定的机制状态项蓝图（BlueprintMechanicEntityFact）。",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveMechanicEntityFactBA_UnitDoesNotHaveThisFactText": {
+    "Translated": "单位没有该状态项",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_FactsLocalizedText": {
+    "Translated": "状态项",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_EtudesLocalizedText": {
+    "Translated": "剧情状态",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_CuesLocalizedText": {
+    "Translated": "对话节点",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Enums_CharacterListType_Localizer_m_StarshipsLocalizedText": {
+    "Translated": "虚空舰",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Enums_PartyTabSectionType_Localizer_m_MechadendritesLocalizedText": {
+    "Translated": "机械触须",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Enums_UnitSelectType_Localizer_m_ShipLocalizedText": {
+    "Translated": "虚空舰",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Main_CurrentlyLoadedBPsText": {
+    "Translated": "当前已加载蓝图：{0}",
+    "Reason": "核对新版语境、操作语义及游戏官方术语"
+  }
+}

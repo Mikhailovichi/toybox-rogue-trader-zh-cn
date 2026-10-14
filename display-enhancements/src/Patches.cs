@@ -2,10 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Reflection.Emit;
 using HarmonyLib;
 
-namespace ToyBoxChineseDisplayEnhancements {
+namespace ToyBoxDisplayEnhancements {
     internal static class Patches {
         private static MethodInfo Own(string name) => typeof(Patches).GetMethod(name, Reflect.Flags);
         private static MethodInfo Target(string type, string name, params string[] parameters) {
@@ -18,41 +17,38 @@ namespace ToyBoxChineseDisplayEnhancements {
                 postfix == null ? null : new HarmonyMethod(Own(postfix)), transpiler == null ? null : new HarmonyMethod(Own(transpiler)));
         }
         internal static int Install(Harmony harmony) {
-            // Resolve every required entry point before installing any patch.
-            var action = Target("ToyBox.PreviewUtilities", "FormatActionAsList", "Kingmaker.ElementsSystem.GameAction");
-            var checker = Target("ToyBox.PreviewUtilities", "FormatConditions", "Kingmaker.ElementsSystem.ConditionsChecker");
-            var array = Target("ToyBox.PreviewUtilities", "FormatConditions", "Kingmaker.ElementsSystem.Condition[]");
-            var answerConditions = Target("ToyBox.PreviewUtilities", "FormatConditionsAsList", "Kingmaker.DialogSystem.Blueprints.BlueprintAnswer");
-            var answer = Target("ToyBox.PreviewManager", "ResultsText", "Kingmaker.DialogSystem.Blueprints.BlueprintAnswer");
-            var cue = Target("ToyBox.PreviewManager", "ResultsText", "Kingmaker.DialogSystem.Blueprints.BlueprintCue");
-            var shift = Target("ToyBox.PreviewManager", "FormatShift", "Kingmaker.UnitLogic.Alignments.SoulMarkShift", "System.String");
-            var title = Target("ToyBox.BlueprintExtensions", "GetTitle", "Kingmaker.Blueprints.SimpleBlueprint", "System.Func`2");
-            var search = Target("ToyBox.BlueprintExtensions", "GetSearchKey", "Kingmaker.Blueprints.SimpleBlueprint", "System.Boolean");
-            var sort = Target("ToyBox.BlueprintExtensions", "GetSortKey", "Kingmaker.Blueprints.SimpleBlueprint");
-            var row = Runtime.ToyBox.GetType("ToyBox.FactsEditor", true).GetMethod("BlueprintRowGUI", Reflect.Flags);
-            if (row == null || !row.IsGenericMethodDefinition || row.GetGenericArguments().Length != 2)
-                throw new MissingMethodException("FactsEditor.BlueprintRowGUI<T,U>");
-            // All current instantiations use reference types and share this generic body on Mono.
-            var featureType = action.GetParameters()[0].ParameterType.Assembly.GetType("Kingmaker.UnitLogic.Feature");
-            var featureBlueprint = action.GetParameters()[0].ParameterType.Assembly.GetType("Kingmaker.UnitLogic.Progression.Features.BlueprintFeature");
-            // GameAction lives in GameCore; feature classes live in Code.
-            featureType = featureType ?? AppDomain.CurrentDomain.GetAssemblies().Select(a => a.GetType("Kingmaker.UnitLogic.Feature")).FirstOrDefault(t => t != null);
-            featureBlueprint = featureBlueprint ?? AppDomain.CurrentDomain.GetAssemblies().Select(a => a.GetType("Kingmaker.UnitLogic.Progression.Features.BlueprintFeature")).FirstOrDefault(t => t != null);
-            if (featureType == null || featureBlueprint == null) throw new TypeLoadException("Feature row types are missing.");
-            var closedRow = row.MakeGenericMethod(featureType, featureBlueprint);
-
+            const string preview = "ToyBox.Features.BagOfTricks.Preview.DialogPreviewUtilities";
+            const string bp = "ToyBox.Infrastructure.Blueprints.BPHelper";
+            var action = Target(preview, "FormatActionAsList", "Kingmaker.ElementsSystem.GameAction");
+            var array = Target(preview, "FormatConditions", "Kingmaker.ElementsSystem.Condition[]");
+            var conditions = Target(preview, "FormatConditionsAsList", "Kingmaker.DialogSystem.Blueprints.BlueprintAnswer");
+            var answer = Target(preview, "GetAnswerResultText", "Kingmaker.DialogSystem.Blueprints.BlueprintAnswer");
+            var cue = Target(preview, "GetCueResultText", "Kingmaker.DialogSystem.Blueprints.BlueprintCue");
+            var shift = Target(preview, "FormatSoulmarkShift", "Kingmaker.UnitLogic.Alignments.SoulMarkShift", "System.String");
+            var title = Target(bp, "GetTitle", "Kingmaker.Blueprints.SimpleBlueprint", "System.Func`2");
+            var search = Target(bp, "GetSearchKey", "Kingmaker.Blueprints.SimpleBlueprint");
+            var sort = Target(bp, "GetSortKey", "Kingmaker.Blueprints.SimpleBlueprint");
+            var description = Target(bp, "GetDescription", "Kingmaker.Blueprints.SimpleBlueprint");
+            var locale = Target("ToyBox.Infrastructure.Localization.LocalizationManager", "Update");
+            var gui = Target("ToyBox.Main", "OnGUI", "UnityModManagerNet.UnityModManager+ModEntry");
             Patch(harmony, action, prefix: nameof(ActionPrefix));
-            Patch(harmony, checker, prefix: nameof(CheckerPrefix));
             Patch(harmony, array, prefix: nameof(ArrayPrefix));
-            Patch(harmony, answerConditions, prefix: nameof(AnswerConditionsPrefix));
+            Patch(harmony, conditions, prefix: nameof(AnswerConditionsPrefix));
             Patch(harmony, shift, prefix: nameof(ShiftPrefix));
             Patch(harmony, answer, transpiler: nameof(PreviewTranspiler));
-            Patch(harmony, cue, postfix: nameof(CuePreviewPostfix), transpiler: nameof(PreviewTranspiler));
+            Patch(harmony, cue, postfix: nameof(CuePreviewPostfix), transpiler: nameof(CueTranspiler));
             Patch(harmony, title, postfix: nameof(TitlePostfix));
             Patch(harmony, search, postfix: nameof(SearchPostfix));
             Patch(harmony, sort, postfix: nameof(SortPostfix));
-            Patch(harmony, closedRow, transpiler: nameof(RowTranspiler));
-            return 11;
+            Patch(harmony, description, postfix: nameof(DescriptionPostfix));
+            Patch(harmony, locale, postfix: nameof(CacheRefresh));
+            Patch(harmony, gui, prefix: nameof(CacheRefresh));
+            Patch(harmony, Runtime.GameLocaleChanged, postfix: nameof(CacheRefresh));
+            return 13;
+        }
+        private static void CacheRefresh() {
+            try { Runtime.RefreshCaches(); }
+            catch (Exception ex) { Main.Warn(ex); }
         }
         private static bool ActionPrefix(object __0, ref List<string> __result) {
             if (!Runtime.Active) return true;
@@ -62,11 +58,6 @@ namespace ToyBoxChineseDisplayEnhancements {
                 __result = new List<string> { text };
                 return false;
             } catch (Exception ex) { Main.Warn(ex); return true; }
-        }
-        private static bool CheckerPrefix(object __0, ref string __result) {
-            if (!Runtime.Active) return true;
-            try { __result = Semantic.Checker(__0); return false; }
-            catch (Exception ex) { Main.Warn(ex); return true; }
         }
         private static bool ArrayPrefix(object __0, ref string __result) {
             if (!Runtime.Active) return true;
@@ -79,53 +70,56 @@ namespace ToyBoxChineseDisplayEnhancements {
                 var list = new List<string>();
                 var check = Reflect.Read(__0, "ShowCheck");
                 if (Reflect.Bool(__0, "HasShowCheck"))
-                    list.Add("出现条件：" + Text.Check(Reflect.String(check, "Type"), Reflect.Int(check, "DC"), false, Runtime.Localize));
+                    list.Add(UiText.Get("Availability", Text.Check(Reflect.String(check, "Type"), Reflect.Int(check, "DC"), false, Runtime.Localize)));
                 var show = Reflect.Read(__0, "ShowConditions");
                 var select = Reflect.Read(__0, "SelectConditions");
-                if (Reflect.Items(Reflect.Read(show, "Conditions")).Any()) list.Add("出现条件：" + Semantic.Checker(show));
-                if (Reflect.Items(Reflect.Read(select, "Conditions")).Any()) list.Add("选择要求：" + Semantic.Checker(select));
+                if (Reflect.Items(Reflect.Read(show, "Conditions")).Any()) list.Add(UiText.Get("Availability", Semantic.Checker(show)));
+                if (Reflect.Items(Reflect.Read(select, "Conditions")).Any()) list.Add(UiText.Get("Selection", Semantic.Checker(select)));
                 __result = list;
                 return false;
             } catch (Exception ex) { Main.Warn(ex); return true; }
         }
         private static bool ShiftPrefix(object __0, string __1, ref string __result) {
-            if (!Runtime.Active || (__1 != "SoulMarkRequired({0})" && __1 != "SoulMarkShift({0})")) return true;
+            var requiredFormat = Runtime.PreviewText("m_SoulMarkRequiredLocalizedText") + "({0})";
+            var shiftFormat = Runtime.PreviewText("m_SoulMarkShiftLocalizedText") + "({0})";
+            if (!Runtime.Active || (__1 != requiredFormat && __1 != shiftFormat)) return true;
             try {
                 if (__0 == null || Reflect.Int(__0, "Value") == 0) { __result = null; return false; }
-                var required = __1.StartsWith("SoulMarkRequired", StringComparison.Ordinal);
+                var required = __1 == requiredFormat;
                 if (required && (!Reflect.Bool(__0, "CheckByValue") || Reflect.String(__0, "Direction") == "None")) return true;
                 __result = Text.Shift(Reflect.String(__0, "Direction"), Reflect.Int(__0, "Value"), required,
                     Reflect.Localized(Reflect.Read(__0, "Description")), Runtime.Localize);
                 if (Main.Settings.ShowTechnicalDetails) {
                     var description = Reflect.Localized(Reflect.Read(__0, "Description"));
                     var raw = Reflect.String(__0, "Direction") + ", " + Reflect.Int(__0, "Value") + (string.IsNullOrEmpty(description) ? "" : ", " + description);
-                    __result = Text.WithDetails(__result, "原始：" + Text.Safe(string.Format(__1, raw)));
+                    __result = Text.WithDetails(__result, UiText.Get("Original", Text.Safe(string.Format(__1, raw))));
                 }
                 return false;
             } catch (Exception ex) { Main.Warn(ex); return true; }
         }
-        internal static IEnumerable<CodeInstruction> PreviewTranspiler(IEnumerable<CodeInstruction> instructions) {
-            var two = typeof(string).GetMethod("Format", new[] { typeof(string), typeof(object), typeof(object) });
-            var three = typeof(string).GetMethod("Format", new[] { typeof(string), typeof(object), typeof(object), typeof(object) });
-            foreach (var instruction in instructions) {
-                if (instruction.Calls(two)) instruction.operand = Own(nameof(FormatTwo));
-                if (instruction.Calls(three)) instruction.operand = Own(nameof(FormatThree));
-                yield return instruction;
-            }
+        internal static IEnumerable<CodeInstruction> PreviewTranspiler(IEnumerable<CodeInstruction> instructions) =>
+            ReplaceFormat(instructions, new[] { typeof(string), typeof(object), typeof(object) }, nameof(FormatTwo));
+        internal static IEnumerable<CodeInstruction> CueTranspiler(IEnumerable<CodeInstruction> instructions) =>
+            ReplaceFormat(instructions, new[] { typeof(string), typeof(object), typeof(object), typeof(object) }, nameof(FormatThree));
+        private static IEnumerable<CodeInstruction> ReplaceFormat(IEnumerable<CodeInstruction> instructions, Type[] parameters, string replacement) {
+            var result = instructions.ToList();
+            var method = typeof(string).GetMethod("Format", parameters);
+            var calls = result.Where(i => i.Calls(method)).ToArray();
+            if (calls.Length != 1) throw new NotSupportedException("Expected one pinned preview format call: " + replacement);
+            calls[0].operand = Own(replacement);
+            return result;
         }
-        internal static string FormatTwo(string format, object first, object second) => Runtime.Active && format == "{0}: {1}"
-            ? "\n" + Text.Layer(Convert.ToInt32(first), second as string) : string.Format(format, first, second);
+        internal static string FormatTwo(string format, object first, object second) => Runtime.Active && format == "[{0}: {1}]"
+            ? "[" + Text.Layer(Convert.ToInt32(first), second as string) + "]" : string.Format(format, first, second);
         internal static string FormatThree(string format, object first, object second, object third) {
-            if (Runtime.Active) {
-                if (format == "Check({0}, DC {1}, hidden {2})") return Text.WithDetails(Text.Check(first.ToString(), Convert.ToInt32(second), Convert.ToBoolean(third), Runtime.Localize), "原始：" + string.Format(format, first, second, third));
-                if (format == " \n<size=75%>[SoulMarkShift {0} by {1} - {2}]")
-                    return " \n<size=75%>[" + Text.WithDetails(Text.Shift(first.ToString(), Convert.ToInt32(second), false, third as string, Runtime.Localize), "原始：" + Text.Safe(string.Format("SoulMarkShift {0} by {1} - {2}", first, second, third))) + "]</size>";
-            }
+            if (Runtime.Active && format == Runtime.PreviewText("m_SoulMarkShift_0_By_1__DescriptioLocalizedText"))
+                return Text.WithDetails(Text.Shift(first.ToString(), Convert.ToInt32(second), false, third as string, Runtime.Localize),
+                    UiText.Get("Original", Text.Safe(string.Format(format, first, second, third))));
             return string.Format(format, first, second, third);
         }
         private static void CuePreviewPostfix(ref string __result) {
             if (Runtime.Active && !string.IsNullOrEmpty(__result))
-                __result = "\n<size=75%>结果预览：</size>" + __result;
+                __result = UiText.Get("CueResult", __result);
         }
         private static void TitlePostfix(object __0, Func<string, string> __1, ref string __result) {
             if (!Runtime.Active) return;
@@ -137,8 +131,8 @@ namespace ToyBoxChineseDisplayEnhancements {
             try {
                 var alias = Aliases.Find(__0);
                 if (alias == null) return;
-                __result += " " + alias.Name + " " + alias.InternalName;
-                if (Runtime.Setting("searchDescriptions")) __result += " " + alias.Description;
+                __result += " " + string.Join(" ", Aliases.SearchNames(__0)).ToUpperInvariant();
+                if (Runtime.Setting("ToggleSearchDescriptions")) __result += " " + alias.Description.ToUpperInvariant();
             } catch (Exception ex) { Main.Warn(ex); }
         }
         private static void SortPostfix(object __0, ref string __result) {
@@ -146,14 +140,10 @@ namespace ToyBoxChineseDisplayEnhancements {
             try { __result = Text.Clean(Aliases.Title(__0, null) ?? __result); }
             catch (Exception ex) { Main.Warn(ex); }
         }
-        internal static IEnumerable<CodeInstruction> RowTranspiler(IEnumerable<CodeInstruction> instructions) {
-            var result = instructions.ToList();
-            var calls = result.Where(i => i.operand is MethodInfo method && method.Name == "get_Description" && method.ReturnType == typeof(string)).ToList();
-            if (calls.Count != 1) throw new NotSupportedException("Expected exactly one description getter in the ToyBox fact row.");
-            // Only this GUI call is replaced; the game getter and blueprint remain untouched.
-            calls[0].opcode = OpCodes.Call;
-            calls[0].operand = typeof(Aliases).GetMethod(nameof(Aliases.DescriptionFor));
-            return result;
+        private static void DescriptionPostfix(object __0, ref string __result) {
+            if (!Runtime.Active) return;
+            try { __result = Aliases.DescriptionFor(__0, __result); }
+            catch (Exception ex) { Main.Warn(ex); }
         }
     }
 }

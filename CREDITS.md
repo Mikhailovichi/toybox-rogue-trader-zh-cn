@@ -5,11 +5,11 @@
 - Original Simplified Chinese contributors, preserved from the installed dictionary: ohZbs, Kirie, lhr7324925.
 - Additional Chinese localization contributors acknowledged in the upstream changelog: icls1337, devilmandare.
 - Revised Simplified Chinese dictionary: mitcheese.
-- Chinese Display Enhancements addon: mitcheese.
+- ToyBox Display Enhancements addon and its Chinese/English supplemental notes: mitcheese.
 
 Upstream: https://github.com/xADDBx/ToyBox-RogueTrader
 
-Source baseline: tag `v1.7.34`, commit `f044d0ccc90c4800aef0142fdd5147abaf7f5a4e`.
+Current source and dictionary baseline: official tag and release `v2.0.16`. Legacy 1.0 dictionary and 0.1/0.2 addon ZIPs target `v1.7.34` (commit `f044d0ccc90c4800aef0142fdd5147abaf7f5a4e`).
 
 Nexus original mod: https://www.nexusmods.com/warhammer40kroguetrader/mods/1
 

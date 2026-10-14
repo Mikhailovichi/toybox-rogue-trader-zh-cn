@@ -23,34 +23,35 @@ try {
     if ($version -notmatch '\b1\.6\.1\.514\b') { throw 'This candidate build is checked against game 1.6.1.514.' }
     & $DotNetPath build (Join-Path $project 'tests\Tests.csproj') -c Release --nologo
     if ($LASTEXITCODE -ne 0) { throw 'Build failed.' }
-    & (Join-Path $project 'tests\bin\Release\net481\ToyBoxChineseDisplayEnhancements.Tests.exe') $project
+    & (Join-Path $project 'tests\bin\Release\net481\ToyBoxDisplayEnhancements.Tests.exe') $project
     if ($LASTEXITCODE -ne 0) { throw 'Formatting/Harmony fixture tests failed.' }
     & $DotNetPath run --project (Join-Path $project 'tools\Inspect\Inspect.csproj') -c Release -- --verify $env:GameManagedDir $env:ModManagerDir
     if ($LASTEXITCODE -ne 0) { throw 'Actual-assembly compatibility checks failed.' }
 
     $info = Get-Content -LiteralPath (Join-Path $project 'Info.json') -Raw | ConvertFrom-Json
-    $dll = Join-Path $project 'bin\Release\net481\ToyBoxChineseDisplayEnhancements.dll'
-    if ($info.Id -ne 'ToyBoxChineseDisplayEnhancements' -or $info.Version -ne '0.2.0' -or
+    $dll = Join-Path $project 'bin\Release\net481\ToyBoxDisplayEnhancements.dll'
+    if ($info.Id -ne 'ToyBoxDisplayEnhancements' -or $info.DisplayName -ne 'ToyBox Display Enhancements' -or $info.Version -ne '0.4.0' -or
+        $info.AssemblyName -ne 'ToyBoxDisplayEnhancements.dll' -or $info.EntryMethod -ne 'ToyBoxDisplayEnhancements.Main.Load' -or
         $info.Requirements.Count -ne 1 -or $info.Requirements[0] -ne '0ToyBox0' -or
-        [Reflection.AssemblyName]::GetAssemblyName($dll).Version -ne [version]'0.2.0.0') { throw 'Package metadata does not match the addon.' }
+        [Reflection.AssemblyName]::GetAssemblyName($dll).Version -ne [version]'0.4.0.0') { throw 'Package metadata does not match the addon.' }
     $files = [ordered]@{
-        'ToyBoxChineseDisplayEnhancements.dll' = $dll
+        'ToyBoxDisplayEnhancements.dll' = $dll
         'Info.json' = Join-Path $project 'Info.json'
         'feature-aliases.zh-CN.json' = Join-Path $project 'feature-aliases.zh-CN.json'
+        'feature-aliases.en.json' = Join-Path $project 'feature-aliases.en.json'
         'story-aliases.zh-CN.json' = Join-Path $project 'story-aliases.zh-CN.json'
+        'story-aliases.en.json' = Join-Path $project 'story-aliases.en.json'
         'README.md' = Join-Path $project 'README.md'
+        'README.en.md' = Join-Path $project 'README.en.md'
         'LICENSE.txt' = Join-Path $project 'LICENSE.txt'
         'CREDITS.md' = Join-Path $project 'CREDITS.md'
-        'docs/images/dialogue-recruitment.png' = Join-Path $project 'docs/images/dialogue-recruitment.png'
-        'docs/images/dialogue-story-conditions.png' = Join-Path $project 'docs/images/dialogue-story-conditions.png'
-        'docs/images/dialogue-quote-conditions.png' = Join-Path $project 'docs/images/dialogue-quote-conditions.png'
-        'docs/images/feature-notes.png' = Join-Path $project 'docs/images/feature-notes.png'
+        'CHANGELOG.md' = Join-Path $project 'CHANGELOG.md'
     }
     Add-Type -AssemblyName System.IO.Compression
     Add-Type -AssemblyName System.IO.Compression.FileSystem
     $release = Join-Path $repo 'release'
     New-Item -ItemType Directory -Path $release -Force | Out-Null
-    $zipPath = Join-Path $release 'toybox-chinese-display-enhancements-v0.2.zip'
+    $zipPath = Join-Path $release 'toybox-display-enhancements-v0.4.zip'
     $stream = [IO.File]::Open($zipPath, [IO.FileMode]::Create)
     $zip = [IO.Compression.ZipArchive]::new($stream, [IO.Compression.ZipArchiveMode]::Create)
     try {

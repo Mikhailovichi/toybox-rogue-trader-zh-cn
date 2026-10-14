@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
-namespace ToyBoxChineseDisplayEnhancements {
+namespace ToyBoxDisplayEnhancements {
     internal static class Reflect {
         internal const BindingFlags Flags = BindingFlags.Public | BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static;
         internal static object Read(object instance, string name) {
@@ -29,7 +29,7 @@ namespace ToyBoxChineseDisplayEnhancements {
         }
         internal static IEnumerable<object> Items(object value) => value is IEnumerable list ? list.Cast<object>() : Enumerable.Empty<object>();
         internal static string Caption(object value) {
-            if (value == null) return "空条件";
+            if (value == null) return UiText.Get("NullCaption");
             var method = value.GetType().GetMethod("GetCaption", Flags, null, Type.EmptyTypes, null);
             return (method?.Invoke(value, null) as string) ?? value.GetType().Name;
         }

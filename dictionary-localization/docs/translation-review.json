@@ -1,0 +1,3754 @@
+{
+  "ToyBox_Features_Achievements_AchievementsFeatureTab_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Achievements_BrowseAchievementsFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Achievements_BrowseAchievementsFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_BagOfTricksFeatureTab_BagOfTricksText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_BagOfTricksFeatureTab_QualityOfLifeText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_BagOfTricksFeatureTab_CheatsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_BagOfTricksFeatureTab_m_CombatLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_BagOfTricksFeatureTab_m_TeleportLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_BagOfTricksFeatureTab_m_CommonLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_BagOfTricksFeatureTab_m_PreviewLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_BagOfTricksFeatureTab_m_DialogLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_BagOfTricksFeatureTab_m_RTFactionReputationLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_BagOfTricksFeatureTab_m_RTResourcesLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_BagOfTricksFeatureTab_m_RTTweaksLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_BagOfTricksFeatureTab_m_CameraLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_BagOfTricksFeatureTab_m_ExperienceMultipliersLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_BagOfTricksFeatureTab_m_OtherMultipliersLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_BagOfTricksFeatureTab_m_DiceRollsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_BagOfTricksFeatureTab_m_EnemyStatModifierLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_AllowMouse3DraggingToAimCameraFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_AllowMouse3DraggingToAimCameraFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_AllowRotateOnAllMapsAndCutscenesFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_AllowRotateOnAllMapsAndCutscenesFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_AllowZoomOnAllMapsAndCutscenesFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_AllowZoomOnAllMapsAndCutscenesFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_CameraElevationOffsetFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_CameraElevationOffsetFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_DragCameraElevationFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_DragCameraElevationFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_FOVMultiplierFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_FOVMultiplierFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_FreeCamFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_FreeCamFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_ResetCameraAimToDefaultFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Camera_ResetCameraAimToDefaultFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_CompleteUnlimitedActionsPerTurnFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_CompleteUnlimitedActionsPerTurnFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_EquipmentChangeDuringCombatFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_EquipmentChangeDuringCombatFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_FreeAbilitiesFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_FreeAbilitiesFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_HighlightHiddenObjectsFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_HighlightHiddenObjectsFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_HighlightHiddenObjectsFeature_AlsoHighlightHiddenTrapsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_HighlightHiddenObjectsFeature_AlsoHighlightInFogOfWarText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_IgnoreAllAbilityRequirementsFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_IgnoreAllAbilityRequirementsFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_IgnoreAoeOverlapAbilityRequirementFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_IgnoreAoeOverlapAbilityRequirementFeature_Description": {
+    "Decision": "empty-purpose",
+    "Note": "保留空原文的提示占位用途"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_IgnoreEquipmentRestrictionsFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_IgnoreEquipmentRestrictionsFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_IgnoreLineOfSightAbilityRequirementFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_IgnoreLineOfSightAbilityRequirementFeature_Description": {
+    "Decision": "empty-purpose",
+    "Note": "保留空原文的提示占位用途"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_IgnoreTargetTooCloseAbilityRequirementFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_IgnoreTargetTooCloseAbilityRequirementFeature_Description": {
+    "Decision": "empty-purpose",
+    "Note": "保留空原文的提示占位用途"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_IgnoreTargetTooFarAbilityRequirementFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_IgnoreTargetTooFarAbilityRequirementFeature_Description": {
+    "Decision": "empty-purpose",
+    "Note": "保留空原文的提示占位用途"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_InfiniteChargesOnItemsFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_InfiniteChargesOnItemsFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_InstantRestAfterCombatFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_InstantRestAfterCombatFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_NoAbilityCooldownsFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_NoAbilityCooldownsFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_PartialUnlimitedActionsPerTurnFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_PartialUnlimitedActionsPerTurnFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_PreventTrapsFromTriggeringFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_PreventTrapsFromTriggeringFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_RestoreSpellsAndSkillsAfterCombatFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_RestoreSpellsAndSkillsAfterCombatFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_UnlimitedStackingOfModifiersFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Cheats_UnlimitedStackingOfModifiersFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Combat_ImmortalityBuffFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Combat_ImmortalityBuffFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Combat_KillAllEnemiesFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Combat_KillAllEnemiesFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Combat_LobotomizeEnemiesFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Combat_LobotomizeEnemiesFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Combat_MurderHoboFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Combat_MurderHoboFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Combat_RemoveBuffsFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Combat_RemoveBuffsFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Combat_RestAllFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Combat_RestAllFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Combat_RestSelectedFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Combat_RestSelectedFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Common_ChangePartyFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Common_ChangePartyFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Common_ChangeWeatherFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Common_ChangeWeatherFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Common_GiveAllItemsFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Common_GiveAllItemsFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Common_GoToGlobalMapFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Common_GoToGlobalMapFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Common_OpenReputationTradeWindowFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Common_OpenReputationTradeWindowFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Common_RerollPerceptionFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Common_RerollPerceptionFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Common_ResetInteractablesFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Common_ResetInteractablesFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_ExCompanionDialogFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_ExCompanionDialogFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_IgnoreDialogRestrictionsEverythingFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_IgnoreDialogRestrictionsEverythingFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_IgnoreDialogRestrictionsSoulMarkFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_IgnoreDialogRestrictionsSoulMarkFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_JealousyBegoneFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_JealousyBegoneFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_LoveIsFreeFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_LoveIsFreeFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_OverrideStoryOccupationFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_OverrideStoryOccupationFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_OverrideStoryOccupationFeature_m_RemoveLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_OverrideStoryOccupationFeature_m_AddLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_RemoteCompanionDialogFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Dialog_RemoteCompanionDialogFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_AdvantageMeansDoingTwoRollsAndTaLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_AllAttacksHitLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_AllAttacksCritLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_RollWithAdvantageLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_RollWithDisadvantageLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_Take100LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_Take50LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_Take1LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_NeverRoll100LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_NeverRoll1LocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_OutOfCombat_Take50LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_OutOfCombat_Take25LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_OutOfCombat_Take1LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_Initiative__HigherIsBetterLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_Initiative_AlwaysRoll10LocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_Initiative_AlwaysRoll5LocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_Initiative_AlwaysRoll1LocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_SkillChecks__LowerIsBetterLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_SkillChecks_Take50LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_SkillChecks_Take25LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_SkillChecks_Take1LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_Damage__HigherIsBetterLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_DamageRolls_Take50LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_DamageRolls_Take25LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_DamageRolls_Take1LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_AttackRolls__LowerIsBetterLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_CoverInterception_UsesASeparateRoLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_CoverNeverInterceptsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_DiceRolls_DiceRollsOverridesFeature_m_CoverAlwaysInterceptsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_EnemyStatModifier_EnemyFlatStatModifierFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_EnemyStatModifier_EnemyFlatStatModifierFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_EnemyStatModifier_EnemyStatMultiplierFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_EnemyStatModifier_EnemyStatMultiplierFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_ExperienceMultipliers_ExperienceMultiplierFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_ExperienceMultipliers_ExperienceMultiplierFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_ExperienceMultipliers_ExperienceMultiplierFeature_m_AllExperienceLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_ExperienceMultipliers_ExperienceMultiplierFeature_m_OverrideForCombatLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_ExperienceMultipliers_ExperienceMultiplierFeature_m_OverrideForQuestsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_ExperienceMultipliers_ExperienceMultiplierFeature_m_OverrideForSkillChecksLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_ExperienceMultipliers_ExperienceMultiplierFeature_m_OverrideForChallengesLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_ExperienceMultipliers_ExperienceMultiplierFeature_m_OverrideForSpaceCombatLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_OtherMultipliers_BuffDurationMultiplierFeature_m_ManageExceptionsToBuffDurationMuLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_OtherMultipliers_BuffDurationMultiplierFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_OtherMultipliers_BuffDurationMultiplierFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_OtherMultipliers_BuffDurationMultiplierFeature_m_StopExcludingLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_OtherMultipliers_BuffDurationMultiplierFeature_m_ExcludeLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_OtherMultipliers_MaxWalkDistanceFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_OtherMultipliers_MaxWalkDistanceFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_OtherMultipliers_MinSprintDistanceFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_OtherMultipliers_MinSprintDistanceFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_OtherMultipliers_MovementSpeedMultiplierFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_OtherMultipliers_MovementSpeedMultiplierFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_OtherMultipliers_VisionRangeFeature_Name": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_BagOfTricks_OtherMultipliers_VisionRangeFeature_Description": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_DialogPreviewUtilities_m_RunActionHolderLocalizedText": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_DialogPreviewUtilities_m_ConditionsHolderLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_DialogPreviewUtilities_m_ShowCheck__0_DC__1__LocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_DialogPreviewUtilities_m_ShowConditionsLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_DialogPreviewUtilities_m_SelectConditionsLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_DialogPreviewUtilities_m_EmptyActionLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_DialogPreviewUtilities_m_SoulMarkShift_0_By_1__DescriptioLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_DialogPreviewUtilities_m_SoulMarkRequiredLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_DialogPreviewUtilities_m_SoulMarkShiftLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_PreviewDialogConditionsFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_PreviewDialogConditionsFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_PreviewDialogResultsFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Preview_PreviewDialogResultsFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_AutoLoadLastSaveOnLaunchFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_AutoLoadLastSaveOnLaunchFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_ClickToTransferEntireStackFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_ClickToTransferEntireStackFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_DisableEndTurnKeybindFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_DisableEndTurnKeybindFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_EnableAchievementsFeature_AllowAchievementsWhileUsingModsT": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_EnableAchievementsFeature_ThisIsIntendedForYouToBeAbleToEn": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_FixIncorrectMainCharacterFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_FixIncorrectMainCharacterFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_GameAlternateTimeScaleFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_GameAlternateTimeScaleFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_GameTimeScaleFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_GameTimeScaleFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_LoadingWithBlueprintErrorsFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_LoadingWithBlueprintErrorsFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_ObjectHighlightToggleFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_ObjectHighlightToggleFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_RefillBeltConsumablesFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_RefillBeltConsumablesFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_SkipSplashScreenFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_QualityOfLife_SkipSplashScreenFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_CustomizePsychicPhenomenaFeature_m_CustomizeLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_CustomizePsychicPhenomenaFeature_m_PsychicPhenomenaLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_CustomizePsychicPhenomenaFeature_m_MinorPerilsLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_CustomizePsychicPhenomenaFeature_m_MajorPerilsLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_CustomizePsychicPhenomenaFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_CustomizePsychicPhenomenaFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_CustomizePsychicPhenomenaFeature_m_RefreshAvailablePhenomenas_PerilLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_CustomizePsychicPhenomenaFeature_m_StopExcludingLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_CustomizePsychicPhenomenaFeature_m_ExcludeLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_DisableRandomWarpEncounterFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_DisableRandomWarpEncounterFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyFactionReputationFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyFactionReputationFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyFactionReputationFeature_m_CurrentReputationLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyFactionReputationFeature_m_LevelLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyFactionReputationFeature_m_ExperienceLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyFactionReputationFeature_m_AdjustReputationByTheFollowingAmLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyFactionReputationFeature_m_AddLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyFactionReputationFeature_m_RemoveLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_m_CurrentNavigatorInsightLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_m_AdjustNavigatorInsightByTheFolloLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_m_AddLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_m_RemoveLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_m_CurrentScrapLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_m_AdjustScrapByTheFollowingAmountLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_m_CurrentProfitFactorLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_m_AdjustProfitFactorByTheFollowingLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_m_CurrentVeilThicknessLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_m_SetVeilThicknessToTheFollowingAmLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_ModifyResourcesFeature_m_SetLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_PreventPsychicPhenomenaFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_PreventPsychicPhenomenaFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_PreventVeilThicknessFromChangingFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_RTSpecific_PreventVeilThicknessFromChangingFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_BagOfTricks_Teleport_TeleportMainToCursorFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Teleport_TeleportMainToCursorFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Teleport_TeleportPartyToCursorFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Teleport_TeleportPartyToCursorFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Teleport_TeleportPartyToYouFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Teleport_TeleportPartyToYouFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Teleport_TeleportSelectedToCursorFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_BagOfTricks_Teleport_TeleportSelectedToCursorFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColoniesFeatureTab_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_NoColoniesText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_ColoniesText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_OngoingEventsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_OngoingProjectsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_FinishText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_ContentmentText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_EfficiencyText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_SecurityText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_ChangeStatText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_AdjustByText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_AddText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_RemoveText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_TraitsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_ShowGuidsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_InspectText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_EditResourcesText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_ResourceAdjustText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Colonies_ColonyEditorFeature_m_CurrentAmountText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_DialogAndNpcFeatureTab_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_DialogAndNpc_DialogEditorFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_DialogEditorFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_DialogEditorFeature_m_NoActiveDialogText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_DialogAndNpc_DialogEditorFeature_m_CurrentText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_DialogEditorFeature_m_AnswerText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_DialogEditorFeature_m_SelectionText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_DialogEditorFeature_m_CueText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_DialogAndNpc_DialogEditorFeature_m_NextText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_DialogEditorFeature_m_CondText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_DialogEditorFeature_m_RepeatText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InspectDialogControllerFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InspectDialogControllerFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_ShowInactiveConditionsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_ShowOtherVersionsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_RefreshText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_InterestingnessCoefficientText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_UnitText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_DialogText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_ConditionsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_ElementsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_ConditionalText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_QuestStatusText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_ObjectiveStatusText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_EtudeStatusText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_StatusText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_ConditionText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_SourceText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_CaptionText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_TrueText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_DialogAndNpc_InterestingNpcsFeature_m_FalseText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudesFeatureTab_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_Etudes_LegacyEtudesEditorFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_Etudes_LegacyEtudesEditorFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_Etudes_LegacyEtudesEditorFeature_m_ThisFeatureIsAtTheMomentMostlyCoLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudeRecord_m_ChainedEtude_0___1__HasDifferentLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudeRecord_m_LinkedToChild_0___1__WithDiffereLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudeRecord_m_NoneLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_EvaluationFailedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_LoadingText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_RootText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_RootNotFoundText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_SearchTextLabel": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_FlagsOnlyText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_ShowGuidsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_ShowCommentsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_RefreshText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_AreaFilterText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_NoEtudesText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_CompletesParentText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_InspectText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_ElementsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_ConflictsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudesFeature_m_EncounteredErrorWhileBuildingEtuLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Etudes_EtudesEditorFeature_m_AllLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_FeatureSearch_FeatureSearchFeature_FeatureSearchNotImplementedForTh": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_FeatureSearch_FeatureSearchFeature_ShowGUIText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_FeatureSearch_FeatureSearchFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_FeatureSearch_FeatureSearchFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_FeatureSearch_FeatureSearchFeature_m_FilterForUntestedFeaturesLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_FeatureSearch_FeatureSearchTab_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_LevelUp_IgnoreArchetypePrerequisitesFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_IgnoreArchetypePrerequisitesFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_IgnoreClassLevelsPrerequisitesFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_LevelUp_IgnoreClassLevelsPrerequisitesFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_LevelUp_IgnoreStatPrerequisitesFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_LevelUp_IgnoreStatPrerequisitesFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_LevelUp_IgnoreTalentPrerequisitesFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_LevelUp_IgnoreTalentPrerequisitesFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_LevelUpFeatureTab_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_m_TryToKeepThisFeatureActivatedAftLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_m_IfAUnitIsRespeccedWhileThisFeatuLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_m_NoneLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_m_CurrentRespecLevelOverrideLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_m_RespecFromLevel0LocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_m_RespecFromLevel15LocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_m_RespecFromLevel35LocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_m_RespecFromCustomLevelLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_LevelUp_RespecFromLevelXFeature_m_ApplyCustomLevelLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_LevelUp_TalentSelectionMultiplierFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_LevelUp_TalentSelectionMultiplierFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootAoEFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootAoEFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootAoERangeFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootAoERangeFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootChecklistFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootChecklistFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootChecklistFeature_m_SearchLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootChecklistFeature_m_ContainersLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootChecklistFeature_m_UnitsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootChecklistFeature_m_SourceIsUnknownLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootChecklistFeature_m_SourceIsGroundLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootChecklistFeature_m_NoLootAvailable_LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootChecklistFeature_m_NotInAnyArea_LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootChecklistShowHiddenLootSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootChecklistShowHiddenLootSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootFeatureTab_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootFeatureTab_m_LootLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_LootFeatureTab_m_ChecklistLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_MassLootShowHiddenItemsSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_MassLootShowHiddenItemsSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_MassLootShowLivingNPCItemsSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_MassLootShowLivingNPCItemsSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Loot_OpenMassLootAction_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_Loot_OpenMassLootAction_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Actions_AddUnitToPartyAction_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_AddUnitToPartyAction_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_AddUnitToPartyAction_m_UnitIsAlreadyPartOfPartyLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_AddUnitToPartyAction_m_AddLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_KillUnitAction_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_KillUnitAction_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_KillUnitAction_m_WhatHappenedHereLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_KillUnitAction_m_KillLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_RecruitUnitAction_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_RecruitUnitAction_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_RecruitUnitAction_m_UnitIsAlreadyRecruitedLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_RecruitUnitAction_m_RecruitLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_RemoveUnitFromPartyAction_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_RemoveUnitFromPartyAction_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_RemoveUnitFromPartyAction_m_UnitIsNotPartOfPartyLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_RemoveUnitFromPartyAction_m_RemoveLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_RespecUnitAction_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Actions_RespecUnitAction_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Actions_RespecUnitAction_m_Can_tRespecUnitLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Actions_RespecUnitAction_m_RespecLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Actions_UnrecruitUnitAction_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_UnrecruitUnitAction_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_UnrecruitUnitAction_m_UnitIsNotRecruitedLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Actions_UnrecruitUnitAction_m_UnrecruitLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Careers_ModifyCharacterLevelFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Careers_ModifyCharacterLevelFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Careers_ModifyCharacterLevelFeature_m_CharacterLevelLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Careers_ModifyExperienceFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Careers_ModifyExperienceFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Careers_ModifyExperienceFeature_m_ExperienceLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Careers_ModifyExperienceFeature_m_AdjustBasedOnLevelLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Careers_ModifyExperienceFeature_m_ThisSetsYourExperienceToMatchTheLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Careers_ShowCareersFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Careers_ShowCareersFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Careers_ShowCareersFeature_m_LevelLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Careers_ShowCareersFeature_m_CareersLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_IncreaseUnitLevelFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_IncreaseUnitLevelFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_IncreaseUnitLevelFeature_Maximum_Abbreviated": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_IncreaseUnitLevelFeature_Level_Abbreviated": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_PartyBrowseAbilitiesFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_PartyBrowseAbilitiesFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_PartyBrowseBuffsFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_PartyBrowseBuffsFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_PartyBrowseFeatsFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_PartyBrowseFeatsFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_PartyBrowseMechadendritesFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_PartyBrowseMechadendritesFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_PartyFeatureTab_PartyLevelText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_PartyFeatureTab_InspectParty_forDebugging__Text": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_PartyFeatureTab_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Classes_Features_PartyTab_RenameUnitFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Classes_Features_PartyTab_RenameUnitFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_ChangeGenderFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_ChangeGenderFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_PortraitEditorFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_PortraitEditorFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_PortraitEditorFeature_m_CurrentCustomPortraitLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_PortraitEditorFeature_m_CurrentBlueprintPortraitLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_PortraitEditorFeature_m_SavePortraitAsPngLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_PortraitEditorFeature_m_ShowCustomPortraitPickerLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_PortraitEditorFeature_m_ShowBlueprintPortraitPickerLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_PortraitEditorFeature_m_NameOfTheNewCustomPortrait_LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_PortraitEditorFeature_m_UnknownID_LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_PortraitEditorFeature_m_ChangePortraitLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_PortraitEditorFeature_m_NameOfTheNewBlueprintportrait_LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideSkeletonFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideSkeletonFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideSkeletonFeature_m_GlobalOffsetsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideSkeletonFeature_m_GlobalScalesText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideSkeletonFeature_m_LocalSizesText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideSkeletonFeature_m_EquipmentOffsetsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideSkeletonFeature_m_EquipmentSizesText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideSkeletonFeature_m_NoAvatarText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitBrowseVoicesFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitBrowseVoicesFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitBrowseVoicesFeature_m_ShowBlueprintVoicePickerLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitBrowseVoicesFeature_m_ChangingTheVoiceOfANon_customChaLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitBrowseVoicesFeature_m_UsingANon_defaultVoiceToACustomCLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitBrowseVoicesFeature_m_TheButton_1_WillPlayTryToPlayARaLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitDisableVoiceoverAndBarksFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitDisableVoiceoverAndBarksFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitModifySoulMarksFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitModifySoulMarksFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitModifySoulMarksFeature_m_UnitsOtherThanTheMainCharacterDoLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitModifySoulMarksFeature_m_SoulMarksLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitModifyStatsFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitModifyStatsFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitModifyStatsFeature_m_TryToKeepThisFeatureActivatedAftLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitModifyStatsFeature_m_OverridenByLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitModifyStatsFeature_m_WhenThisIsTurnedOff_TheChangedStLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideAiControlBehaviourFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideAiControlBehaviourFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideAiControlBehaviourFeature_m_MakeCharacterAIControlledLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideMechanicalSizeFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideMechanicalSizeFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideMechanicalSizeFeature_m_CurrentMechanicalSizeLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideMechanicalSizeFeature_m_OverrideLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideVisualSizeFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideVisualSizeFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PartyTab_Stats_UnitOverrideVisualSizeFeature_m_VisualOverrideLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PatchTool_PatchToolApplyPatchesFeature_Name": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolApplyPatchesFeature_Description": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolDangerousPatchesFeature_Name": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolDangerousPatchesFeature_Description": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolFeatureTab_Name": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_WarningLabel": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_NoteLabel": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_PowerfulFeatureWarning": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_PowerfulFeatureWarning2": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_KeepABackup": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_RestartAdvised": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_NewFeatureWarning": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ManageExistingPatches": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Tabs": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_CreateNewTab": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_NewTab": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Close": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_NoTabsOpen": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_PatchesNotLoaded": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Blueprint": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_PatchId": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Applied": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Yes": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_No": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Failed": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Enable": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Disable": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_OpenInTab": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Delete": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowBrowserPicker": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowBrowser": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_BpCategory": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowPatchManager": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Inspect": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Remove": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ApplyChanges": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_CurrentPatchInfo": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_OperationRow": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_FieldRow": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ConfigureFieldsToShow": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Primitives": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Enums": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_BlueprintReferences": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Collections": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ComplexTypes": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowUnityObjects": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_OtherSettings": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowDeleteButton": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowCreateButton": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_CollapseOnPatch": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_EnableDangerousForThisPatch": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowFieldsEditor": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_AlreadyOpenedElsewhere": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Create": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_NewItem": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowValues": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Change": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_UnityObject": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_DumpToToyBoxFolder": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_EditReference": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_NonGenericReference": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Null": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_NullValue": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_Entries": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowEntries": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_AddItem": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_AddBefore": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_AddAfter": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ShowFields": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_AddAsNewEntry": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ExceptionInToString": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_FailedToParse": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ExchangeUnityObject": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_AssetGuid": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_AssetFileId": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_CurrentAsset": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_CurrentAssetUnknown": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_CouldNotResolveAsset": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_IncompatibleAssetType": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ComponentsHeader": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ChildrenHeader": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ComponentRow": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolStrings_ChildRow": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_PatchTool_PatchToolTabUI_m_ShowBlueprintPickerLocalizedText": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_Quests_QuestEditorFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Quests_QuestEditorFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Quests_QuestEditorFeature_m_NoQuestsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Quests_QuestEditorFeature_m_HideCompletedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Quests_QuestEditorFeature_m_ShowUnrevealedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Quests_QuestEditorFeature_m_ShowInspectorText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Quests_QuestEditorFeature_m_InspectText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Quests_QuestEditorFeature_m_StartText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Quests_QuestEditorFeature_m_CompleteText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Quests_QuestEditorFeature_m_FinishText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Quests_QuestEditorFeature_m_ResetTimeText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Quests_QuestEditorFeature_m_RestartText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Quests_QuestEditorFeature_m_AddendumText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Quests_QuestsFeatureTab_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Saves_BrowseSavesFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Saves_BrowseSavesFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Saves_BrowseSavesFeature_m_LevelLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Saves_ChangeSaveIdFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Saves_ChangeSaveIdFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_Saves_ChangeSaveIdFeature_m_N_ALocalizedText": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_Saves_SavesFeatureTab_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_SearchAndPickFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_SearchAndPickFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_SearchAndPickFeature_m_ShowCharacterFilterPickerLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_SearchAndPickFeature_m_ActionParameterLocalizedText": {
+    "Decision": "revised",
+    "Note": "补齐新版缺译"
+  },
+  "ToyBox_Features_SearchAndPick_SearchAndPickFeature_m_CurrentCollationCategoryLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_SearchAndPickFeature_m_Collating_LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_SearchAndPickFeature_m_ShowCategoryPickerLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_SearchAndPickFeatureTab_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_SortCollationCategoriesByCountSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_SortCollationCategoriesByCountSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_BlueprintsLoaderChunkSizeSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_BlueprintsLoaderChunkSizeSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_BlueprintsLoaderNumShardSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_BlueprintsLoaderNumShardSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_BlueprintsLoaderNumThreadSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_BlueprintsLoaderNumThreadSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_BPIdCacheFeature_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_BPIdCacheFeature_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_BPIdCacheFeature_ResetCache_inCaseOfIssues_Text": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SettingsFeatures_BlueprintLoaderSettings_PerformanceEnhancementFeatures_PerformanceEnhancementText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_BlueprintLoaderSettings_PerformanceEnhancementFeatures_EnhancesBlueprintLoadingPerforma": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_BlueprintLoaderSettings_PreloadBlueprintsFeature_PreloadBlueprintsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_BlueprintLoaderSettings_PreloadBlueprintsFeature_AlwaysLoadAllBlueprintsOnGameSta": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_ShowBlueprintAssetIdsSetting_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_ShowBlueprintAssetIdsSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_ShowBlueprintTypeSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_ShowBlueprintTypeSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_ShowDisplayAndInternalNamesSetting_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_ShowDisplayAndInternalNamesSetting_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_ThreadedBlueprintsLoaderSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_ThreadedBlueprintsLoaderSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_BrowserSettings_PageLimitSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_BrowserSettings_PageLimitSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_BrowserSettings_SearchAsYouTypeFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_BrowserSettings_SearchAsYouTypeFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_BrowserSettings_SearchDelaySetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_BrowserSettings_SearchDelaySetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_BrowserSettings_SearchDescriptionsSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_BrowserSettings_SearchDescriptionsSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Game_CopyLocationHotkeySetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Game_CopyLocationHotkeySetting_m___ToyBox_FailedToCopyLocation_NoHLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Game_CopyLocationHotkeySetting_m___ToyBox_CopiedLocationToClipboarLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Game_DisplayGuidsInTooltipsFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Game_DisplayGuidsInTooltipsFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Game_DisplayGuidsInTooltipsFeature_m_CopiedGuidToClipboard_LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Game_EnableGameDevelopmentModeSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Game_EnableGameDevelopmentModeSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorDrawLimitSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorDrawLimitSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorIndentWidthSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorIndentWidthSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorNameFractionOfWidthSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorNameFractionOfWidthSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorSearcherBatchSizeSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorSearcherBatchSizeSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorShowCompilerGeneratedFields_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorShowCompilerGeneratedFields_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorShowEnumerableFieldsSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorShowEnumerableFieldsSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorShowNullAndEmptyMembersSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorShowNullAndEmptyMembersSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorShowStaticMembersSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorShowStaticMembersSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorSlimModeSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Inspector_InspectorSlimModeSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_LanguagePickerFeature_LanguagePickerText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_LanguagePickerFeature_PickYourCurrentUiLocaleText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_LanguagePickerFeature_CurrentCultureText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_CharacterPickerNearbyRangeSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_CharacterPickerNearbyRangeSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_FontFix_FontFixFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_FontFix_FontFixFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_GlyphSettingsFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_GlyphSettingsFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_GlyphSettingsFeature_CheckLabel": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_GlyphSettingsFeature_CheckDescription": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_GlyphSettingsFeature_UseDefaultLabel": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_GlyphSettingsFeature_UseDefaultDescription": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_ImguiColorFixFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_ImguiColorFixFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_LazyInitFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_LazyInitFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_LazyInit_X_Amount_Of_FeaturesFailedInitialization_LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_LogHotkeysToCombatLogSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_LogHotkeysToCombatLogSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_LogLevelSetting_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_LogLevelSetting_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_ShowRiskyTogglesFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_ShowRiskyTogglesFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_TB1SettingsImporterFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_TB1SettingsImporterFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_TB1SettingsImporterFeature_PathText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_TB1SettingsImporterFeature_ImportText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_TB1SettingsImporterFeature_ImportedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_TB1SettingsImporterFeature_PerSaveImportedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_TB1SettingsImporterFeature_PerSaveSkippedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsTab_Other_TB1SettingsImporterFeature_FailedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_SettingsFeaturesTab_UpdateText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_SettingsFeaturesTab_VersionAndFileIntegrityCategory": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_SettingsFeaturesTab_BlueprintsCategory": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SettingsFeatures_SettingsFeaturesTab_LanguageCategory": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_SettingsFeaturesTab_ListsAndBrowsersText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_SettingsFeaturesTab_InspectorText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_SettingsFeaturesTab_OtherText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_SettingsFeaturesTab_SettingsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_SettingsFeaturesTab_m_GameLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_UpdateAndIntegrity_UpdateCompatabilityFeature_EnableIntegrityCheckText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_UpdateAndIntegrity_UpdateCompatabilityFeature_CheckTheIntegrityOfToyBoxFilesTe": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_UpdateAndIntegrity_UpdaterFeature_RestartToFinishUpdateText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_UpdateAndIntegrity_UpdaterFeature_TryReinstallCurrentVersionText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_UpdateAndIntegrity_UpdaterFeature_TryUpdatingToNewestVersionText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_UpdateAndIntegrity_UpdaterFeature_DownloadProgress_Text": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_UpdateAndIntegrity_UpdaterFeature_UpdateModText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_UpdateAndIntegrity_UpdaterFeature_ReinstallTheCurrentModVersionOrU": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_UpdateAndIntegrity_VersionCompatabilityFeature_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_UpdateAndIntegrity_VersionCompatabilityFeature_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SettingsFeatures_UpdateAndIntegrity_VersionCompatabilityFeature_ModVersionIsNotCompatibleWithThi": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_ColonizeColonyBA_ColonizeText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_ColonizeColonyBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_ColonizeColonyBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_ColonizePlanetBA_ColonizeText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_ColonizePlanetBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_ColonizePlanetBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_LoadAreaPresetBA_LoadPresetText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_LoadAreaPresetBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_LoadAreaPresetBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_TeleportBlueprintAreaBA_TeleportText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_TeleportBlueprintAreaBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_TeleportBlueprintAreaBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_TeleportBlueprintAreaEnterPointBA_TeleportText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_TeleportBlueprintAreaEnterPointBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_TeleportBlueprintAreaEnterPointBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_TeleportBlueprintSectorMapPointStarSystemBA_TeleportText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_TeleportBlueprintSectorMapPointStarSystemBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_TeleportBlueprintSectorMapPointStarSystemBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_TeleportBlueprintStarSystemMapBA_TeleportText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_TeleportBlueprintStarSystemMapBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_TeleportBlueprintStarSystemMapBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddItemBA_Add_x": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddItemBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddItemBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveItemBA_Remove_x": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveItemBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveItemBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_ChangeFlagValueBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_ChangeFlagValueBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_ChangeFlagValueBA_FlagIsNotUnlockedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_CompleteEtudeBA_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_CompleteEtudeBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_CompleteEtudeBA_CompleteText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_CompleteEtudeBA_EtudeIsNotStartedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_CompleteQuestBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_CompleteQuestBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_CompleteQuestBA_CompleteText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_CompleteQuestBA_QuestIsNotStartedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_CompleteQuestObjectiveBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_CompleteQuestObjectiveBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_CompleteQuestObjectiveBA_CompleteText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_CompleteQuestObjectiveBA_QuestObjectiveIsNotStartedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_LockFlagBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_LockFlagBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_LockFlagBA_LockText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_LockFlagBA_FlagIsNotUnlockedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_PlayCutsceneBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_PlayCutsceneBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_PlayCutsceneBA_PlayText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_StartEtudeBA_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_StartEtudeBA_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_StartEtudeBA_StartText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_StartEtudeBA_EtudeIsAlreadyStartedOrCompleted": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_StartQuestBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_StartQuestBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_StartQuestBA_StartText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_StartQuestBA_QuestAlreadyStartedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_StartQuestObjectiveBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_StartQuestObjectiveBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_StartQuestObjectiveBA_StartText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_StartQuestObjectiveBA_QuestObjectiveStateIsNotNoneText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_UnlockAchievementBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_UnlockAchievementBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_UnlockAchievementBA_UnlockText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_UnlockAchievementBA_AchievementAlreadyUnlockedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_UnlockFlagBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_UnlockFlagBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_UnlockFlagBA_UnlockText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_UnlockFlagBA_FlagIsNotLockedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_UnstartEtudeBA_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_UnstartEtudeBA_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_UnstartEtudeBA_UnstartText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_UnstartEtudeBA_EtudeIsNotStartedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddAbilityResourceBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddAbilityResourceBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddAbilityResourceBA_AddText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddAbilityResourceBA_UnitAlreadyHasThisAbilityResourc": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddMechadendriteBA_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddMechadendriteBA_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddMechadendriteBA_m_AddLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddMechadendriteBA_m_UnitAlreadyHasThisMechadendriteLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddMechanicEntityFactBA_AddText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddMechanicEntityFactBA_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddMechanicEntityFactBA_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_AddMechanicEntityFactBA_UnitAlreadyHasThisFactText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_ChangeBuffRankBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_ChangeBuffRankBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_ChangeBuffRankBA_ThisBuffHasNoRanksText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_ChangeFeatureRankBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_ChangeFeatureRankBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_ChangeFeatureRankBA_ThisFeatureHasNoRanksText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_Units_ChangeVoiceBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_Units_ChangeVoiceBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_Units_ChangeVoiceBA_m_ChangeVoiceLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_Units_ChangeVoiceBA_m_ThisIsTheCurrentVoice_LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Classes_Infrastructure_Blueprints_BlueprintActions_Units_PlayVoiceBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Classes_Infrastructure_Blueprints_BlueprintActions_Units_PlayVoiceBA_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Classes_Infrastructure_Blueprints_BlueprintActions_Units_PlayVoiceBA_m_PlayExampleLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Classes_Infrastructure_Blueprints_BlueprintActions_Units_PlayVoiceBA_m_CanOnlyPlayAnExampleOfTheCurrentLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveAbilityResourceBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveAbilityResourceBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveAbilityResourceBA_RemoveText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveAbilityResourceBA_UnitAlreadyHasThisAbilityResourc": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveMechadendriteBA_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveMechadendriteBA_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveMechadendriteBA_m_RemoveLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveMechadendriteBA_m_UnitDoesn_tHaveThisMechadendriteLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveMechanicEntityFactBA_RemoveText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveMechanicEntityFactBA_Name": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveMechanicEntityFactBA_Description": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_RemoveMechanicEntityFactBA_UnitDoesNotHaveThisFactText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_SpawnUnitBA_Spawn_x": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_SpawnUnitBA_Name": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintActions_SpawnUnitBA_Description": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_AllLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_FactsLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_FeaturesLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_CareersLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_ProgressionLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_AbilitiesLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_SpellsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_BrainsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_AbilityRsrc_LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_BuffsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_ItemsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_EquipmentLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_WeaponsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_ArmorsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_UsableLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_UnitsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_UnitsCRLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_CRLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_RacesLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_AreasLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_AreaEntryLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_SystemMapLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_SectorMapPointsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_CutscenesLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_QuestsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_QuestObj_LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_EtudesLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_FlagsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_DailogsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_AnswersLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_PlanetsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_ColoniesLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_AreaPresetsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Features_SearchAndPick_BlueprintFilters_m_CuesLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintFilter_AllLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Blueprints_BlueprintUI_m_ShowSettingsLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_CharacterPicker_ThereAreNoCharactersInThisList": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_CharacterListType_Localizer_PartyText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_CharacterListType_Localizer_PartyAndPetsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_CharacterListType_Localizer_AllText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_CharacterListType_Localizer_ActiveText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_CharacterListType_Localizer_RemoteText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_CharacterListType_Localizer_CustomCompanionText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_CharacterListType_Localizer_PetsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_CharacterListType_Localizer_NearbyText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_CharacterListType_Localizer_FriendlyText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_CharacterListType_Localizer_EnemiesText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_CharacterListType_Localizer_AllUnitsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_CharacterListType_Localizer_m_StarshipsLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Enums_EtudeState_Localizer_m_NotStartedLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_EtudeState_Localizer_m_StartedLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_EtudeState_Localizer_m_ActiveLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_EtudeState_Localizer_m_PreCompletedLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_EtudeState_Localizer_m_CompletedLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_EtudeState_Localizer_m_CompletionInProgressLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_LogLevel_Localizer_ErrorText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_LogLevel_Localizer_WarningText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_LogLevel_Localizer_InfoText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_LogLevel_Localizer_DebugText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_LogLevel_Localizer_TraceText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_PartyTabSectionType_Localizer_ClassesText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_PartyTabSectionType_Localizer_StatsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_PartyTabSectionType_Localizer_FeaturesText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_PartyTabSectionType_Localizer_BuffsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_PartyTabSectionType_Localizer_AbilitiesText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_PartyTabSectionType_Localizer_InspectText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_PartyTabSectionType_Localizer_m_MechadendritesLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Enums_UnitSelectType_Localizer_EveryoneText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_UnitSelectType_Localizer_EnemiesText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_UnitSelectType_Localizer_FriendlyText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_UnitSelectType_Localizer_PartyText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_UnitSelectType_Localizer_MainCharacterText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_UnitSelectType_Localizer_OffText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Enums_UnitSelectType_Localizer_m_ShipLocalizedText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_Enums_UnitSelectType_Localizer_m_EnemyShipLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_FeatureTab_m_FeatureFailedInitializationLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Inspector_InspectorUI_ShowSearchText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Inspector_InspectorUI_ShowSearchSettingsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Inspector_InspectorUI_SearchByNameText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Inspector_InspectorUI_SearchByTypeText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Inspector_InspectorUI_SearchByValueText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Inspector_InspectorUI_SearchDepthText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Inspector_InspectorUI_StoppedDrawingEntriesToPreventUI": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Utilities_Strings_SharedStrings_ThisCannotBeUsedFromTheMainMenu": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Utilities_Strings_SharedStrings_TheCharacterPickerCannotBeUsedFromTheMainMenu": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Utilities_Strings_SharedStrings_Reset_to_default_Value": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Utilities_Strings_SharedStrings_List_x_Matches": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_UI_VerticalList_PageText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_UI_Browser_ShowAllText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Main_ModFilesAreCorrupted_Text": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Inspector_InspectorUI_CurrentlyInspectingText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Main_ResetText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Main_CurrentlyLoadedBPsText": {
+    "Decision": "revised",
+    "Note": "核对新版语境、操作语义及游戏官方术语"
+  },
+  "ToyBox_Infrastructure_UI_Browser_SearchText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_UI_Browser_SortAscendingText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_UI_Browser_SortDescendingText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_UI_UI_MinimumText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_UI_UI_MaximumText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Inspector_InspectorUI_SearchInProgres___Text": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Inspector_InspectorUI_CancelText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_BlueprintPicker_EnterTargetBlueprintIdText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_BlueprintPicker_PickBlueprintText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_BlueprintPicker_NoBlueprintWithThatGuidFound_Text": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_BlueprintPicker_ShowListOfBlueprintsText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_BlueprintPicker_CurrentlySelectedBlueprint_Text": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_UnitPicker_CurrentlySelectedUnit_Text": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Utilities_ContextProvider_NoneText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_FeatureWithBindableAction_m_DeleteLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_FeatureWithBindableAction_m_RebindLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_FeatureWithBindableAction_m_BindLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_FeatureWithBindableAction_m_CancelLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_FeatureWithBindableAction_m_ApplyLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_FeatureWithBindableAction_In_Progress_Keybind": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_FeatureWithBindableAction_m_CurrentKeybindConflictsWithExistLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Infrastructure_Utilities_ContextProvider_PetsNotAllowedForThisFeature_LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Main_SomethingWentHorriblyWrongAndYou": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Main_m_ThisModWillAutomaticallyConntectLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Main_m_IUnderstandLocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  },
+  "ToyBox_Main_m_YouNeedToClearTheException_LocalizedText": {
+    "Decision": "retained",
+    "Note": "新版译文与当前用途一致，保留"
+  }
+}

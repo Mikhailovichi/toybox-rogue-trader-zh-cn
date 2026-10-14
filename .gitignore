@@ -1,17 +1,14 @@
 # Local source, game terminology, snapshots and installation backups.
 /reference/
 /dictionary-localization/reference/*
-!/dictionary-localization/reference/baseline-zh-CN.json
-!/dictionary-localization/reference/extracted-keys.json
-!/dictionary-localization/reference/finite-keys.json
-!/dictionary-localization/reference/game-enums.json
+!/dictionary-localization/reference/upstream-en-v2.0.16.json
+!/dictionary-localization/reference/upstream-zh-CN-v2.0.16.json
 
 # Reproducible packages and local validation/installation records.
 /release/
 /dictionary-localization/docs/installation.json
 /dictionary-localization/docs/local-acceptance.md
 /dictionary-localization/docs/validation.json
-/dictionary-localization/docs/translation-review.json
 
 # Python dependencies and caches.
 /dictionary-localization/tools/vendor/

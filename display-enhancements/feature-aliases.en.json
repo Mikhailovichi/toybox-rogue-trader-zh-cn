@@ -1,0 +1,42 @@
+{
+  "175d1fd853b24f188a4078306ca066ad": {
+    "InternalName": "CorruptionSoulMark_Base",
+    "Name": "Heretical [internal conviction entry]",
+    "Description": "An internal record of the Heretical conviction, with linked logic triggered by rank changes. The value here is this internal entry's rank, not a selectable talent. Do not add or remove it based only on its list name."
+  },
+  "676567cf7bb8459abded7ee617d1625e": {
+    "InternalName": "HopeSoulMark_Base",
+    "Name": "Iconoclast [internal conviction entry]",
+    "Description": "An internal record of the Iconoclast conviction, with linked logic triggered by rank changes. The value here is this internal entry's rank, not a selectable talent. Do not add or remove it based only on its list name."
+  },
+  "1aa7cb5ae17c4ed19aa2596b6bcca9d3": {
+    "InternalName": "FaithSoulMark_Base",
+    "Name": "Dogmatic [internal conviction entry]",
+    "Description": "An internal record of the Dogmatic conviction, with linked logic triggered by rank changes. The value here is this internal entry's rank, not a selectable talent. Do not add or remove it based only on its list name."
+  },
+  "f7cb6da6f8424aacb7414aa35cb06824": {
+    "InternalName": "BaseCharacterFeatures",
+    "Name": "Base character features [internal entry]",
+    "Description": "A group of base features with components that add related facts and features during level-up. Its effects come from several linked blueprints; it is not a single selectable talent."
+  },
+  "314d7be4a98249438db05b517213e810": {
+    "InternalName": "ReloadAfterCombat_Feature",
+    "Name": "Reload after combat [internal entry]",
+    "Description": "Triggers ReloadAfterCombatAbility at the end of combat. That ability contains a weapon-reload action. This entry belongs to the internal automatic-reload logic, rather than an ability activated by the player."
+  },
+  "9fd7e5142622424d9686b7f27e2e05d4": {
+    "InternalName": "IsPlayer_Feature",
+    "Name": "IsPlayer_Feature",
+    "Description": "An internal feature with a component that adds related facts. Its full role has not been confirmed, so its internal name is retained. The name alone does not establish what changing or removing it would do."
+  },
+  "45181a40472441a8904a5282f83693f4": {
+    "InternalName": "CustomCharacterChargenPath",
+    "Name": "Custom character creation path [internal entry]",
+    "Description": "A character-creation path blueprint with several groups of components that add features during level-up. Its rank belongs to the internal path record, rather than an individual talent."
+  },
+  "25a98d3901c0426f87d2e85930fc1cd7": {
+    "InternalName": "FeatProgressionTest",
+    "Name": "FeatProgressionTest",
+    "Description": "Uses an obsolete progression blueprint type and contains a component that adds related facts. Its full role has not been confirmed. Having Test in its name does not mean that this entry can be safely removed."
+  }
+}

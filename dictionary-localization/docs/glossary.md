@@ -1,70 +1,70 @@
-# 术语对照
+# 新版术语对照
 
-优先参考本机游戏 1.6.1.514 的 `enGB.json` 与 `zhCN.json`，通过同一文本 GUID 对照。下表“官方”表示找到直接对应；工具内部术语与枚举按实际界面功能译写。
+适用 ToyBox **2.0.16**、词表 **2.0** 和显示增强 **0.3.0**。游戏术语以本机游戏 **1.6.1.514** 的 `enGB.json`／`zhCN.json` 同一文本 GUID 为依据。工具操作根据新版功能语境译写，保留已有准确译文。
 
-## 核心界面与机制
+## 界面与操作
 
-| 原文／内部枚举 | 本修订 | 依据与说明 |
-|---|---|---|
-| Archetype / Archetypes | 职业 | 官方；替换“变体” |
-| Career / Careers | 职业路径 | 工具描述的是各阶段职业路径 |
-| Etude / Etudes | 剧情状态 | 控制剧情条件和进度；替换“研究” |
-| Respec | 重置加点 | 操作用途明确；替换含糊的“重新分配” |
-| Search 'n Pick | 搜索与添加 | 统一页签与按钮相关说明 |
-| Bag of Tricks | 实用工具 | 面向玩家的功能总览页 |
-| Fact / Facts | 状态项 | 引擎挂载在角色上的状态、能力等，不是“实物” |
-| Buff / Buffs | 状态效果 | 同时包含正面和负面效果 |
-| Momentum | 士气 | 官方；不把它直译成“动量” |
-| Veil Degradation / UI Veil Thickness | 障壁恶化／障壁恶化值 | 官方；源码的 Thickness 在此显示恶化计数 |
-| Resolve | 决心 | 官方 |
-| Psy Rating | 灵能等级 | 官方 |
-| Profit Factor | 利润因子 | 官方 |
-| Navigator's Insight | 导航者洞察 | 官方 |
-| Psychic Phenomena | 灵能异象 | 官方 |
-| Perils of the Warp | 亚空间的威胁 | 官方 |
-| MinorPerils / MajorPerils | 轻微／严重亚空间威胁 | 两组设置的说明性译法 |
-| Soul Marks | 信念 | 当前角色信念系统，不是“灵魂伴侣” |
-| Faith / Dogmatic | 教条主义 | UI 枚举 Faith 对应官方信念路线 |
-| Hope / Iconoclast | 自由主义 | UI 枚举 Hope 对应官方信念路线 |
-| Corruption / Heretical | 异端主义 | UI 枚举 Corruption 对应官方信念路线 |
-| Reason | 理性 | 内部信念方向的直观名称 |
-| Fellowship | 社交 | 官方；修正“魅力” |
-| Ballistic Skill | 弹道技能 | 官方 |
-| Willpower | 意志 | 官方 |
-| SkillCarouse | 饮酒 | 官方；修正“狂欢” |
-| SkillCoercion | 胁迫 | 官方 |
-| SkillAwareness | 警觉 | 官方 |
-| SkillPersuasion | 劝说 | 官方 |
-| SkillTechUse | 科技使用 | 官方 |
-| Lore (Imperium / Warp / Xenos) | 知识（帝国／亚空间／异形） | 官方 |
-| Sanctioned Psyker | 合法灵能者 | 官方；身份覆盖功能 |
-| Exemplar | 典范 | 官方；职业选择警告 |
-| Patch Tool / Patch Manager | 蓝图补丁工具／补丁管理器 | 编辑对象为游戏蓝图 |
+| 原文 | 采用译法 | 说明 |
+| --- | --- | --- |
+| Bag of Tricks | 百宝袋 | 保留新版页签译法。 |
+| Quality of Life | 便利功能 | 保留新版已有译法。 |
+| Search 'n Pick | 搜索与选取 | 不仅用于添加，也用于对不同蓝图执行操作。 |
+| Archetype / Career | 职业 | 游戏用语；各阶段职业仍按实际说明区分。 |
+| Respec / Retrain | 重置加点 | 说明从 0、15、35 级开始时可重选哪些职业。 |
+| Etude | 剧情状态 | 用于状态及进度控制；不译作“研究”。 |
+| Fact | 状态项 | 角色上的状态、能力等引擎记录。 |
+| Buff | 状态效果 | 可包含正面和负面效果。 |
+| Patch Tool / Patch Manager | 蓝图补丁工具／补丁管理器 | 修改对象为蓝图；说明加载时应用与共享对象修改的区别。 |
+| Field of View | 视野角度 | 影响视角拉近／拉远，不等同于迷雾揭示范围。 |
+| Field Of View Reveal Multiplier | 视野揭示范围倍率 | 调整揭开战争迷雾的范围。 |
+| Show Conditions / Select Conditions | 出现条件／选择要求 | 区分选项出现和允许选择的条件。 |
+| SoulMarkRequired / SoulMarkShift | 信念要求／信念变化 | 不将信念等级要求一律写成点数门槛。 |
+
+## 游戏机制与检定
+
+| 原文或内部方向 | 采用译法 | 依据 |
+| --- | --- | --- |
+| Momentum | 士气 | 官方。 |
+| Resolve | 决心 | 官方。 |
+| Psy Rating | 灵能等级 | 官方。 |
+| Veil Degradation | 障壁恶化值 | 官方；设置值说明保持相应计数语境。 |
+| Profit Factor | 利润因子 | 官方。 |
+| Navigator's Insight | 导航者洞察 | 官方。 |
+| Psychic Phenomena | 灵能异象 | 官方。 |
+| Perils of the Warp | 亚空间的威胁 | 官方；设置说明按轻微／严重威胁区分。 |
+| Sanctioned Psyker | 合法灵能者 | 官方。 |
+| Exemplar | 典范 | 官方。 |
+| Faith / Dogmatic | 教条主义 | 游戏本地化优先。 |
+| Hope / Iconoclast | 自由主义 | 游戏本地化优先。 |
+| Corruption / Heretical | 异端主义 | 游戏本地化优先。 |
+| Fellowship | 社交 | 官方，不写“魅力”。 |
+| Ballistic Skill | 弹道技能 | 官方。 |
+| Willpower | 意志 | 官方。 |
+| SkillCarouse / SkillCoercion | 饮酒／胁迫 | 官方。 |
+| SkillAwareness / SkillPersuasion | 警觉／劝说 | 官方。 |
+| SkillTechUse | 科技使用 | 官方。 |
+| Lore (Imperium / Warp / Xenos) | 知识（帝国／亚空间／异形） | 官方。 |
+
+显示增强通过游戏 `UIUtility` 读取信念与检定名称。未知方向或检定保留可辨识的原名称，不按枚举名字臆译。`Heresy` 的“异端”是按已登记 GUID 提供的剧情状态别名；“未在运行”不等于“从未触发”。
 
 ## 派系与虚空舰
 
-| 原文 | 本修订 | 依据 |
-|---|---|---|
-| Drusians | 德鲁苏斯教派 | 官方；语境为声望派系，选“教派”而非单个教徒 |
-| Explorators | 开拓者 | 官方 |
-| Kasballica Mission / Kasballica | 卡斯巴利卡犯罪集团 | 官方 |
-| Voidship / Ship | 虚空舰 | 官方，统一工具内相关名称 |
-| Fore / Aft armour | 舰首／舰尾护甲 | 官方 |
-| Port / Starboard armour | 左舷／右舷护甲 | 官方 |
-| Armour Plating | 护甲船板 | 官方；条目显示为“虚空舰护甲船板” |
-| Auger Array | 鸟卜仪阵列 | 采用战锤语境译法 |
-| Geller Field Device | 盖勒力场装置 | 战锤专名；不改变内部 Geller 标识 |
-| Warp Drives | 亚空间引擎 | 战锤航行机制；替换其他作品语境的“曲速” |
-| Augmentation / Augment | 植入物 | 官方物品类别 |
-| Cyber-Mastiff / Cyber-Eagle | 生化獒犬／生化猎鹰 | 官方；协议类别采用对应名称 |
-| Servoskull | 伺服头骨 | 官方；宠物协议名称采用此译法 |
+| 原文 | 采用译法 | 依据 |
+| --- | --- | --- |
+| Drusians | 德鲁苏斯教派 | 官方声望派系名称。 |
+| Explorators | 开拓者 | 官方。 |
+| Kasballica Mission / Kasballica | 卡斯巴利卡犯罪集团 | 官方。 |
+| Voidship / Ship | 虚空舰 | 官方。 |
+| Fore / Aft armour | 舰首／舰尾护甲 | 官方。 |
+| Port / Starboard armour | 左舷／右舷护甲 | 官方。 |
+| Armour Plating | 护甲船板 | 官方。 |
+| Auger Array | 鸟卜仪阵列 | 战锤语境。 |
+| Geller Field Device | 盖勒力场装置 | 设定译法，保留内部 Geller 标识。 |
+| Warp Drives | 亚空间引擎 | 战锤航行语境。 |
+| Augmentation / Augment | 植入物 | 官方物品类别。 |
+| Cyber-Mastiff / Cyber-Eagle | 生化獒犬／生化猎鹰 | 官方。 |
+| Servoskull | 伺服头骨 | 官方。 |
 
-## 保留与备选
+## 维护边界
 
-“星舰”可作为 Voidship 的自然泛称，但本项目使用官方“虚空舰”，避免同一物品类别有多种名称。“伺服颅骨”是可考虑的设定译法，本次仍按本地官方“伺服头骨”。Geller 可能存在“盖勒／盖拉”等不同音译；本次采用“盖勒力场”，后续若有明确官方文本对照，再统一调整。
-
-“开拓者／探索者”“卡斯巴利卡／卡斯巴利加”等没有采用其他音译或惯用译法；当前官方词表能提供明确对应，优先保持玩家能在游戏里找到的名称。
-
-蓝图 ID、类名、字段名、GUID 不进行术语替换。作为选项显示的有限枚举可译，词表键保留其原枚举字符串。
-
-体型顺序采用极微型、超微型、微型、小型、中型、大型、超大型、巨型、超巨型，区分 Fine、Diminutive、Tiny 等原本容易混同的等级。
+本表用于修订和运行时显示，不是可新增的英文查找键清单。新版仅通过登记字段 ID 构建词表，未登记的枚举和按钮不计入覆盖；不再生成旧版有限枚举扩展或颜色变体键。蓝图内部名、类名、字段名和 GUID 保留原标识。
