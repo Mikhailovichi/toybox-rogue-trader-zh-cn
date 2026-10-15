@@ -39,5 +39,12 @@ namespace ToyBoxDisplayEnhancements {
             return Text.Missing(title) ? null : title;
         }
         internal static string InternalName(object blueprint) => String(blueprint, "name");
+        internal static string BlueprintName(object blueprint) {
+            if (blueprint == null) return null;
+            var name = Text.Clean(String(blueprint, "CharacterName"));
+            if (Text.Missing(name) || name == "-unit name not set-") name = Text.Clean(Aliases.OfficialName(blueprint));
+            if (Text.Missing(name)) name = InternalName(blueprint);
+            return Text.Missing(name) ? String(blueprint, "AssetGuid") : Text.Clean(name);
+        }
     }
 }

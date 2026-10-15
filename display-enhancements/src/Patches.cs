@@ -123,26 +123,29 @@ namespace ToyBoxDisplayEnhancements {
         }
         private static void TitlePostfix(object __0, Func<string, string> __1, ref string __result) {
             if (!Runtime.Active) return;
-            try { __result = Aliases.Title(__0, __1) ?? __result; }
+            try { __result = Aliases.Title(__0, __1) ?? DialogueText.Title(__0, __1) ?? __result; }
             catch (Exception ex) { Main.Warn(ex); }
         }
         private static void SearchPostfix(object __0, ref string __result) {
             if (!Runtime.Active) return;
             try {
                 var alias = Aliases.Find(__0);
-                if (alias == null) return;
-                __result += " " + string.Join(" ", Aliases.SearchNames(__0)).ToUpperInvariant();
-                if (Runtime.Setting("ToggleSearchDescriptions")) __result += " " + alias.Description.ToUpperInvariant();
+                if (alias != null) {
+                    __result += " " + string.Join(" ", Aliases.SearchNames(__0)).ToUpperInvariant();
+                    if (Runtime.Setting("ToggleSearchDescriptions")) __result += " " + alias.Description.ToUpperInvariant();
+                }
+                var dialogue = DialogueText.SearchText(__0);
+                if (!string.IsNullOrWhiteSpace(dialogue)) __result += " " + dialogue.ToUpperInvariant();
             } catch (Exception ex) { Main.Warn(ex); }
         }
         private static void SortPostfix(object __0, ref string __result) {
             if (!Runtime.Active) return;
-            try { __result = Text.Clean(Aliases.Title(__0, null) ?? __result); }
+            try { __result = Text.Clean(Aliases.Title(__0, null) ?? DialogueText.Name(__0) ?? __result); }
             catch (Exception ex) { Main.Warn(ex); }
         }
         private static void DescriptionPostfix(object __0, ref string __result) {
             if (!Runtime.Active) return;
-            try { __result = Aliases.DescriptionFor(__0, __result); }
+            try { __result = DialogueText.DescriptionFor(__0, Aliases.DescriptionFor(__0, __result)); }
             catch (Exception ex) { Main.Warn(ex); }
         }
     }

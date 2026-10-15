@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 // A managed fixture for patch installation, not a replacement game or distributable mod.
 namespace Kingmaker.Blueprints {
     public class SimpleBlueprint { public string name; public string AssetGuid; }
-    public class BlueprintScriptableObject : SimpleBlueprint { }
+    public class BlueprintScriptableObject : SimpleBlueprint { public object[] ComponentsArray = Array.Empty<object>(); }
 }
 namespace Kingmaker.ElementsSystem {
     public class GameAction { public int Executions; public virtual string GetCaption() => "Unknown action"; public void RunAction() { Executions++; } }
@@ -62,6 +62,18 @@ namespace Kingmaker.Designers.EventConditionActionSystem.Conditions {
         public bool CurrentDialog;
         public override string GetCaption() => (Not ? "Not " : "") + "Cue Seen (" + Cue?.name + ")";
     }
+    public class AnswerSelected : Kingmaker.ElementsSystem.Condition {
+        public Kingmaker.ElementsSystem.Ref m_Answer;
+        public Kingmaker.DialogSystem.Blueprints.BlueprintAnswer Answer => (Kingmaker.DialogSystem.Blueprints.BlueprintAnswer)m_Answer?.Get();
+        public bool CurrentDialog;
+        public override string GetCaption() => (Not ? "Not " : "") + "Answer Selected (" + Answer?.name + ")";
+    }
+    public class AnswerListShown : Kingmaker.ElementsSystem.Condition {
+        public Kingmaker.ElementsSystem.Ref m_AnswersList;
+        public Kingmaker.DialogSystem.Blueprints.BlueprintAnswersList AnswersList => (Kingmaker.DialogSystem.Blueprints.BlueprintAnswersList)m_AnswersList?.Get();
+        public bool CurrentDialog;
+        public override string GetCaption() => (Not ? "Not " : "") + "Answer List Shown (" + AnswersList?.name + ")";
+    }
 }
 namespace Kingmaker.UnitLogic.Alignments { public enum SoulMarkDirection { None, Faith, Hope, Corruption, Reason, Unknown } public class SoulMarkShift { public SoulMarkDirection Direction; public int Value; public string Description; public bool CheckByValue = true; } }
 namespace Kingmaker.UI.Models.Tooltip.Base { public interface IUIDataProvider { string Name { get; } string Description { get; } } }
@@ -75,7 +87,16 @@ namespace Kingmaker.UnitLogic.Progression.Features {
 namespace Kingmaker.UnitLogic { public class Feature { } }
 namespace Kingmaker.DialogSystem.Blueprints {
     public class ShowCheck { public Kingmaker.EntitySystem.Stats.Base.StatType Type = Kingmaker.EntitySystem.Stats.Base.StatType.SkillPersuasion; public int DC = 10; }
-    public class BlueprintAnswer {
+    public class BlueprintAnswerBase : Kingmaker.Blueprints.BlueprintScriptableObject { }
+    public class BlueprintAnswersList : BlueprintAnswerBase {
+        public List<Kingmaker.ElementsSystem.Ref> Answers = new List<Kingmaker.ElementsSystem.Ref>();
+        public Kingmaker.ElementsSystem.ConditionsChecker Conditions = new Kingmaker.ElementsSystem.ConditionsChecker();
+    }
+    public class BlueprintAnswer : BlueprintAnswerBase {
+        private string text, description;
+        public string TextEn, TextZh, DescriptionEn, DescriptionZh;
+        public string Text { get => FixtureText.Resolve(text, TextZh, TextEn); set => text = value; }
+        public string Description { get => FixtureText.Resolve(description, DescriptionZh, DescriptionEn); set => description = value; }
         public bool HasShowCheck;
         public ShowCheck ShowCheck = new ShowCheck();
         public Kingmaker.ElementsSystem.ConditionsChecker ShowConditions = new Kingmaker.ElementsSystem.ConditionsChecker();
@@ -83,10 +104,13 @@ namespace Kingmaker.DialogSystem.Blueprints {
         public Kingmaker.ElementsSystem.GameAction[] Actions = Array.Empty<Kingmaker.ElementsSystem.GameAction>();
         public Kingmaker.UnitLogic.Alignments.SoulMarkShift Shift;
     }
-    public class BlueprintCue : Kingmaker.Blueprints.SimpleBlueprint {
-        private string text;
-        public string TextEn, TextZh;
+    public class BlueprintCue : BlueprintCueBase {
+        private string text, description;
+        public string TextEn, TextZh, DescriptionEn, DescriptionZh;
         public string Text { get => FixtureText.Resolve(text, TextZh, TextEn); set => text = value; }
+        public string Description { get => FixtureText.Resolve(description, DescriptionZh, DescriptionEn); set => description = value; }
+        public CueSelection Continue = new CueSelection();
+        public List<Kingmaker.ElementsSystem.Ref> Answers = new List<Kingmaker.ElementsSystem.Ref>();
         public Kingmaker.ElementsSystem.ActionList OnShow = new Kingmaker.ElementsSystem.ActionList(), OnStop = new Kingmaker.ElementsSystem.ActionList();
         public Kingmaker.UnitLogic.Alignments.SoulMarkShift SoulMarkShift;
     }
@@ -197,11 +221,11 @@ namespace ToyBox.Infrastructure.Blueprints {
             return formatter == null ? title : formatter(title);
         }
         [MethodImpl(MethodImplOptions.NoInlining)] public static string GetSearchKey(Kingmaker.Blueprints.SimpleBlueprint bp) {
-            if (!searches.TryGetValue(bp, out var search)) searches[bp] = search = (Official(bp) + " " + bp.name + " " + bp.AssetGuid + (GeneralSettings.Settings.ToggleSearchDescriptions ? " " + GetDescription(bp) : "")).ToUpperInvariant();
+            if (!searches.TryGetValue(bp, out var search)) searches[bp] = search = (Official(bp) + " " + bp.name + " " + bp.AssetGuid + (bp is Kingmaker.UI.Models.Tooltip.Base.IUIDataProvider && GeneralSettings.Settings.ToggleSearchDescriptions ? " " + GetDescription(bp) : "")).ToUpperInvariant();
             return search;
         }
         [MethodImpl(MethodImplOptions.NoInlining)] public static string GetSortKey(Kingmaker.Blueprints.SimpleBlueprint bp) {
-            if (!sorts.TryGetValue(bp, out var sort)) sorts[bp] = sort = Official(bp) + (GeneralSettings.Settings.ToggleSearchDescriptions ? " " + GetDescription(bp) : "");
+            if (!sorts.TryGetValue(bp, out var sort)) sorts[bp] = sort = Official(bp) + (bp is Kingmaker.UI.Models.Tooltip.Base.IUIDataProvider && GeneralSettings.Settings.ToggleSearchDescriptions ? " " + GetDescription(bp) : "");
             return sort;
         }
         [MethodImpl(MethodImplOptions.NoInlining)] public static string GetDescription(Kingmaker.Blueprints.SimpleBlueprint bp) {

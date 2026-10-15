@@ -87,6 +87,24 @@ internal static class Verify {
         Member(game, conditions + "CheckConditionsHolder", "ConditionsHolder");
         Member(game, conditions + "OrAndLogic", "ConditionsChecker");
         Member(game, conditions + "CueSeen", "Cue", "CurrentDialog");
+        Member(game, conditions + "AnswerSelected", "Answer", "CurrentDialog");
+        Member(game, conditions + "AnswerListShown", "AnswersList", "CurrentDialog");
+        var answerReference = Method(code, conditions + "AnswerSelected", "get_Answer");
+        Require(answerReference.Body.Instructions.Any(i => i.Operand is IMethod m && m.Name == "Get") &&
+            answerReference.MethodSig.RetType.FullName == answer, "AnswerSelected must resolve its answer reference");
+        foreach (var entry in new[] { new[] { "AnswerSelected", "LocalSelectedAnswers", "SelectedAnswersContains" },
+                                      new[] { "AnswerListShown", "LocalShownAnswerLists", "ShownAnswerListsContains" } }) {
+            var check = Method(code, conditions + entry[0], "CheckCondition");
+            Require(check.Body.Instructions.Any(i => i.Operand is IField f && f.Name == "CurrentDialog") &&
+                check.Body.Instructions.Any(i => i.Operand is IField f && f.Name == entry[1]) &&
+                check.Body.Instructions.Any(i => i.Operand is IMethod m && m.Name == entry[2]),
+                entry[0] + " current/history scope changed");
+        }
+        Member(game, answer, "Text", "Description");
+        Member(game, "Kingmaker.DialogSystem.Blueprints.BlueprintAnswersList", "Answers");
+        var listAnswers = Type(game, "Kingmaker.DialogSystem.Blueprints.BlueprintAnswersList").Fields.Single(f => f.Name == "Answers");
+        Require(listAnswers.FieldType.FullName == "System.Collections.Generic.List`1<Kingmaker.Blueprints.BlueprintAnswerBaseReference>",
+            "Answer lists must preserve ordered answer/base-list references");
         Require(Type(game, conditions + "HasEnoughMoneyForCustomCompanion").Methods.Any(m => m.Name == "CheckCondition"), "Missing companion affordability condition");
         Require(Type(game, actions + "OpenVendorSelectingWindow").Methods.Any(m => m.Name == "RunAction"), "Missing vendor action type");
         Require(Type(game, actions + "CreateCustomCompanion").Methods.Any(m => m.Name == "RunAction"), "Missing companion creation action type");
@@ -97,6 +115,89 @@ internal static class Verify {
         Member(game, "Kingmaker.Blueprints.Quests.BlueprintQuest", "Title");
         Member(game, "Kingmaker.Blueprints.Quests.BlueprintQuestObjective", "Title", "Quest");
         Method(manager, "UnityModManagerNet.UnityModManager", "FindMod", "System.String");
+        DialogueDisplay(game, code);
         Console.WriteLine("PASS: " + checks + " actual-assembly compatibility checks; no game code executed.");
+    }
+
+    private static void DialogueDisplay(ModuleDefMD[] game, ModuleDefMD code) {
+        const string bp = "Kingmaker.DialogSystem.Blueprints.";
+        const string conditions = "Kingmaker.Designers.EventConditionActionSystem.Conditions.";
+        const string actions = "Kingmaker.Designers.EventConditionActionSystem.Actions.";
+        const string evaluators = "Kingmaker.Designers.EventConditionActionSystem.Evaluators.";
+        Member(game, bp + "BlueprintCue", "Text", "Description", "Continue", "Answers");
+        Member(game, bp + "BlueprintCheck", "Type", "Hidden", "Difficulty", "DC", "DCModifiers");
+        Member(game, bp + "DCModifier", "Mod", "Conditions");
+        Member(game, bp + "BlueprintDialog", "FirstCue", "Description");
+        Member(game, "Kingmaker.DialogSystem.CueSelection", "Cues");
+        Member(game, bp + "BlueprintBookPage", "Cues", "Answers");
+        Member(game, bp + "BlueprintCueSequence", "Cues", "Exit");
+        Member(game, bp + "BlueprintSequenceExit", "Continue", "Answers");
+        Enum(game, "Kingmaker.View.MapObjects.SkillCheckDifficulty", "Custom", "Easy", "Normal", "Hard", "Impossible");
+        var custom = Type(game, "Kingmaker.View.MapObjects.SkillCheckDifficulty").Fields.Single(f => f.Name == "Custom");
+        Require(Convert.ToInt32(custom.Constant.Value) == 0, "Custom difficulty value changed");
+        var difficulty = Method(code, bp + "BlueprintCheck", "get_DifficultyIsCustom");
+        Require(difficulty.Body.Instructions.Any(i => i.OpCode == OpCodes.Ceq) &&
+            difficulty.Body.Instructions.Any(i => i.Operand is IField f && f.Name == "Difficulty"), "Check custom/preset difficulty distinction changed");
+        foreach (var entry in new[] {
+            new[] { "BlueprintBookPage", "Cues", "BlueprintCueBaseReference" },
+            new[] { "BlueprintBookPage", "Answers", "BlueprintAnswerBaseReference" },
+            new[] { "BlueprintCueSequence", "Cues", "BlueprintCueBaseReference" },
+            new[] { "BlueprintSequenceExit", "Answers", "BlueprintAnswerBaseReference" }
+        }) {
+            var field = Type(game, bp + entry[0]).Fields.Single(f => f.Name == entry[1]);
+            Require(field.FieldType.FullName == "System.Collections.Generic.List`1<Kingmaker.Blueprints." + entry[2] + ">",
+                entry[0] + "." + entry[1] + " must remain an ordered reference list");
+        }
+        foreach (var entry in new[] { new[] { "CheckPassed", "LocalPassedChecks" }, new[] { "CheckFailed", "LocalFailedChecks" } }) {
+            Member(game, conditions + entry[0], "CheckBlueprint");
+            var method = Method(code, conditions + entry[0], "CheckCondition");
+            Require(method.Body.Instructions.Any(i => i.Operand is IField f && f.Name == entry[1]) &&
+                method.Body.Instructions.Any(i => i.Operand is IMethod m && m.Name == "Contains"),
+                entry[0] + " must test the local dialog record, not infer the opposite record");
+        }
+        Member(game, conditions + "CompanionInParty", "companion", "MatchWhenActive", "MatchWhenRemote", "MatchWhenDetached", "MatchWhenEx", "IncludeDead");
+        Enum(game, "Kingmaker.UnitLogic.Parts.CompanionState", "None", "Remote", "InParty", "ExCompanion", "InPartyDetached");
+        var companion = Method(code, conditions + "CompanionInParty", "CheckCondition");
+        foreach (var field in new[] { "MatchWhenActive", "MatchWhenRemote", "MatchWhenDetached", "MatchWhenEx", "IncludeDead" })
+            Require(companion.Body.Instructions.Any(i => i.Operand is IField f && f.Name == field), "Companion filter no longer used: " + field);
+        Require(companion.Body.Instructions.Any(i => i.Operand is IMethod m && m.Name == "get_AllCharacters") &&
+            companion.Body.Instructions.Any(i => i.Operand is IMethod m && m.Name == "get_IsFinallyDead"),
+            "Companion roster or death filter changed");
+        Member(game, "Kingmaker.Blueprints.BlueprintUnit", "CharacterName");
+        Member(game, "Kingmaker.Blueprints.BlueprintScriptableObject", "ComponentsArray");
+        Member(game, conditions + "ItemsEnough", "Money", "ItemToCheck", "Quantity");
+        var items = Method(code, conditions + "ItemsEnough", "CheckCondition");
+        Require(items.Body.Instructions.Any(i => i.Operand is IMethod m && m.FullName.Contains("MoneyReplacement")) &&
+            items.Body.Instructions.Any(i => i.Operand is IMethod m && m.Name == "get_Money") &&
+            items.Body.Instructions.Any(i => i.Operand is IMethod m && m.Name == "Contains"),
+            "ItemsEnough money replacement or inventory branch changed");
+        Member(game, conditions + "HasFact", "Unit", "Fact");
+        Member(game, conditions + "HasBuff", "Target", "Buff");
+        Require(Type(game, evaluators + "PlayerCharacter") != null, "Player character evaluator missing");
+        Member(game, evaluators + "CompanionInParty", "Companion");
+        Member(game, evaluators + "IntConstant", "Value");
+        Member(game, conditions + "FlagUnlocked", "ConditionFlag", "SpecifiedValues", "ExceptSpecifiedValues");
+        Member(game, conditions + "FlagInRange", "Flag", "MinValue", "MaxValue");
+        foreach (var condition in new[] { "FlagUnlocked", "FlagInRange" }) {
+            var method = Method(code, conditions + condition, "CheckCondition");
+            Require(method.Body.Instructions.Any(i => i.Operand is IMethod m && m.Name == "get_IsUnlocked") &&
+                method.Body.Instructions.Any(i => i.Operand is IMethod m && m.Name == "get_Value"),
+                condition + " must require unlock before testing configured values");
+        }
+        foreach (var action in new[] { "MarkAnswersSelected", "UnmarkAnswersSelected" }) {
+            Member(game, actions + action, "Answers");
+            Require(Type(game, actions + action).Fields.Single(f => f.Name == "m_Answers").FieldType.FullName ==
+                "Kingmaker.Blueprints.BlueprintAnswerReference[]", "Mark action answer reference array changed");
+        }
+        Member(game, actions + "StartDialog", "Dialogue", "DialogEvaluator", "DialogueOwner");
+        Member(game, actions + "UnlockFlag", "flag", "flagValue");
+        Member(game, actions + "LockFlag", "Flag");
+        Member(game, actions + "IncrementFlagValue", "Flag", "Value", "UnlockIfNot");
+        var increment = Method(code, actions + "IncrementFlagValue", "RunAction");
+        Require(increment.Body.Instructions.Any(i => i.Operand is IField f && f.Name == "UnlockIfNot") &&
+            increment.Body.Instructions.Any(i => i.Operand is IMethod m && m.Name == "get_IsUnlocked") &&
+            increment.Body.Instructions.Any(i => i.Operand is IMethod m && m.Name == "Unlock") &&
+            increment.Body.Instructions.Any(i => i.Operand is IMethod m && m.Name == "GetValue"),
+            "IncrementFlagValue unlock/evaluation policy changed");
     }
 }

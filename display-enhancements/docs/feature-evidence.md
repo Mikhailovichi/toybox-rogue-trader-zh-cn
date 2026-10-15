@@ -67,8 +67,27 @@
 | `CreateCustomCompanion` | `RunAction` 在非免费情形检查门槛后调用 `Player.CreateCustomCompanion`；后者打开角色创建界面 | “进入自定义队友创建流程”，不宣称立即获得队友或必然扣费 |
 | `HasEnoughMoneyForCustomCompanion` | `CheckCondition` 比较 `GetCustomCompanionCost()` 与 `Player.ProfitFactor.Total`；前者读取 `BlueprintRoot.CustomCompanionBaseCost` | 仅描述“利润因子达到招募自定义队友所需的门槛”；不读取实时数值、不调用费用方法或求值 |
 | `CueSeen` | `Cue` 关联 `BlueprintCueBase`；`CurrentDialog` 为真检查 `LocalShownCues`，否则检查玩家对话记录 `ShownCuesContains`；`BlueprintCue.Text` 提供官方对白 | 区分本次对话与此前记录，使用“已显示过／未显示过”或对应英文，不写“已选择”；只读取文本、去富文本，中文上限 40 字、英文上限 120 字符且尽量保留完整单词，缺失时保留内部名或 GUID |
+| `AnswerSelected` | `Answer` 属性解析 `m_Answer`；`CurrentDialog` 为真读取 `LocalSelectedAnswers`，否则读取玩家记录 `SelectedAnswersContains`；`BlueprintAnswer.Text` 为正式回答 | 使用“已选择过／未选择过回答”，区分本次与此前；只读取回答文本，缺失时保留内部名或 GUID，引用缺失时保留原摘要 |
+| `AnswerListShown` | `AnswersList` 关联 `BlueprintAnswersList`；`CurrentDialog` 为真读取 `LocalShownAnswerLists`，否则读取 `ShownAnswerListsContains`；`Answers` 为有序的 `BlueprintAnswerBaseReference` 列表，可引用回答或嵌套选项组 | 使用“已显示过／未显示过选项组”，按声明顺序引用首条有文本的回答；跳过循环，不调用可选性检查，不推断其中的回答已被选择 |
+| 回答与选项组浏览器 | `BPHelper` 提供标题、描述、搜索、排序四个入口；`BlueprintAnswer` 有 `Text` 与 `Description`，上游浏览器未将其正文作为名称 | 四个既有后置补丁使用同一文本读取逻辑；官方名称优先，描述保留官方内容并补充全文，搜索描述开关控制全文匹配，内部名显示不改变排序；语言与增强开关复用既有缓存刷新 |
 
 条件读取和渲染分离：组合否定保留整个分组，未知条件沿用已带否定的原摘要，避免再次否定。顶层空条件仍返回空字符串；嵌套空组与循环则保留可辨认的原摘要及原因。
+
+### 同类遗漏的补齐依据
+
+本机对话蓝图记录确实使用检定记录、回答标记／清除、队友、物品、能力、效果和标志相关类型。浏览器侧，`Armorer_Footfall_dialog`（`3eeba66c3ba449f5babf9c384e9b5d6e`）引用 `Cue_0001`（`28e09c96b4fd4d21b5943ca1048e0ed7`），并关联对白序列和出口；上游 `BPHelper` 的默认名称路径没有提取这些类型的对白正文。
+
+| 类型 | 实际字段或 IL 依据 | 显示决定 |
+| --- | --- | --- |
+| `BlueprintCue` 与四种容器 | 对白有 `Text`／`Description`；对话有 `FirstCue.Cues`；叙事页有 `Cues`／`Answers`；序列有 `Cues`／`Exit`；出口有 `Continue.Cues`／`Answers` | 保留配置顺序，引用首条有效对白或回答；跳过循环，终止于文本节点，不追踪回答后续或检定成功／失败分支 |
+| `BlueprintCheck` | `Type`、`Hidden`、`Difficulty`、`DC`、`DCModifiers`；`DifficultyIsCustom` 仅比较 `Difficulty == Custom` | 技能取游戏本地化；自定义难度显示基础 DC，预设显示难度等级，条件修正只附说明 |
+| `CheckPassed`／`CheckFailed` | 分别查询 `DialogController.LocalPassedChecks`／`LocalFailedChecks` | 说明本次对话对应记录是否存在；不把缺少成功记录等同于失败 |
+| `MarkAnswersSelected`／`UnmarkAnswersSelected` | `m_Answers` 为有序回答引用数组，`Answers` 返回可枚举引用代理 | 按顺序列出回答摘录及必要回退；技术详情保留每个回答身份 |
+| `CompanionInParty` | 遍历 `AllCharacters`，匹配蓝图或原型；四个 `MatchWhen*` 分别排除状态，`IncludeDead` 决定是否排除 `IsFinallyDead` | 显示角色存在及排除筛选，不将远程或离队角色说成当前随队 |
+| `ItemsEnough` | `Money` 为真或物品含 `MoneyReplacement` 时比较 `Player.Money`，否则调用库存 `Contains` | 显示资金或物品数量门槛，不查询当前库存、余额 |
+| `HasFact`／`HasBuff` | 分别保存 `Unit`／`Target` 求值器和 `Fact`／`Buff` 引用；角色正式名来自 `CharacterName` | 保留目标表达式，明确主角与可辨认队友，不执行目标求值 |
+| `FlagUnlocked`／`FlagInRange` | 两者先检查 `IsUnlocked`，再处理 `SpecifiedValues`／`ExceptSpecifiedValues` 或 `MinValue`／`MaxValue` | 已解锁与数值约束共同呈现，范围含两端，否定整个谓词 |
+| 标志动作与 `StartDialog` | 解锁动作保存 `flagValue`；增量使用 `Value` 求值器，受 `UnlockIfNot` 与解锁状态约束；开始对话有直接引用或目标表达式 | 静态常量显示正负增量，动态值保留表达式；描述解锁前提，不运行求值器或动作 |
 
 新版 `DialogPreviewUtilities.GetAnswerResultText(answer)` 的深度分组使用 `"[{0}: {1}]"`；0.4.0 继续仅替换唯一的二参数格式化调用，不改上游收集方法。各组依原顺序保留，当前层标为“结果预览”／`Result preview`、后续层标为“后续可能涉及”／`Possible later results`，不去重，不改写为连续步骤。技术详情附原始摘要、关联标识及原数字深度，不重复遍历或判断条件。Heresy 的否定运行状态英文为 `Story state "Heresy" is not running`，不推断从未触发。
 
@@ -80,7 +99,7 @@
 
 信念与检定通过游戏 `UIUtility.GetSoulMarkDirectionText`／`GetStatText` 读取；已核实英文机制名称为 Dogmatic、Iconoclast、Heretical、Profit Factor、Persuasion、Awareness。缺失时使用已核实的对应语言后备，未知项仍保留内部名或原摘要。中英模板集中在 `src/UiText.cs`，UMM 状态按绘制时的语言生成。
 
-0.4.0 已通过 279 项托管 Harmony／格式化断言与 81 项真实程序集检查，覆盖四种中英组合、八个特性、双语搜索、否定、对白、缓存恢复和行为计数。此记录用于说明实现依据；新版游戏内排版仍按 [验收记录](acceptance.md) 由用户安装后确认。
+0.4.0 已通过 780 项托管 Harmony／格式化断言与 182 项真实程序集检查，覆盖四种中英组合、八个特性、双语搜索、否定、对白、缓存恢复和行为计数。此记录用于说明实现依据；新版游戏内排版仍按 [验收记录](acceptance.md) 由用户安装后确认。
 
 ## 不推测的内容
 

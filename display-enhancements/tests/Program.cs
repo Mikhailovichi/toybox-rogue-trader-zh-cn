@@ -18,7 +18,7 @@ using Kingmaker.UnitLogic.Alignments;
 using GameLocale = Kingmaker.Localization.Enums.Locale;
 using GameLocalization = Kingmaker.Localization.LocalizationManager;
 
-internal static class Program {
+internal static partial class Program {
     private static int assertions;
     private static void Is(bool condition, string label) {
         assertions++;
@@ -180,6 +180,8 @@ internal static class Program {
             Is(Preview.GetCueResultText(cue).Contains("打开商人") && !Preview.GetCueResultText(cue).Contains("-3") && cueAction.Executions == 0, "cue preserves upstream positive-only shift collection and never executes actions");
             Is(Preview.GetCueResultText(new Kingmaker.DialogSystem.Blueprints.BlueprintCue()) == "", "empty cue remains empty");
             BilingualTests();
+            AnswerDisplayTests();
+            DialogueDisplayTests();
         } finally { harmony.UnpatchAll(harmony.Id); }
         Console.WriteLine("PASS: " + assertions + " assertions; managed Harmony fixture, not a game UI test.");
     }

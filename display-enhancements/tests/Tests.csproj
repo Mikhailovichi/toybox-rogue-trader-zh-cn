@@ -8,6 +8,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Program.cs" />
+    <Compile Include="AnswerDisplayTests.cs" />
+    <Compile Include="DialogueDisplayTests.cs" />
     <ProjectReference Include="../ToyBoxDisplayEnhancements.csproj" />
     <ProjectReference Include="Shim/ToyBoxShim.csproj" />
     <Reference Include="0Harmony" HintPath="$(GameManagedDir)/0Harmony.dll" />
