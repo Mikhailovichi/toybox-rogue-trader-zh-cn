@@ -1,15 +1,15 @@
 # ToyBox 行商浪人词表与显示增强
 
-两个独立包为《战锤 40,000：行商浪人》的 ToyBox 提供中文词表和中英文显示说明。当前候选包适配 **ToyBox 2.0.16 预发布版**，本机验证游戏版本为 **1.6.1.514**。
+两个独立包为《战锤 40,000：行商浪人》的 ToyBox 提供中文词表和中英文显示说明。当前候选包适配 **ToyBox 2.0.20 预发布版**，本机游戏版本为 **1.6.1.514**。
 
 ## 选择安装包
 
 | 安装包 | 版本 | 主要内容 | 安装位置 |
 | --- | --- | --- | --- |
-| [简体中文词表修订](dictionary-localization/README.md) | 2.0 候选版 | 覆盖 938 个字段，补齐 86 条缺译，统一游戏术语，完善蓝图补丁、搜索、存档、重置加点及视野与对话预览说明。 | 替换 `0ToyBox0/Localization/zh-CN_lang.json`。 |
-| [显示增强](display-enhancements/README.md) | 0.4 候选版 | 中英文对话提示说明商人和招募流程、任务名、条件分组及相关对白；为八个内部条目提供中英文名称或说明。 | 独立 UMM 模组，与 `0ToyBox0` 并列。 |
+| [简体中文词表修订](dictionary-localization/README.md) | 2.1 候选版 | 覆盖 940 个字段，保留 216 项译文修订，包含新版特性等级设置的译文。 | 替换 `0ToyBox0/Localization/zh-CN_lang.json`。 |
+| [显示增强](display-enhancements/README.md) | 0.5 候选版 | 中英文对话和蓝图显示增强，补齐选项检定、对话历史、物品与资金增减和殖民地特质预览。 | 独立 UMM 模组，与 `0ToyBox0` 并列。 |
 
-先安装原版 [ToyBox for Rogue Trader](https://www.nexusmods.com/warhammer40kroguetrader/mods/1)。两个包可同时或独立使用，不包含 ToyBox 本体。安装前关闭游戏，具体步骤见两个子项目 README。
+关闭游戏后安装官方 [ToyBox 2.0.20 发布包](https://github.com/xADDBx/ToyBox-RogueTrader/releases/tag/v2.0.20)。两个附加包可独立安装，具体步骤见各自的 README。
 
 ## 显示示例
 
@@ -20,7 +20,7 @@
 - 任务目标附所属任务名，例如“返回着陆区域〔终末黎明之光〕”。
 - 英文界面显示 `Result preview: Open vendor selection`、`Story state "Heresy" is not running`，信念名称使用 Dogmatic、Iconoclast、Heretical。
 
-现有图片来自 ToyBox 1.7.34，暂不作为 2.0.16 效果展示；新版界面验收后补图。
+现有图片记录 ToyBox 1.7.34 的界面。
 
 ## 使用与版本
 
@@ -28,7 +28,7 @@
 
 游戏随附 Unity Mod Manager（UMM）。显示增强可通过 Modfinder 拖入 ZIP 或手动解压安装，步骤见其 README，并提供 [English instructions](display-enhancements/README.en.md)。公开名称为 ToyBox Display Enhancements，安装目录与模组 ID 统一为 `ToyBoxDisplayEnhancements`。从旧标识版本升级时，将 `display-settings.json` 复制到新目录，再移除旧 `ToyBoxChineseDisplayEnhancements` 目录，避免重复加载。切换 ToyBox 或游戏语言时刷新名称与浏览器缓存；关闭增强或 ToyBox 使用不支持的语言时恢复原显示。
 
-候选包位于 `release/`：词表 `toybox-zh-cn-v2.0.zip`，显示增强 `toybox-display-enhancements-v0.4.zip`。保留适配 2.0.16 的 0.3 中文增强包，以及只供 ToyBox 1.7.34 使用的词表 1.0、增强 0.1／0.2 ZIP。新代码仅适配 2.0.16。显示增强已通过 279 项夹具断言、81 项真实程序集检查和 11 文件 ZIP 核对，游戏内双语界面待用户验收，不为测试修改任务或特性。
+`release/` 下的候选包为 `toybox-zh-cn-v2.1.zip` 和 `toybox-display-enhancements-v0.5.zip`。ToyBox 2.0.16 对应词表 2.0 和显示增强 0.3／0.4，ToyBox 1.7.34 对应词表 1.0 和增强 0.1／0.2。
 
 ## 署名与许可
 

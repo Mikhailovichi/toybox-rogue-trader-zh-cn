@@ -12,8 +12,8 @@ from validate import PROJECT, check_markup, load, unique_object, validate_data
 class DictionaryTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.original = load(PROJECT / "reference/upstream-zh-CN-v2.0.16.json")
-        cls.english = load(PROJECT / "reference/upstream-en-v2.0.16.json")
+        cls.original = load(PROJECT / "reference/upstream-zh-CN-v2.0.20.json")
+        cls.english = load(PROJECT / "reference/upstream-en-v2.0.20.json")
         cls.review = load(PROJECT / "docs/translation-review.json")
         cls.data = build.build_data()
 

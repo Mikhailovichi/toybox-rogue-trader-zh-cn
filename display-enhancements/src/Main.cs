@@ -23,8 +23,8 @@ namespace ToyBoxDisplayEnhancements {
             Settings = DisplaySettings.Load(modEntry.Path);
             try {
                 var toyBox = UnityModManager.FindMod("0ToyBox0");
-                if (toyBox == null || toyBox.Info.Version != "2.0.16" || toyBox.Assembly == null || toyBox.Assembly.GetName().Version != new Version(2, 0, 16, 0))
-                    throw new NotSupportedException("Requires loaded ToyBox 2.0.16 (assembly 2.0.16.0).");
+                if (toyBox == null || toyBox.Info.Version != "2.0.20" || toyBox.Assembly == null || toyBox.Assembly.GetName().Version != new Version(2, 0, 20, 0))
+                    throw new NotSupportedException("Requires ToyBox 2.0.20 with its matching assembly.");
                 Runtime.ToyBox = toyBox.Assembly;
                 Runtime.Initialize();
                 Aliases.Load(modEntry.Path);
@@ -52,7 +52,7 @@ namespace ToyBoxDisplayEnhancements {
             return true;
         }
         private static void Draw(UnityModManager.ModEntry modEntry) {
-            GUILayout.Label("ToyBox Display Enhancements 0.4");
+            GUILayout.Label("ToyBox Display Enhancements " + modEntry.Info.Version);
             GUILayout.Label(StatusText);
             var details = GUILayout.Toggle(Settings.ShowTechnicalDetails, UiText.Get("TechnicalSetting"));
             if (details != Settings.ShowTechnicalDetails) {

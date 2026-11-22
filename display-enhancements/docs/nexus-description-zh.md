@@ -6,7 +6,7 @@ ToyBox 显示增强 - ToyBox Display Enhancements
 
 ## 简介
 
-为 ToyBox 2.0.16 的对话预览补充中英文说明：任务结果显示目标名，条件引用相关台词，招募要求说明利润因子门槛，并为八个内部特性提供名称或说明。增强文字随 ToyBox 语言切换，官方文本随游戏语言切换。独立 UMM 附加模组。
+为 ToyBox 2.0.20 的对话预览补充中英文说明，涵盖选项检定、对话历史、物品和资金增减、殖民地特质、任务与招募。增强说明跟随 ToyBox，官方文本跟随游戏。可独立安装到 UMM。
 
 ## 正文
 
@@ -16,17 +16,17 @@ ToyBox 能预览对话的条件与结果。本附加模组为其中常见的提�
 
 例如，原来的 `Open vendor selecting window` 显示为“打开商人选择界面”；招募自定义队友的条件写成“利润因子达到招募自定义队友所需的门槛”。
 
-当前版本为 **0.4 候选版**，UMM 中显示为 `0.4.0`。适用于 **ToyBox 2.0.16 预发布版**，对应游戏版本 **1.6.1.514**。本包调整显示文本，玩法和对话选择仍由游戏与 ToyBox 处理。
+当前版本为 **0.5 候选版**，UMM 中显示为 `0.5.0`。适用于 **ToyBox 2.0.20 预发布版**和游戏 **1.6.1.514**。选项检定可显示配置的预设难度或基础 DC。物品预览给出名称与数量，殖民地特质预览给出配置目标。
 
 支持 ToyBox 简体中文（`zh-CN`）、英文（`en`）及英语区域代码。增强标签、别名和技术详情跟随 ToyBox，官方任务名、对白、信念与检定名称跟随游戏。两边都设为英文时显示完整英文；混合设置时保留各自语言，无需额外选择增强语言。其他 ToyBox 语言保留原显示；其他游戏语言仍优先使用其有效官方文本。
 
 ### 安装方法
 
-先安装原版 [ToyBox for Rogue Trader](https://www.nexusmods.com/warhammer40kroguetrader/mods/1) **2.0.16**，然后关闭游戏。游戏随附 Unity Mod Manager（UMM），无需另行安装。已有旧 `ToyBoxChineseDisplayEnhancements` 的用户，安装后按“更新与恢复”迁移设置并移除旧目录，再启动游戏。
+安装原版 ToyBox **2.0.20**，然后关闭游戏。游戏随附 Unity Mod Manager（UMM）。旧 `ToyBoxChineseDisplayEnhancements` 用户可按「更新与恢复」迁移设置。[官方发布包](https://github.com/xADDBx/ToyBox-RogueTrader/releases/tag/v2.0.20) · [原模组页面](https://www.nexusmods.com/warhammer40kroguetrader/mods/1)
 
 **使用 Modfinder**
 
-下载并打开 [Modfinder](https://www.nexusmods.com/warhammer40kroguetrader/mods/146)，将 `toybox-display-enhancements-v0.4.zip` 拖入窗口下方的 **“Drag zips here to install”** 区域，等待安装完成。当前候选包采用本地 ZIP 安装，不需要先在 Modfinder 目录中找到本模组。
+将 `toybox-display-enhancements-v0.5.zip` 拖入 Modfinder 的 **“Drag zips here to install”** 区域，等待安装完成。[Modfinder](https://www.nexusmods.com/warhammer40kroguetrader/mods/146)
 
 **手动安装**
 
@@ -97,19 +97,19 @@ ToyBox 能预览对话的条件与结果。本附加模组为其中常见的提�
 
 ### 搭配词表汉化
 
-菜单和设置说明可以搭配 **ToyBox 简体中文词表修订 2.0** 阅读。它统一“职业”“剧情状态”“搜索与选取”等译名，并补充重置加点、灵能和地图选项的中文说明。
+菜单和设置说明可以搭配 **ToyBox 简体中文词表修订 2.1** 阅读。它统一「职业」「剧情状态」「搜索与选取」等译名，补充重置加点、灵能、地图和特性等级设置的中文说明。
 
 两个包可以单独安装，也可以一起使用：词表汉化替换 `0ToyBox0` 中的中文 JSON，本包安装在独立 UMM 文件夹。
 
 ### 更新与恢复
 
-模组 ID、DLL 和目录统一为 `ToyBoxDisplayEnhancements`。从旧 `ToyBoxChineseDisplayEnhancements` 升级，包括此前使用旧标识的 0.4 候选包，先确认 ToyBox 为 2.0.16，再关闭游戏并安装新版到新目录。若旧目录有 `display-settings.json`，将它复制到新目录，然后移除 UMM 中的旧 `ToyBoxChineseDisplayEnhancements` 文件夹；备份应放在 UMM 目录之外，避免重复加载。启动游戏后在 UMM 中重新启用新版。
+模组 ID、DLL 和目录统一为 `ToyBoxDisplayEnhancements`。安装 ToyBox 2.0.20 后，关闭游戏并安装新版显示增强。旧 `ToyBoxChineseDisplayEnhancements` 用户可把 `display-settings.json` 复制到新目录，然后把旧目录移出 UMM。启动游戏后在 UMM 中启用新版。
 
 后续同标识版本可覆盖 `ToyBoxDisplayEnhancements` 目录。包内不包含 `display-settings.json`，不会覆盖该目录中的技术详情偏好。
 
 切换 ToyBox 或游戏语言会刷新名称、搜索、排序、描述及浏览器缓存。关闭附加模组或 ToyBox 使用不支持的语言时恢复原显示；已打开的对话提示必要时重新打开。卸载时关闭游戏并移除本附加模组文件夹。
 
-保留的 0.3 中文包适用于 ToyBox 2.0.16；旧 0.1／0.2 ZIP 只适用于 ToyBox 1.7.34，同一模组只安装一个版本。当前候选包通过 780 项托管断言、182 项真实程序集检查，游戏内布局和语言切换待验收后再确定公开发布。
+0.3／0.4 对应 ToyBox 2.0.16，0.1／0.2 对应 ToyBox 1.7.34。0.5 通过 805 项托管断言与 211 项真实程序集检查。本机游戏已复查 13 个补丁的加载、蓝图搜索及四种中英预览样本。
 
 ### 署名与许可
 
@@ -119,13 +119,13 @@ ToyBox 能预览对话的条件与结果。本附加模组为其中常见的提�
 
 ## 下载文件信息
 
-- 文件名称：ToyBox Display Enhancements 0.4 候选版
-- 文件版本：`0.4.0`
-- 上传文件：`toybox-display-enhancements-v0.4.zip`
-- 文件说明：适用于 ToyBox 2.0.16，游戏版本 1.6.1.514。使用 Modfinder 拖入 ZIP 或解压到 UMM 模组目录；启用增强，将 ToyBox 设为英文或简体中文，并开启对话结果与条件预览。增强说明跟随 ToyBox，官方文本跟随游戏语言。
-- 保留文件：`toybox-chinese-display-enhancements-v0.3.zip`，仅中文增强，适用于 ToyBox 2.0.16。
+- 文件名称 `ToyBox Display Enhancements 0.5 候选版`
+- 文件版本 `0.5.0`
+- 上传文件 `toybox-display-enhancements-v0.5.zip`
+- 适用于 ToyBox 2.0.20，游戏版本 1.6.1.514。可用 Modfinder 安装或解压到 UMM。启用增强后，将 ToyBox 设为英文或简体中文，并开启对话结果与条件预览。
+- 旧版 `toybox-display-enhancements-v0.4.zip` 对应 ToyBox 2.0.16。
 - 旧版文件：`toybox-chinese-display-enhancements-v0.1.zip`、`toybox-chinese-display-enhancements-v0.2.zip`，明确标注仅适用于 ToyBox 1.7.34。
 
 ## 图片说明
 
-已有四张图来自旧版，不作为 2.0.16 效果展示。本版先使用商人、招募、任务目标、对白条件和特性条目的文字例子，待新版界面验收后再补图。
+新版配图可选用 2.0.20 的选项检定、对话历史、物品预览和蓝图搜索界面。

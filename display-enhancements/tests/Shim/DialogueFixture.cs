@@ -56,7 +56,21 @@ namespace Kingmaker.Blueprints {
 namespace Kingmaker.Blueprints.Items {
     public class BlueprintItem : Kingmaker.UnitLogic.Progression.Features.BlueprintFeature { }
 }
-namespace Kingmaker.Blueprints.Items.Components { public class MoneyReplacement { } }
+namespace Kingmaker.Blueprints.Items.Components { public class MoneyReplacement { public long Cost; } }
+namespace Kingmaker.Globalmap.Blueprints.Colonization {
+    public class BlueprintColony : Kingmaker.Blueprints.BlueprintScriptableObject {
+        public string NameZh, NameEn;
+        public string ColonyName => FixtureText.Resolve(null, NameZh, NameEn);
+    }
+    public class BlueprintColonyTrait : Kingmaker.UnitLogic.Progression.Features.BlueprintFeature { }
+}
+namespace Kingmaker.Assets.Designers.EventConditionActionSystem.Conditions {
+    public class DialogSeen : Condition {
+        public Ref m_Dialog;
+        public object Dialog => m_Dialog?.Get();
+        public override string GetCaption() => (Not ? "Not " : "") + "Dialog Seen (" + ((Kingmaker.Blueprints.SimpleBlueprint)Dialog)?.name + ")";
+    }
+}
 namespace Kingmaker.Designers.EventConditionActionSystem.Evaluators {
     public class DynamicEvaluator {
         public int Evaluations;
@@ -123,6 +137,22 @@ namespace Kingmaker.Designers.EventConditionActionSystem.Actions {
         public Ref m_Dialogue;
         public object Dialogue => m_Dialogue?.Get();
         public object DialogEvaluator, DialogueOwner;
+    }
+    public class AddItemToPlayer : GameAction {
+        public Ref m_ItemToGive;
+        public object ItemToGive => m_ItemToGive?.Get();
+        public int Quantity;
+    }
+    public class RemoveItemFromPlayer : GameAction {
+        public Ref m_ItemToRemove;
+        public object ItemToRemove => m_ItemToRemove?.Get();
+        public bool Money, RemoveAll;
+        public int Quantity;
+        public float Percentage;
+    }
+    public class ApplyTraitToColony : GameAction {
+        public Ref Trait, m_Colony;
+        public object Colony => m_Colony?.Get();
     }
     public class UnlockFlag : GameAction {
         public Ref m_flag;

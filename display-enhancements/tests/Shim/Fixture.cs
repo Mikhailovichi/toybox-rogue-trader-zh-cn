@@ -86,7 +86,12 @@ namespace Kingmaker.UnitLogic.Progression.Features {
 }
 namespace Kingmaker.UnitLogic { public class Feature { } }
 namespace Kingmaker.DialogSystem.Blueprints {
-    public class ShowCheck { public Kingmaker.EntitySystem.Stats.Base.StatType Type = Kingmaker.EntitySystem.Stats.Base.StatType.SkillPersuasion; public int DC = 10; }
+    public class ShowCheck {
+        public Kingmaker.EntitySystem.Stats.Base.StatType Type = Kingmaker.EntitySystem.Stats.Base.StatType.SkillPersuasion;
+        public string Difficulty = "Custom";
+        public int DC = 10;
+        public int GetDC() => throw new InvalidOperationException("Display must not calculate a check.");
+    }
     public class BlueprintAnswerBase : Kingmaker.Blueprints.BlueprintScriptableObject { }
     public class BlueprintAnswersList : BlueprintAnswerBase {
         public List<Kingmaker.ElementsSystem.Ref> Answers = new List<Kingmaker.ElementsSystem.Ref>();

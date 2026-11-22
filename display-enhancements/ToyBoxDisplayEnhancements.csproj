@@ -3,7 +3,7 @@
     <TargetFramework>net481</TargetFramework>
     <LangVersion>latest</LangVersion>
     <AssemblyName>ToyBoxDisplayEnhancements</AssemblyName>
-    <Version>0.4.0</Version>
+    <Version>0.5.0</Version>
     <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
   </PropertyGroup>

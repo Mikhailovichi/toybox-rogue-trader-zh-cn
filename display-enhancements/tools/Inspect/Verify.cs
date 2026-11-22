@@ -40,7 +40,7 @@ internal static class Verify {
         Require(Type(new[] { locales }, "Kingmaker.Localization.Enums.Locale").Fields.Any(f => f.Name == "enGB") &&
             Type(new[] { locales }, "Kingmaker.Localization.Enums.Locale").Fields.Any(f => f.Name == "zhCN"), "English/Chinese game locales missing");
         Require(localeChanged.Body.Instructions.Any(i => i.Operand is IMethod m && m.Name == "set_CurrentPack"), "Game locale hook must follow pack update");
-        Require(toy.Assembly.Version == new Version(2, 0, 16, 0), "ToyBox version must be 2.0.16.0");
+        Require(toy.Assembly.Version == new Version(2, 0, 20, 0), "Expected the ToyBox 2.0.20 assembly");
         const string util = "ToyBox.Features.BagOfTricks.Preview.DialogPreviewUtilities";
         const string ext = "ToyBox.Infrastructure.Blueprints.BPHelper";
         const string answer = "Kingmaker.DialogSystem.Blueprints.BlueprintAnswer";
@@ -126,8 +126,17 @@ internal static class Verify {
         const string evaluators = "Kingmaker.Designers.EventConditionActionSystem.Evaluators.";
         Member(game, bp + "BlueprintCue", "Text", "Description", "Continue", "Answers");
         Member(game, bp + "BlueprintCheck", "Type", "Hidden", "Difficulty", "DC", "DCModifiers");
+        Member(game, bp + "BlueprintAnswer", "HasShowCheck", "ShowCheck");
+        Member(game, bp + "ShowCheck", "Type", "Difficulty", "DC");
+        var showCheck = Method(code, bp + "ShowCheck", "GetDC");
+        Require(showCheck.Body.Instructions.Any(i => i.Operand is IMethod m && m.DeclaringType.Name == "SkillCheckHelper" && m.Name == "GetDC"),
+            "ShowCheck preset DC calculation changed");
         Member(game, bp + "DCModifier", "Mod", "Conditions");
         Member(game, bp + "BlueprintDialog", "FirstCue", "Description");
+        const string seen = "Kingmaker.Assets.Designers.EventConditionActionSystem.Conditions.DialogSeen";
+        Member(game, seen, "Dialog");
+        Require(Method(code, seen, "CheckCondition").Body.Instructions.Any(i => i.Operand is IMethod m && m.Name == "ShownDialogsContains"),
+            "DialogSeen history scope changed");
         Member(game, "Kingmaker.DialogSystem.CueSelection", "Cues");
         Member(game, bp + "BlueprintBookPage", "Cues", "Answers");
         Member(game, bp + "BlueprintCueSequence", "Cues", "Exit");
@@ -190,6 +199,26 @@ internal static class Verify {
                 "Kingmaker.Blueprints.BlueprintAnswerReference[]", "Mark action answer reference array changed");
         }
         Member(game, actions + "StartDialog", "Dialogue", "DialogEvaluator", "DialogueOwner");
+        Member(game, actions + "AddItemToPlayer", "ItemToGive", "Quantity");
+        Member(game, actions + "RemoveItemFromPlayer", "ItemToRemove", "Money", "Quantity", "Percentage", "RemoveAll");
+        Member(game, "Kingmaker.UnitLogic.Mechanics.Blueprints.BlueprintMechanicEntityFact", "Name");
+        Member(game, "Kingmaker.Blueprints.Items.Components.MoneyReplacement", "Cost");
+        var addItem = Method(code, "Kingmaker.Items.ItemsCollection", "Add", "Kingmaker.Items.ItemEntity", "System.Boolean");
+        Require(addItem.Body.Instructions.Any(i => i.Operand is IMethod m && m.Name == "GainMoney") &&
+            addItem.Body.Instructions.Any(i => i.Operand is IField f && f.Name == "Cost") &&
+            addItem.Body.Instructions.Any(i => i.OpCode == OpCodes.Mul), "Money replacement gain calculation changed");
+        var remove = Method(code, actions + "RemoveItemFromPlayer", "RunAction");
+        Require(remove.Body.Instructions.Any(i => i.Operand is IMethod m && m.FullName.Contains("MoneyReplacement")) &&
+            remove.Body.Instructions.Any(i => i.Operand is IField f && f.Name == "RemoveAll") &&
+            remove.Body.Instructions.Any(i => i.Operand is IField f && f.Name == "Percentage"),
+            "Item removal money or amount configuration changed");
+        Member(game, actions + "ApplyTraitToColony", "Colony", "Trait");
+        Member(game, "Kingmaker.Globalmap.Blueprints.Colonization.BlueprintColony", "ColonyName");
+        Member(game, "Kingmaker.Globalmap.Blueprints.Colonization.BlueprintColonyTrait", "Name");
+        var apply = Method(code, actions + "ApplyTraitToColony", "RunAction");
+        Require(apply.Body.Instructions.Any(i => i.Operand is IMethod m && m.Name == "get_Colony") &&
+            apply.Body.Instructions.Any(i => i.Operand is IField f && f.Name == "ColonyContextData"),
+            "Colony trait specified and context targets changed");
         Member(game, actions + "UnlockFlag", "flag", "flagValue");
         Member(game, actions + "LockFlag", "Flag");
         Member(game, actions + "IncrementFlagValue", "Flag", "Value", "UnlockIfNot");

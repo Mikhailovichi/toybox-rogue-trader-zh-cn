@@ -1,10 +1,10 @@
-"""Rebuild ToyBox 2.0.16 translations by stable field ID, offline."""
+"""Rebuild ToyBox 2.0.20 translations by stable field ID, offline."""
 import json
 from validate import PROJECT, load
 
 
 def build_data():
-    baseline = load(PROJECT / "reference/upstream-zh-CN-v2.0.16.json")
+    baseline = load(PROJECT / "reference/upstream-zh-CN-v2.0.20.json")
     revisions = load(PROJECT / "tools/revisions.json")
     assert set(revisions) <= set(baseline), "Unknown revision field IDs"
     return {key: {"Original": entry["Original"],

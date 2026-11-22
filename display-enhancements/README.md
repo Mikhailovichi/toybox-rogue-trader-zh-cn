@@ -6,10 +6,10 @@
 
 ## 版本与依赖
 
-- 附加模组：**0.4 候选版**，UMM 中显示为 `0.4.0`。
-- 适用版本：**ToyBox 2.0.16 预发布版**，游戏 **1.6.1.514**。
+- 附加模组版本为 **0.5.0 候选版**，适配 **ToyBox 2.0.20 预发布版**和游戏 **1.6.1.514**。
+- 选项检定显示预设难度或基础 DC。新预览还涵盖对话历史、物品和资金增减，以及殖民地特质的目标。
 - 需要原版 [ToyBox for Rogue Trader](https://www.nexusmods.com/warhammer40kroguetrader/mods/1)。游戏随附 Unity Mod Manager（UMM），无需另行安装 UMM。
-- 可与 **ToyBox 简体中文词表修订 2.0** 一起使用，两者分别安装。
+- 可与 **ToyBox 简体中文词表修订 2.1** 一起使用，两者分别安装。
 
 增强支持 ToyBox 简体中文（`zh-CN`）、英文（`en`）及英语区域代码，例如 `en-GB`、`en-US`。增强说明、别名和技术详情跟随 ToyBox；官方任务名、对白、信念与检定名称跟随游戏语言，不需要另设增强语言。
 
@@ -24,12 +24,12 @@
 
 ## 安装
 
-先安装原版 ToyBox **2.0.16**，然后关闭游戏。选择以下任一种方式安装显示增强。已安装旧 `ToyBoxChineseDisplayEnhancements` 的用户，请按下方“更新与恢复”迁移设置并移除旧目录后再启动游戏。
+关闭游戏后安装官方 [ToyBox 2.0.20 发布包](https://github.com/xADDBx/ToyBox-RogueTrader/releases/tag/v2.0.20)，再选择以下任一种方式安装显示增强。旧 `ToyBoxChineseDisplayEnhancements` 用户参考“更新与恢复”迁移设置。
 
 ### 使用 Modfinder
 
 1. 下载并打开 [Modfinder](https://www.nexusmods.com/warhammer40kroguetrader/mods/146)。
-2. 将 `toybox-display-enhancements-v0.4.zip` 拖入窗口下方的 **“Drag zips here to install”** 区域，等待安装完成。
+2. 将 `toybox-display-enhancements-v0.5.zip` 拖入窗口下方的 **“Drag zips here to install”** 区域，等待安装完成。
 3. 确认附加模组安装在 UMM 目录内，与 `0ToyBox0` 并列。
 
 当前候选包采用本地 ZIP 安装，不需要先在 Modfinder 目录中找到本模组。
@@ -134,7 +134,7 @@ ToyBox 蓝图浏览器中的 `Answer_00101` 等条目改为“回答：‘正式
 
 模组 ID、DLL 和安装目录统一为 `ToyBoxDisplayEnhancements`。从旧 `ToyBoxChineseDisplayEnhancements` 升级，包括此前使用旧标识的 0.4 候选包，不能直接覆盖旧目录：
 
-1. 确认 ToyBox 为 **2.0.16 预发布版**，关闭游戏，安装新版到 `ToyBoxDisplayEnhancements`。
+1. 确认 ToyBox 为 **2.0.20 预发布版**，关闭游戏，安装新版到 `ToyBoxDisplayEnhancements`。
 2. 若旧目录有 `display-settings.json`，将它复制到新目录，保留技术详情偏好；没有该文件则使用默认设置。
 3. 移除 UMM 目录中的旧 `ToyBoxChineseDisplayEnhancements` 文件夹。需要备份时将其保存到 UMM 目录之外；不要保留两套模组。
 4. 启动游戏，在 UMM 中启用 **ToyBox Display Enhancements**。UMM 将其视为新模组，需要重新启用。
@@ -143,9 +143,9 @@ ToyBox 蓝图浏览器中的 `Answer_00101` 等条目改为“回答：‘正式
 
 切换 ToyBox 或游戏语言时，会刷新名称、搜索、排序、描述及浏览器缓存。关闭增强或将 ToyBox 切换到不支持的语言时恢复原显示。对话提示随界面刷新；必要时重新打开相关界面。卸载时关闭游戏并移除本附加模组文件夹。
 
-保留 0.3 中文包，适用于 **ToyBox 2.0.16**；旧 0.1／0.2 ZIP 仅供 **ToyBox 1.7.34** 使用。同一模组只安装一个版本。更新 ToyBox 后应选择对应适配包。
+ToyBox **2.0.16** 对应增强 **0.3／0.4**，ToyBox **1.7.34** 对应增强 **0.1／0.2**。每次使用一组匹配版本。
 
-当前候选包通过 780 项托管格式化／Harmony 断言与 182 项本机真实程序集检查；新版游戏内加载、排版及语言切换仍待用户验收。已有图片来自旧版，本版先用文字示例，验收后补新版截图。
+候选包的验证结果与游戏内复查步骤见源码仓库的 `docs/acceptance.md`。现有截图记录旧版界面。
 
 ## 署名与许可
 

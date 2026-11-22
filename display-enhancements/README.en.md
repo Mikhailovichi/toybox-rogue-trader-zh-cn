@@ -6,10 +6,10 @@ Adds readable English and Simplified Chinese text to ToyBox dialogue previews: q
 
 ## Version and language support
 
-- Addon: **0.4.0 candidate**.
-- Requires [ToyBox for Rogue Trader](https://www.nexusmods.com/warhammer40kroguetrader/mods/1) **2.0.16 prerelease**; checked against game **1.6.1.514**.
+- The **0.5.0 candidate** targets **ToyBox 2.0.20 prerelease** and game **1.6.1.514**.
+- Dialogue previews distinguish preset checks from custom base DCs and explain dialogue history, item and money changes, and colony trait targets.
 - Rogue Trader includes Unity Mod Manager (UMM), so no separate UMM installation is needed.
-- Can be used independently or alongside **ToyBox Simplified Chinese Localization 2.0**, which installs separately.
+- Can be used independently or alongside **ToyBox Simplified Chinese Localization 2.1**, which installs separately.
 
 **Addon labels, aliases, notes and technical details follow ToyBox's UI language. Official names and dialogue follow the game's language.** Supported ToyBox languages are English (`en`, including regional codes such as `en-GB` and `en-US`) and Simplified Chinese (`zh-CN`). There is no separate addon language setting.
 
@@ -24,12 +24,12 @@ Other ToyBox UI languages retain the original displays. Other game languages ret
 
 ## Installation
 
-Install ToyBox **2.0.16**, then close the game. Choose either method below. If you have the old `ToyBoxChineseDisplayEnhancements` addon, follow Updating and uninstalling below to transfer settings and remove its directory before starting the game.
+Close the game and install the official [ToyBox 2.0.20 release](https://github.com/xADDBx/ToyBox-RogueTrader/releases/tag/v2.0.20), then choose either addon installation method below. If you have `ToyBoxChineseDisplayEnhancements`, follow Updating and uninstalling to transfer settings.
 
 ### Using Modfinder
 
 1. Download and open [Modfinder](https://www.nexusmods.com/warhammer40kroguetrader/mods/146).
-2. Drag `toybox-display-enhancements-v0.4.zip` into **"Drag zips here to install"** at the bottom of its window. Wait for installation to finish.
+2. Drag `toybox-display-enhancements-v0.5.zip` into **"Drag zips here to install"** at the bottom of its window. Wait for installation to finish.
 3. Check that `ToyBoxDisplayEnhancements` is alongside `0ToyBox0` in the UMM mod directory.
 
 Use the downloaded ZIP for this candidate; you do not need to find the addon in Modfinder's catalogue.
@@ -92,16 +92,16 @@ Later preview results depend on dialogue branches and checks. The addon uses Toy
 
 The mod ID, DLL and installation directory now use `ToyBoxDisplayEnhancements`. If upgrading from `ToyBoxChineseDisplayEnhancements`, including the earlier 0.4 candidate with the old ID, do not overwrite the old directory:
 
-1. Confirm ToyBox is **2.0.16 prerelease**, close the game, and install the new package into `ToyBoxDisplayEnhancements`.
+1. Confirm ToyBox is **2.0.20 prerelease**, close the game, and install the new package into `ToyBoxDisplayEnhancements`.
 2. If the old directory contains `display-settings.json`, copy it into the new directory to keep your technical-details preference. Without that file, the addon uses its defaults.
 3. Remove the old `ToyBoxChineseDisplayEnhancements` directory from UMM. Keep any backup outside the UMM directory; do not leave both addons installed.
 4. Start the game and enable **ToyBox Display Enhancements** in UMM. Its new mod ID requires enabling it again.
 
 For subsequent versions using `ToyBoxDisplayEnhancements`, close the game and replace files in that same directory. The package contains no `display-settings.json` and does not overwrite that directory's preferences. To uninstall, close the game and remove `ToyBoxDisplayEnhancements`.
 
-The retained Chinese-only 0.3 ZIP targets **ToyBox 2.0.16**. The older 0.1/0.2 ZIPs target **ToyBox 1.7.34** and do not work with 2.0.16. Install one version of this addon at a time.
+Addon versions **0.3 and 0.4** target **ToyBox 2.0.16**. Versions **0.1 and 0.2** target **ToyBox 1.7.34**. Install one matching version at a time.
 
-This candidate has passed 780 managed formatting/Harmony assertions and 182 actual-assembly compatibility checks. In-game loading, layout and language-switching acceptance are pending; new screenshots will follow that review.
+See `docs/acceptance.md` in the source repository for verification results and in-game checks.
 
 ## Credits and license
 

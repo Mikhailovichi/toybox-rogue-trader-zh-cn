@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.1
+
+Targets ToyBox **2.0.20 prerelease** and game **1.6.1.514**.
+
+- Adopted the official translations for the two new feature-rank setting fields.
+- Validated all 940 field IDs against the new baselines, including the 216 existing revisions and four empty-source fields.
+
 ## 2.0
 
 Compatibility target: ToyBox **2.0.16 prerelease**, game **1.6.1.514**. Candidate; game UI acceptance pending.

@@ -6,38 +6,38 @@ ToyBox Simplified Chinese Localization - Revised
 
 ## Summary
 
-Revised Simplified Chinese dictionary for ToyBox 2.0.16 prerelease. Fills 86 missing translations and improves blueprint patch, retraining, field-of-view and search instructions. Requires the original ToyBox mod.
+Revised Simplified Chinese dictionary for ToyBox 2.0.20 prerelease. Fills 86 missing translations and improves blueprint patch, retraining, field-of-view and search instructions. Includes translations for the new feature-rank setting. Requires the original ToyBox mod.
 
 ## Description
 
-Localization **2.0 candidate** targets **ToyBox 2.0.16 prerelease**, with terminology checked against game **1.6.1.514**. All 938 field IDs were reviewed; 216 entries were revised, including 86 missing translations. Four empty source fields retain their original purpose.
+Localization **2.1 candidate** targets **ToyBox 2.0.20 prerelease**, with terminology checked against game **1.6.1.514**. It retains 216 revisions by field ID, including 86 missing translations, and adopts the upstream translations for the two new fields.
 
 ### Main features
 
-- Covers 938 fields and fills 86 missing translations for menus, buttons and settings.
+- Covers 940 fields for menus, buttons and settings.
 - Uses consistent game terminology for archetypes, story states, Profit Factor, Navigator's Insight and psychic mechanics.
 - Clarifies blueprint patches, search, saves and retraining, including what each option does and how related settings affect it.
 - Distinguishes camera field of view from fog-of-war reveal range and explains dialogue visibility, selection and conviction requirements and changes.
 
 ### Installation and restoration
 
-Install the original ToyBox 2.0.16 first, then close the game. Back up `0ToyBox0\Localization\zh-CN_lang.json`. Extract `toybox-zh-cn-v2.0.zip` into `0ToyBox0`, replacing that file. The default mod root is:
+Install the original ToyBox 2.0.20 first, then close the game. Back up `0ToyBox0\Localization\zh-CN_lang.json`. Extract `toybox-zh-cn-v2.1.zip` into `0ToyBox0`, replacing that file. The default mod root on Windows is
 
 ```text
 %USERPROFILE%\AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue Trader\UnityModManager\0ToyBox0
 ```
 
-Select Simplified Chinese (`zh-CN`) in ToyBox. Restore the backed-up file to revert. The old 1.0 ZIP is only for ToyBox 1.7.34; it cannot restore the new dictionary format.
+Select Simplified Chinese (`zh-CN`) in ToyBox. To revert, restore the backup. Localization 2.0 targets ToyBox 2.0.16, and localization 1.0 targets ToyBox 1.7.34.
 
 ### Optional display addon
 
-Chinese Display Enhancements **0.3.0** adds readable dialogue conditions and results, quest names, dialogue quotations and notes for eight internal features. It installs separately in UMM. Either package can be used independently.
+**ToyBox Display Enhancements 0.5.0** adds bilingual dialogue conditions and results, including configured checks, dialogue history, item and currency changes, and colony traits. It installs separately in UMM and can be used independently.
 
 ### Scope and status
 
 Only registered ToyBox fields are translated. Internal identifiers and unregistered buttons may remain in English. Game object names follow the game's language setting. The package contains no ToyBox binary or game assets.
 
-Field coverage, unchanged source text, placeholders, line breaks, rich text and offline rebuilding have passed validation. Game UI acceptance is pending; old screenshots are not presented as the new interface.
+Field coverage, source text, placeholders, line breaks, rich text and offline rebuilding passed validation. The new feature-rank label and description were checked in the game’s ToyBox settings and feature search.
 
 ### Credits and license
 

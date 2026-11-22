@@ -2,10 +2,12 @@ using System;
 using System.Linq;
 using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Items;
+using Kingmaker.Blueprints.Items.Components;
 using Kingmaker.DialogSystem.Blueprints;
 using Kingmaker.Designers.EventConditionActionSystem.Actions;
 using Kingmaker.Designers.EventConditionActionSystem.Conditions;
 using Kingmaker.ElementsSystem;
+using Kingmaker.Globalmap.Blueprints.Colonization;
 using Kingmaker.UnitLogic.Progression.Features;
 using ToyBoxDisplayEnhancements;
 using Eval = Kingmaker.Designers.EventConditionActionSystem.Evaluators;
@@ -14,6 +16,7 @@ using General = ToyBox.Infrastructure.GeneralSettings;
 using Preview = ToyBox.Features.BagOfTricks.Preview.DialogPreviewUtilities;
 using GameLocale = Kingmaker.Localization.Enums.Locale;
 using GameLocalization = Kingmaker.Localization.LocalizationManager;
+using DialogSeen = Kingmaker.Assets.Designers.EventConditionActionSystem.Conditions.DialogSeen;
 
 internal static partial class Program {
     private static void DialogueLanguages(string ui, GameLocale game) {
@@ -149,6 +152,7 @@ internal static partial class Program {
         var firstText = DialogueText.FullText(cue);
         Is(!firstText.Contains(after.Text), "read only the selected representative node's own text");
         DialogueSemanticTests(dialog, check, answer);
+        UpdatedPreviewTests();
 
         foreach (var ui in new[] { "fr", "en" }) {
             General.Settings.UILanguage = ui;
@@ -167,6 +171,76 @@ internal static partial class Program {
             }
         }
         DialogueLanguages("zh-CN", GameLocale.zhCN);
+    }
+
+    private static void UpdatedPreviewTests() {
+        var line = new BlueprintCue { TextZh = "<b>已抵达</b>", TextEn = "<b>We have arrived</b>" };
+        var dialog = new BlueprintDialog { name = "Arrival_Internal", AssetGuid = "arrival-guid" };
+        dialog.FirstCue.Cues.Add(Link(line));
+        var seen = new DialogSeen { m_Dialog = Link(dialog) };
+        var item = new BlueprintItem { name = "Supply_Internal", NameZh = "补给箱", NameEn = "Supply crate" };
+        var token = new BlueprintItem { ComponentsArray = new object[] { new MoneyReplacement { Cost = 15 } } };
+        var gain = new AddItemToPlayer { m_ItemToGive = Link(item), Quantity = 3 };
+        var remove = new RemoveItemFromPlayer { m_ItemToRemove = Link(item), Quantity = 2, Percentage = 12.5f };
+        var money = new RemoveItemFromPlayer { Money = true, Percentage = 25 };
+        var colony = new BlueprintColony { name = "Colony_Internal", AssetGuid = "colony-guid", NameZh = "试验殖民地", NameEn = "Test Colony" };
+        var trait = new BlueprintColonyTrait { name = "Trait_Internal", AssetGuid = "trait-guid", NameZh = "增产", NameEn = "Extra Output" };
+        var apply = new ApplyTraitToColony { Trait = Link(trait), m_Colony = Link(colony) };
+        var answer = new BlueprintAnswer {
+            HasShowCheck = true,
+            ShowCheck = new ShowCheck { DC = 981, Difficulty = "Hard" },
+            ShowConditions = new ConditionsChecker { Conditions = new Condition[] { seen } },
+            Actions = new GameAction[] { gain, remove, money, apply }
+        };
+        foreach (var ui in new[] { "zh-CN", "en" }) {
+            foreach (var game in new[] { GameLocale.zhCN, GameLocale.enGB }) {
+                DialogueLanguages(ui, game);
+                var english = ui == "en";
+                var chineseGame = game == GameLocale.zhCN;
+                var stat = chineseGame ? "劝说" : "Persuasion";
+                var excerpt = chineseGame ? "已抵达" : "We have arrived";
+                seen.Not = false;
+                var conditions = Preview.FormatConditionsAsList(answer);
+                Is(conditions[0] == (english ? $"Availability conditions: Check: {stat}, hard" : $"出现条件：检定：{stat}，困难"),
+                    "show check uses preset difficulty through the installed prefix");
+                Is(conditions[1].Contains(english ? $"Dialog shown before (excerpt \"{excerpt}\")" : $"此前显示过该对话（摘录“{excerpt}”）") &&
+                    !conditions[1].Contains(dialog.name) && !conditions[1].Contains("<b>"), "dialog history uses the official localized excerpt");
+                seen.Not = true;
+                Is(Preview.FormatConditions(new Condition[] { seen }).StartsWith(english ? "Dialog not shown before" : "此前未显示过该对话"),
+                    "negated history has its own label");
+                var traversals = Preview.Traversals;
+                var preview = Preview.GetAnswerResultText(answer);
+                Is(Preview.Traversals == traversals + 1 && preview.Contains(chineseGame ? "补给箱" : "Supply crate") &&
+                    preview.Contains(english ? "Gain item" : "获得物品") &&
+                    preview.Contains(english ? "2 plus 12.5% of amount held" : "2 加持有量的 12.5%") &&
+                    preview.Contains(english ? "Remove money (25% of amount held)" : "扣除资金（持有量的 25%）") &&
+                    preview.Contains(chineseGame ? "试验殖民地" : "Test Colony") &&
+                    preview.Contains(chineseGame ? "增产" : "Extra Output") &&
+                    !preview.Contains(english ? "the current colony" : "当前殖民地"),
+                    "items, money and named colony use the installed result preview and both locales");
+            }
+        }
+
+        gain.m_ItemToGive = Link(token);
+        Is(Preview.FormatActionAsList(gain)[0] == "Gain 45 money", "money conversion multiplies configured count and component cost");
+        money.Money = false; money.m_ItemToRemove = Link(token); money.Percentage = 0; money.Quantity = 7;
+        Is(Preview.FormatActionAsList(money)[0] == "Remove money (amount 7)", "money replacement also selects the money removal branch");
+        remove.RemoveAll = true;
+        Is(Preview.FormatActionAsList(remove)[0] == "Remove item \"Supply crate\" (all)", "remove all takes precedence over quantity and percentage");
+        ToyBoxDisplayEnhancements.Main.Settings.ShowTechnicalDetails = true;
+        Is(Preview.FormatConditions(new Condition[] { seen }).Contains(dialog.name) &&
+            Preview.FormatConditions(new Condition[] { seen }).Contains(dialog.AssetGuid), "history technical detail keeps dialog identity");
+        Is(Preview.FormatActionAsList(apply)[0].Contains(colony.AssetGuid) && Preview.FormatActionAsList(apply)[0].Contains(trait.AssetGuid),
+            "specified colony and trait both retain technical identities");
+        ToyBoxDisplayEnhancements.Main.Settings.ShowTechnicalDetails = false;
+        apply.m_Colony = null;
+        Is(Preview.FormatActionAsList(apply)[0] == "Add trait \"Extra Output\" to the current colony", "context colony is labelled without reading colony state");
+        dialog.FirstCue.Cues.Clear();
+        Is(Preview.FormatConditions(new Condition[] { seen }).Contains(dialog.name), "a dialog without an excerpt falls back to its identity");
+        seen.m_Dialog = null;
+        Is(Preview.FormatConditions(new Condition[] { seen }) == seen.GetCaption(), "a missing dialog reference preserves native negation");
+        Is(seen.Checks == 0 && answer.ShowConditions.Checks == 0 && dialog.Conditions.Checks == 0 &&
+            answer.Actions.All(action => action.Executions == 0), "updated preview never evaluates predicates or runs actions");
     }
 
     private static void DialogueSemanticTests(BlueprintDialog dialog, BlueprintCheck check, BlueprintAnswer answer) {

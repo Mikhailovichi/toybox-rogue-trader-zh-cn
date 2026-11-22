@@ -68,9 +68,11 @@ namespace ToyBoxDisplayEnhancements {
             if (!Runtime.Active) return true;
             try {
                 var list = new List<string>();
-                var check = Reflect.Read(__0, "ShowCheck");
-                if (Reflect.Bool(__0, "HasShowCheck"))
-                    list.Add(UiText.Get("Availability", Text.Check(Reflect.String(check, "Type"), Reflect.Int(check, "DC"), false, Runtime.Localize)));
+                if (Reflect.Bool(__0, "HasShowCheck")) {
+                    var check = Reflect.Read(__0, "ShowCheck");
+                    var text = DialogueText.CheckName(check) ?? Text.Check(Reflect.String(check, "Type"), Reflect.Int(check, "DC"), false, Runtime.Localize);
+                    list.Add(UiText.Get("Availability", text));
+                }
                 var show = Reflect.Read(__0, "ShowConditions");
                 var select = Reflect.Read(__0, "SelectConditions");
                 if (Reflect.Items(Reflect.Read(show, "Conditions")).Any()) list.Add(UiText.Get("Availability", Semantic.Checker(show)));

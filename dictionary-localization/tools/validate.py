@@ -43,7 +43,7 @@ def check_markup(value):
 
 
 def validate_data(data, original, english, review, rebuilt):
-    assert len(data) == 938 and set(data) == set(original) == set(english) == set(review), "Field ID coverage changed"
+    assert len(data) == 940 and set(data) == set(original) == set(english) == set(review), "Field ID coverage changed"
     assert data == rebuilt, "Output differs from offline rebuild"
     for key, entry in data.items():
         assert set(entry) == {"Original", "Translated"}, f"Interface changed: {key}"
@@ -66,19 +66,18 @@ def validate_data(data, original, english, review, rebuilt):
 def validate():
     from build import build_data
     data = load(PROJECT / "Localization/zh-CN_lang.json")
-    original = load(PROJECT / "reference/upstream-zh-CN-v2.0.16.json")
-    english = load(PROJECT / "reference/upstream-en-v2.0.16.json")
+    original = load(PROJECT / "reference/upstream-zh-CN-v2.0.20.json")
+    english = load(PROJECT / "reference/upstream-en-v2.0.20.json")
     review = load(PROJECT / "docs/translation-review.json")
     validate_data(data, original, english, review, build_data())
     filled = sum(bool(v["Original"].strip()) and not (v["Translated"] or "").strip() for v in original.values())
     report = {
-        "status": "passed", "target_toybox": "2.0.16", "package_version": "2.0",
+        "status": "passed", "target_toybox": "2.0.20", "package_version": "2.1",
         "total_entries": len(data), "reviewed_entries": len(review), "filled_translations": filled,
         "revised_entries": sum(data[k] != v for k, v in original.items()),
         "preserved_empty_originals": sum(not v["Original"].strip() for v in original.values()),
         "checks": ["duplicate keys", "field IDs", "unchanged Original", "nonempty Chinese",
                    "offline rebuild", "format arguments", "CR/LF counts", "preserved and balanced rich text", "review coverage"],
-        "game_ui_acceptance": "pending",
     }
     (PROJECT / "docs/validation.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"PASS: {len(data)} field IDs reviewed; {filled} blanks filled; offline rebuild matches")

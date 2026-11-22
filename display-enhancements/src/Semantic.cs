@@ -48,6 +48,37 @@ namespace ToyBoxDisplayEnhancements {
                         : DialogueText.Identity(blueprint);
                     if (!Text.Missing(dialog)) result = UiText.Get("StartDialog", Text.Safe(dialog));
                     break;
+                case Actions + "AddItemToPlayer":
+                    blueprint = Reflect.Read(action, "ItemToGive");
+                    var quantity = Reflect.Int(action, "Quantity");
+                    if (Reflect.Read(MoneyReplacement(blueprint), "Cost") is long cost)
+                        result = UiText.Get("GainMoney", cost * quantity);
+                    else {
+                        var item = Reflect.BlueprintName(blueprint);
+                        if (!Text.Missing(item)) result = UiText.Get("GainItem", Text.Safe(item), quantity);
+                    }
+                    break;
+                case Actions + "RemoveItemFromPlayer":
+                    var removeMoney = Reflect.Bool(action, "Money");
+                    if (!removeMoney) blueprint = Reflect.Read(action, "ItemToRemove");
+                    var removalTarget = removeMoney || MoneyReplacement(blueprint) != null ? UiText.Get("MoneyTarget") : ItemTarget(blueprint);
+                    if (removalTarget != null) result = UiText.Get("RemoveItem", removalTarget, RemovalAmount(action));
+                    break;
+                case Actions + "ApplyTraitToColony":
+                    blueprint = Reflect.Resolve(Reflect.Read(action, "Trait"));
+                    var trait = Reflect.BlueprintName(blueprint);
+                    if (Text.Missing(trait)) return null;
+                    var colony = Reflect.Read(action, "Colony");
+                    var target = UiText.Get("CurrentColony");
+                    if (colony != null) {
+                        var colonyName = Reflect.String(colony, "ColonyName");
+                        if (Text.Missing(colonyName)) colonyName = Reflect.BlueprintName(colony);
+                        if (Text.Missing(colonyName)) return null;
+                        target = UiText.Get("NamedColony", Text.Safe(Text.Clean(colonyName)));
+                    }
+                    identities = new[] { blueprint, colony };
+                    result = UiText.Get("ApplyColonyTrait", target, Text.Safe(trait));
+                    break;
                 case Actions + "UnlockFlag":
                     blueprint = Reflect.Read(action, "flag");
                     if (!Text.Missing(Reflect.BlueprintName(blueprint)))
@@ -74,6 +105,21 @@ namespace ToyBoxDisplayEnhancements {
         }
         private static string Objective(object blueprint, string verb) =>
             Text.Objective(verb, Reflect.Title(blueprint), Reflect.Title(Reflect.Read(blueprint, "Quest")));
+        private static object MoneyReplacement(object blueprint) =>
+            Reflect.Items(Reflect.Read(blueprint, "ComponentsArray"))
+                .FirstOrDefault(component => component?.GetType().FullName == "Kingmaker.Blueprints.Items.Components.MoneyReplacement");
+        private static string ItemTarget(object blueprint) {
+            var name = Reflect.BlueprintName(blueprint);
+            return Text.Missing(name) ? null : UiText.Get("ItemTarget", Text.Safe(name));
+        }
+        private static string RemovalAmount(object action) {
+            if (Reflect.Bool(action, "RemoveAll")) return UiText.Get("RemoveAllAmount");
+            var quantity = Reflect.Int(action, "Quantity");
+            var percentage = (float)Reflect.Read(action, "Percentage");
+            if (percentage == 0) return UiText.Get("RemoveFixedAmount", quantity);
+            if (quantity == 0) return UiText.Get("RemovePercentAmount", percentage);
+            return UiText.Get("RemoveCombinedAmount", quantity, percentage);
+        }
 
         internal static string Checker(object checker) => ReadChecker(checker, new HashSet<object>()).Render();
         internal static string Condition(object condition) => ReadCondition(condition, new HashSet<object>()).Render();
@@ -158,6 +204,14 @@ namespace ToyBoxDisplayEnhancements {
                         negative = UiText.Get(current ? "CueNotSeenCurrent" : "CueNotSeenBefore", Text.Safe(identity));
                     }
                 }
+            } else if (type == "Kingmaker.Assets.Designers.EventConditionActionSystem.Conditions.DialogSeen") {
+                blueprint = Reflect.Read(condition, "Dialog");
+                var excerpt = Text.Excerpt(DialogueText.FullText(blueprint));
+                var reference = Text.Missing(excerpt) ? Text.Safe(Reflect.BlueprintName(blueprint)) : UiText.Get("DialogueExcerpt", Text.Safe(excerpt));
+                if (!Text.Missing(reference)) {
+                    result = UiText.Get("DialogShown", reference);
+                    negative = UiText.Get("DialogNotShown", reference);
+                }
             } else if (type == Conditions + "CheckPassed" || type == Conditions + "CheckFailed") {
                 blueprint = Reflect.Read(condition, "CheckBlueprint");
                 var identity = DialogueText.Identity(blueprint);
@@ -179,8 +233,7 @@ namespace ToyBoxDisplayEnhancements {
                 }
             } else if (type == Conditions + "ItemsEnough") {
                 blueprint = Reflect.Read(condition, "ItemToCheck");
-                var money = Reflect.Bool(condition, "Money") || Reflect.Items(Reflect.Read(blueprint, "ComponentsArray"))
-                    .Any(c => c?.GetType().FullName == "Kingmaker.Blueprints.Items.Components.MoneyReplacement");
+                var money = Reflect.Bool(condition, "Money") || MoneyReplacement(blueprint) != null;
                 var name = Reflect.BlueprintName(blueprint);
                 if (money) { result = UiText.Get("MoneyEnough", Reflect.Int(condition, "Quantity")); negative = UiText.Get("MoneyNotEnough", Reflect.Int(condition, "Quantity")); }
                 else if (!Text.Missing(name)) {

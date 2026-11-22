@@ -12,7 +12,7 @@ FILES = (
 
 def package():
     report = validate()
-    target = PROJECT.parent / "release/toybox-zh-cn-v2.0.zip"
+    target = PROJECT.parent / "release/toybox-zh-cn-v2.1.zip"
     target.parent.mkdir(parents=True, exist_ok=True)
     with ZipFile(target, "w", compression=ZIP_DEFLATED, compresslevel=9) as archive:
         for name in FILES:

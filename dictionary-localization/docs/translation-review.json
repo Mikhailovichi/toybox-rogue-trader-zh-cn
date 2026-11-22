@@ -2391,6 +2391,14 @@
     "Decision": "retained",
     "Note": "新版译文与当前用途一致，保留"
   },
+  "ToyBox_Features_SettingsFeatures_Blueprints_AllowAllFeatureRankChangesSetting_Name": {
+    "Decision": "retained",
+    "Note": "保留 2.0.20 官方译文，明确适用于所有特性的等级调整"
+  },
+  "ToyBox_Features_SettingsFeatures_Blueprints_AllowAllFeatureRankChangesSetting_Description": {
+    "Decision": "retained",
+    "Note": "保留 2.0.20 官方译文，说明新范围和原本可调等级的特性类别"
+  },
   "ToyBox_Features_SettingsFeatures_Blueprints_BlueprintsLoaderChunkSizeSetting_Name": {
     "Decision": "retained",
     "Note": "新版译文与当前用途一致，保留"

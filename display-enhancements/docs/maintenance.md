@@ -1,23 +1,24 @@
 # 显示增强维护
 
-目标固定为 ToyBox **2.0.16 预发布版**、游戏 **1.6.1.514**。增强版本 **0.4.0**，公开名称为 **ToyBox Display Enhancements**。UMM ID、DLL、安装目录、命名空间和项目名统一为 `ToyBoxDisplayEnhancements`，设置格式和文件名仍为 `display-settings.json`。以下命令在仓库根目录 PowerShell 中执行，构建脚本生成候选包，不部署文件。
+**ToyBox Display Enhancements 0.5.0** 适配 ToyBox **2.0.20 预发布版**和游戏 **1.6.1.514**。以下命令从仓库根目录执行并生成候选包。
 
 ## 构建
 
-需要 Windows、.NET 8 SDK、.NET Framework 4.8.1，以及本机游戏、UMM 和 ToyBox 2.0.16。SDK、NuGet 缓存置于已忽略的根 `reference/`；可复用现有 SDK，通过 `-DotNetPath` 指定 `dotnet.exe`。编译使用 net481 参考程序集，不重建上游 ToyBox。
+需要 Windows、.NET 8 SDK、.NET Framework 4.8.1、本机游戏、UMM 和官方 ToyBox 2.0.20 DLL。`-DotNetPath` 可指定本机 SDK，默认读取仓库 `reference/dotnet-sdk/dotnet.exe`。
 
 ```powershell
 & ./display-enhancements/build.ps1 `
-  -GameDirectory 'D:\SteamLibrary\steamapps\common\Warhammer 40,000 Rogue Trader'
+  -GameDirectory 'D:\SteamLibrary\steamapps\common\Warhammer 40,000 Rogue Trader' `
+  -ModManagerDirectory (Resolve-Path './reference/stage-toybox-2.0.20').Path
 ```
 
-默认 UMM 为当前用户 `AppData\LocalLow\Owlcat Games\Warhammer 40000 Rogue Trader\UnityModManager`。其他位置用 `-ModManagerDirectory` 指定。
+暂存目录根部放入本机 UMM 的 `UnityModManager.dll` 与 `dnlib.dll`，并在 `0ToyBox0/` 放入官方 `ToyBox.dll`。真实程序集检查会从暂存目录读取这三份 DLL。省略 `-ModManagerDirectory` 时使用当前用户的游戏 UMM 目录。
 
-输出 `release/toybox-display-enhancements-v0.4.zip`。包内 11 个文件位于 `ToyBoxDisplayEnhancements/`：DLL、Info、特性与剧情四份中英文 JSON、中英文 README、CHANGELOG、CREDITS、LICENSE。游戏、UMM、Harmony、测试程序集、用户设置与旧截图不入包；旧 0.3 ZIP 保留供 ToyBox 2.0.16 使用，0.1／0.2 ZIP 保留供 ToyBox 1.7.34 使用。
+输出 `release/toybox-display-enhancements-v0.5.zip`。`ToyBoxDisplayEnhancements/` 内的 11 个文件包括 DLL、Info、四份别名表、中英文 README、CHANGELOG、CREDITS 和 LICENSE。0.3／0.4 ZIP 对应 ToyBox 2.0.16，0.1／0.2 ZIP 对应 ToyBox 1.7.34。
 
 ## 新版入口
 
-- `src/Main.cs`：独立 UMM ID `ToyBoxDisplayEnhancements`、2.0.16 版本检查、加载失败回退、增强开关与技术详情保存。`Info.json` 的 DLL 和入口、程序集名、Harmony ID 与项目引用同步使用新标识。
+- `src/Main.cs` 检查 ToyBox 2.0.20 的清单和程序集版本，管理增强开关和技术详情。
 - `src/Runtime.cs`：读取 `GeneralSettings.Settings` 的 `UILanguage`、`ToggleSearchDescriptions`、`ToggleBPsShowDisplayAndInternalName`，以及游戏 `LocalizationManager.Instance.CurrentPack.Locale`；通过游戏 `UIUtility.GetSoulMarkDirectionText`／`GetStatText` 取得名称，未知项保留原名。
 - `src/UiText.cs`：集中维护中英完整句子模板。增强说明跟随 ToyBox，官方名称和对白跟随游戏；UMM 状态在绘制时生成，语言切换后同步更新。
 - `src/Patches.cs`：13 个 Harmony 补丁。`DialogPreviewUtilities` 的动作、条件、信念及结果格式化六个入口；`BPHelper` 的名称、搜索、排序、描述四个入口；ToyBox 语言更新、ToyBox GUI 和游戏语言更新三个缓存刷新入口。
@@ -36,6 +37,8 @@
 
 `BlueprintUnit.CharacterName` 提供角色正式名，未设置时回退内部名或 GUID。主角求值器显示目标类型，带直接队友蓝图的求值器附正式名及原目标表达式；不查询实际角色。新增目标与文本不登记到固定别名表，八个特性和 Heresy 的表保持不变。
 
+`ShowCheck` 复用浏览器的检定配置说明。`DialogSeen` 从对话的声明顺序取得代表文本，历史条件的否定沿用 `ConditionText`。获得资金按货币替代物价值乘配置数量显示。扣除优先显示全部移除，否则显示固定数量和持有量比例。殖民地特质读取指定蓝图或显示当前殖民地。
+
 ## 行为约束与验证
 
 新版 `GetAnswerResultText` 唯一的二参数 `string.Format` 使用 `"[{0}: {1}]"`。仅替换该调用，深度 0 标“结果预览”，其余标“后续可能涉及”；保留原收集顺序、分支和条件求值次数。`GetCueResultText` 的三参数格式化同样只替换显示，保留上游仅收集正值信念变化的规则。
@@ -50,10 +53,10 @@ ToyBox `zh-CN` 启用中文增强，`en` 及有效英语区域代码启用英文
 
 缓存刷新调用新版 `BPHelper.ClearNameCaches`，由上游清空四类缓存并使已注册浏览器失效。增强开关、ToyBox 与游戏语言、描述搜索和内部名显示变化时刷新；名称、搜索、排序及描述同步恢复。游戏 `LocalizationManager.OnLocaleProviderValueChanged(Locale)` 已确认在返回前设置新本地化包；后置补丁只检测语言并刷新缓存，不改变切换流程。
 
-构建脚本完成编译、780 项夹具断言、182 项真实程序集检查与 11 文件 ZIP 字节核对。夹具覆盖四种中英组合、不支持的 ToyBox 语言、八个特性、双语搜索、缓存恢复及行为计数。游戏内验收见 [acceptance.md](acceptance.md)。测试专用 Newtonsoft.Json 仅在测试输出中使用；运行模组引用游戏版本，不发布替代 DLL。
+构建脚本依次完成编译、格式化与 Harmony 夹具、真实程序集检查、11 文件 ZIP 核对。游戏内复查见 [验收记录](acceptance.md)。
 
 ## 修订与交接
 
-UMM 版本 `0.4.0`、程序集 `0.4.0.0`。新标识不自动迁移旧安装：用户关闭游戏后安装到 `ToyBoxDisplayEnhancements`，将旧 `ToyBoxChineseDisplayEnhancements/display-settings.json` 复制到新目录，移除旧目录并在 UMM 重新启用；旧目录备份放在 UMM 之外，防止不同 ID 的两套补丁同时加载。设置格式不变，不增加运行时迁移层。
+UMM 版本 `0.5.0`，程序集版本使用对应的四段格式。关闭游戏后，备份 `0ToyBox0` 和 `ToyBoxDisplayEnhancements` 到 UMM 之外。新版沿用 `display-settings.json`，恢复整组版本时将两个备份目录一起还原。
 
-调整别名时同步中英文表与 `feature-evidence.md`；文案与布局反馈直接修改主文件，再构建同一候选包。当前待用户安装验收全英文、混合语言、长对白和分组换行，再补新版截图。保留旧 ZIP，只安装一套显示增强。SDK、源码参考、游戏资产、缓存、ZIP 均不进入 Git；不自动提交、推送或安装。
+调整别名时同步中英文表与 `feature-evidence.md`。根据复现反馈更新主文件并重建候选包。SDK、参考资料、缓存和 ZIP 保存在 Git 忽略目录。

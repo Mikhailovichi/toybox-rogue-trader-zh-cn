@@ -1,8 +1,8 @@
 # Local source, game terminology, snapshots and installation backups.
 /reference/
 /dictionary-localization/reference/*
-!/dictionary-localization/reference/upstream-en-v2.0.16.json
-!/dictionary-localization/reference/upstream-zh-CN-v2.0.16.json
+!/dictionary-localization/reference/upstream-en-v2.0.20.json
+!/dictionary-localization/reference/upstream-zh-CN-v2.0.20.json
 
 # Reproducible packages and local validation/installation records.
 /release/

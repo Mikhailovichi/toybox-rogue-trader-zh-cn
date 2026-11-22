@@ -1,15 +1,15 @@
 # 词表维护
 
-以下命令在仓库根目录执行。目标固定为 ToyBox **2.0.16**，安装包 **2.0**。常规重建只依赖仓库内数据与 Python 标准库，不需要游戏文件、上游源码或解析器依赖。
+以下命令在仓库根目录执行。词表 **2.1** 适配 ToyBox **2.0.20**，使用仓库内数据和 Python 标准库重建。
 
 ## 主文件
 
-- `reference/upstream-en-v2.0.16.json`、`reference/upstream-zh-CN-v2.0.16.json`：官方公开发布包中英文基线，938 个字段 ID；原样保存，不在基线改译文。
+- `reference/upstream-en-v2.0.20.json`、`reference/upstream-zh-CN-v2.0.20.json` 保存官方发布包内 940 个字段的原文和译文。对照上游 ZIP 的 `Localization` 目录核对字段内容。
 - `tools/revisions.json`：按字段 ID 保存 `Translated` 与修订原因，是修订主文件。
 - `docs/translation-review.json`：全部字段的逐项审阅记录，包括保留、修订与空原文用途，进入 Git。
 - `Localization/zh-CN_lang.json`：可安装的生成词表，仅含 `{字段ID: {Original, Translated}}`。
 - `tools/build.py`、`tools/validate.py`、`tools/test_dictionary.py`、`tools/package.py`：重建、接口校验、聚焦测试及 ZIP 打包。
-- `docs/glossary.md`、`docs/acceptance.md`：术语与游戏验收；`docs/validation.json` 为生成报告，不进入 Git。
+- `docs/glossary.md`、`docs/acceptance.md` 记录术语与游戏验收。构建工具生成本地静态检查报告 `docs/validation.json`。
 
 退出旧的英文原文精确键提取与有限枚举扩展流程。旧工具、旧安装 JSON 和四份构建参考由 Git 历史保留，1.0 ZIP 留在根目录 `release/`，不并入新版包。
 
@@ -22,7 +22,7 @@ python -X utf8 dictionary-localization/tools/validate.py
 python -X utf8 dictionary-localization/tools/package.py
 ```
 
-输出 `release/toybox-zh-cn-v2.0.zip`。包内仅五个文件：新版词表、README、CHANGELOG、CREDITS、LICENSE。逐文件核对包内数据与仓库输出，不包含旧 `zh-CN.json` 或旧界面图片。
+输出 `release/toybox-zh-cn-v2.1.zip`。包内的词表、README、CHANGELOG、CREDITS、LICENSE 逐项与仓库文件核对。
 
 校验拒绝重复键、字段丢失／新增、元数据混入、`Original` 改动、缺译、格式参数或 CR／LF 数量变化、错误富文本与重建不一致。四个空原文字段保持基线内容。
 

@@ -6,7 +6,7 @@
 - [显示增强中文发布文案](../../display-enhancements/docs/nexus-description-zh.md)
 - [显示增强英文发布文案](../../display-enhancements/docs/nexus-description-en.md)
 
-显示增强 0.4 支持中英文运行时显示。中英文发布文案均说明：增强文字跟随 ToyBox，官方名称和对白跟随游戏语言；其他 ToyBox 语言保留原显示。词表包继续仅提供简体中文。
+显示增强 0.5 的说明跟随 ToyBox，官方名称和对白跟随游戏语言。词表包提供简体中文菜单与设置说明。
 
 ## 分别创建两个页面
 
@@ -15,9 +15,9 @@
 | 填写项 | 词表汉化 | 显示增强 |
 | --- | --- | --- |
 | 名称 | ToyBox 简体中文词表修订 - Simplified Chinese Localization | ToyBox Display Enhancements |
-| 文件版本 | 2.0 候选版 | 0.4.0 候选版 |
-| 下载包 | [toybox-zh-cn-v2.0.zip](../../release/toybox-zh-cn-v2.0.zip) | [toybox-display-enhancements-v0.4.zip](../../release/toybox-display-enhancements-v0.4.zip) |
-| 原模组依赖 | ToyBox 2.0.16 | ToyBox 2.0.16，使用游戏随附的 UMM |
+| 文件版本 | 2.1 候选版 | 0.5.0 候选版 |
+| 下载包 | [toybox-zh-cn-v2.1.zip](../../release/toybox-zh-cn-v2.1.zip) | [toybox-display-enhancements-v0.5.zip](../../release/toybox-display-enhancements-v0.5.zip) |
+| 原模组依赖 | ToyBox 2.0.20 预发布版 | ToyBox 2.0.20 预发布版及游戏随附的 UMM |
 | 另一附加包 | 可选搭配 | 可选搭配 |
 
 两个页面均填写原 [ToyBox](https://www.nexusmods.com/warhammer40kroguetrader/mods/1) 依赖，并在正文保留原模组链接。词表包按汉化附加包发布，使用页面提供的 `Translation` 标记；显示增强按独立显示附加模组介绍。
@@ -32,15 +32,13 @@
 2. 在显示增强页面，把“ToyBox 简体中文词表修订”链接到词表的 Nexus 页面。
 3. 将对方列为可选推荐，原 ToyBox 保持为必需依赖。
 
-页面标题保留英文产品名称便于搜索。词表使用中文简介与正文，显示增强提供中英文发布文案，按页面受众选择。显示增强下载文件使用“0.4 候选版”，安装目录和模组 ID 统一为 `ToyBoxDisplayEnhancements`。从旧标识版本升级时，需复制 `display-settings.json` 到新目录，并移除旧 `ToyBoxChineseDisplayEnhancements` 目录，不能直接覆盖升级。
+页面标题保留英文产品名称便于搜索。显示增强下载文件使用「0.5 候选版」，安装目录和模组 ID 均为 `ToyBoxDisplayEnhancements`。从旧标识版本升级时，将 `display-settings.json` 复制到新目录，再把旧 `ToyBoxChineseDisplayEnhancements` 目录移出 UMM。
 
 ## 图片与文件
 
-当前两包适配 ToyBox **2.0.16 预发布版**，均先交付候选包。旧图来自 1.7.34，不直接用于新版效果展示；待新版验收后补图。
+当前两包已在 ToyBox **2.0.20 预发布版**和游戏 **1.6.1.514** 上完成本机样本验收。新版配图使用对应版本的设置、搜索或对话界面。
 
-保留旧词表 1.0、显示增强 0.1／0.2 ZIP，上传时明确注明仅适用于 ToyBox 1.7.34。新包分别上传，不将词表放进显示增强目录。
-
-保留的显示增强 0.3 ZIP 为仅中文版本，适用于 ToyBox 2.0.16。0.4 是中英双语包，同一模组只安装一个版本。
+词表 2.0 与显示增强 0.3／0.4 对应 ToyBox 2.0.16。词表 1.0 与显示增强 0.1／0.2 对应 ToyBox 1.7.34。两个新版 ZIP 分别上传。
 
 ## 许可与制作标签
 
@@ -53,7 +51,7 @@
 Nexus 的文件提交规则要求翻译依赖原模组、链接原页面，并遵守原内容的许可要求。
 
 - [原 ToyBox 页面](https://www.nexusmods.com/warhammer40kroguetrader/mods/1)
-- [对应版本的 MIT 许可](https://github.com/xADDBx/ToyBox-RogueTrader/blob/v2.0.16/LICENSE.txt)
+- [对应版本的 MIT 许可](https://github.com/xADDBx/ToyBox-RogueTrader/blob/v2.0.20/LICENSE.txt)
 - [Nexus 文件提交规则](https://help.nexusmods.com/article/28-file-submission-guidelines)
 
 ### AI 使用标签

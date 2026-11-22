@@ -162,7 +162,7 @@ internal static partial class Program {
             ToyBox.Main.OnGUI(ToyBox.Main.ModEntry);
             Is(!BP.GetSearchKey(bp).Contains("内部记录") && BP.GetSearchKey(bp).Contains("异端主义"), "description search follows new setting");
             readableAnswer.HasShowCheck = true;
-            Is(Preview.FormatConditionsAsList(readableAnswer)[0] == "出现条件：检定：劝说，难度 10", "show check uses game stat text");
+            Is(Preview.FormatConditionsAsList(readableAnswer)[0] == "出现条件：检定：劝说，基础 DC 10", "show check uses game stat text");
             readableAnswer.ShowCheck.Type = Kingmaker.EntitySystem.Stats.Base.StatType.Unknown;
             Is(Preview.FormatConditionsAsList(readableAnswer)[0].Contains("Unknown"), "unknown check remains identifiable");
             Is(Text.Check("SkillAwareness", 12, true, Runtime.Localize).Contains("警觉，难度 12（隐藏检定）"), "localized hidden check format");
@@ -238,7 +238,7 @@ internal static partial class Program {
                     seen.Contains(gameChinese ? "你并不是" : "You are not") && !seen.Contains("<b>"), "dialogue wrapper and official quote use independent languages");
                 var lines = Preview.FormatConditionsAsList(answer);
                 Is(lines[0] == (ui == "en" ? "Availability conditions: Check: " : "出现条件：检定：") +
-                    (gameChinese ? "劝说" : "Persuasion") + (ui == "en" ? ", difficulty 10" : "，难度 10"), "check label follows ToyBox and stat name follows game");
+                    (gameChinese ? "劝说" : "Persuasion") + (ui == "en" ? ", base DC 10" : "，基础 DC 10"), "check label follows ToyBox and stat name follows game");
                 Is(lines[1] == (ui == "en" ? "Availability conditions: Story state \"Heresy\" is not running" : "出现条件：剧情状态“异端”未在运行"), "registered story alias follows ToyBox");
                 var traversals = Preview.Traversals;
                 var preview = Preview.GetAnswerResultText(answer);

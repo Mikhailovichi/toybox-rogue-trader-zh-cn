@@ -6,13 +6,13 @@ ToyBox Display Enhancements
 
 ## Summary
 
-English and Chinese dialogue previews for ToyBox 2.0.16: quest names, dialogue quotations, grouped conditions and recruitment requirements, plus notes for eight internal features. Standalone UMM addon. Addon text follows ToyBox's language; official text follows the game's language.
+English and Chinese previews for ToyBox 2.0.20 cover configured checks, dialogue history, item and currency changes, colony traits, quests and recruitment. This standalone UMM addon uses the ToyBox language for explanations and the game language for official text.
 
 ## Description
 
 ### About this addon
 
-ToyBox Display Enhancements **0.4.0 candidate** targets **ToyBox 2.0.16 prerelease**, checked against game **1.6.1.514**.
+ToyBox Display Enhancements **0.5.0 candidate** targets **ToyBox 2.0.20 prerelease** and game **1.6.1.514**.
 
 It makes common dialogue conditions and results readable in English and Simplified Chinese, including vendor selection, custom companion recruitment, quest objectives and story states. Eight internal feature entries also receive aliases or explanatory notes.
 
@@ -22,11 +22,11 @@ Other ToyBox languages retain the original displays. Other game languages retain
 
 ### Installation
 
-Install [ToyBox for Rogue Trader](https://www.nexusmods.com/warhammer40kroguetrader/mods/1) **2.0.16**, then close the game. Rogue Trader includes Unity Mod Manager (UMM); no separate UMM installation is needed. If the old `ToyBoxChineseDisplayEnhancements` addon is installed, follow Updating and uninstalling below before starting the game.
+Install ToyBox for Rogue Trader **2.0.20**, then close the game. Rogue Trader includes Unity Mod Manager (UMM). If you use `ToyBoxChineseDisplayEnhancements`, follow Updating and uninstalling to transfer your settings. [Official release](https://github.com/xADDBx/ToyBox-RogueTrader/releases/tag/v2.0.20) · [Original Nexus page](https://www.nexusmods.com/warhammer40kroguetrader/mods/1)
 
 **Using Modfinder**
 
-Download and open [Modfinder](https://www.nexusmods.com/warhammer40kroguetrader/mods/146). Drag `toybox-display-enhancements-v0.4.zip` into **"Drag zips here to install"** and wait for installation to finish. Use the downloaded ZIP for this candidate; catalogue installation is not required.
+Drag `toybox-display-enhancements-v0.5.zip` into **“Drag zips here to install”** in Modfinder and wait for installation to finish. [Modfinder](https://www.nexusmods.com/warhammer40kroguetrader/mods/146)
 
 **Manual installation**
 
@@ -43,6 +43,8 @@ Start the game, press `Ctrl + F10` to open UMM, and enable **ToyBox Display Enha
 The UMM ID and installation directory are `ToyBoxDisplayEnhancements`; the DLL is `ToyBoxDisplayEnhancements.dll`. Upgrading from the old `ToyBoxChineseDisplayEnhancements` ID requires transferring settings and removing the old directory, as described below.
 
 ### Main features
+
+- Option checks show their configured difficulty or base DC. Dialogue history includes a short quotation to identify the referenced dialogue. Item and currency changes show the configured amount, and colony traits show the configured colony.
 
 - **Results:** vendor selection and custom companion creation are described directly. Quest objectives include the parent quest name. Current results use **Result preview**; later possible results use **Possible later results**.
 - **Conditions:** **Availability conditions** explains when an option appears; **Selection requirements** explains when it can be selected. AND/OR groups, nesting and individual or whole-group negation are preserved.
@@ -71,17 +73,17 @@ For original captions, internal identifiers and source depth, enable **Show tech
 
 ### Optional localization package
 
-**ToyBox Simplified Chinese Localization 2.0** provides Chinese menu and setting text. It replaces `0ToyBox0\Localization\zh-CN_lang.json`; this display addon installs in its own UMM directory. Either package can be used independently.
+**ToyBox Simplified Chinese Localization 2.1** provides Chinese menu and setting text. It replaces `0ToyBox0\Localization\zh-CN_lang.json`. The display addon installs in its own UMM directory and can be used independently.
 
 ### Updating and uninstalling
 
-The mod ID, DLL and directory now use `ToyBoxDisplayEnhancements`. To upgrade from `ToyBoxChineseDisplayEnhancements`, including the earlier 0.4 candidate with the old ID, confirm ToyBox is 2.0.16 and close the game. Install into the new directory, copy `display-settings.json` from the old directory if it exists, then remove the old `ToyBoxChineseDisplayEnhancements` directory from UMM. Keep any backup outside UMM to avoid loading both addons. Start the game and enable the new addon in UMM.
+The mod ID, DLL and directory use `ToyBoxDisplayEnhancements`. Install ToyBox 2.0.20 and close the game before installing the addon. When upgrading from `ToyBoxChineseDisplayEnhancements`, copy `display-settings.json` to the new directory, then move the old directory outside UMM. Start the game and enable the addon in UMM.
 
 Subsequent versions with the same ID can replace files in `ToyBoxDisplayEnhancements`. The package contains no `display-settings.json`, so it does not overwrite that directory's technical-details preference.
 
 Changing ToyBox's or the game's language refreshes name, search, sort, description and browser caches. Disabling the addon or selecting an unsupported ToyBox language restores original displays. Reopen a visible preview if needed. To uninstall, close the game and remove `ToyBoxDisplayEnhancements`.
 
-The retained Chinese-only 0.3 package targets **ToyBox 2.0.16**. Older 0.1/0.2 packages target **ToyBox 1.7.34** and cannot be used with 2.0.16. Install one version at a time. This candidate has passed 780 managed assertions and 182 actual-assembly checks; in-game layout and language-switching acceptance are pending.
+Versions 0.3 and 0.4 target ToyBox 2.0.16. Versions 0.1 and 0.2 target ToyBox 1.7.34. Version 0.5 passed 805 managed assertions and 211 checks against the shipped assemblies. In-game testing confirmed that 13 patches loaded and verified blueprint search and sample previews in all four Chinese and English language combinations.
 
 ### Credits and license
 
@@ -89,13 +91,13 @@ Addon: **mitcheese**. ToyBox: Narria, ADDB and upstream contributors. The MIT li
 
 ## Download file information
 
-- Name: ToyBox Display Enhancements 0.4 Candidate
-- Version: `0.4.0`
-- File: `toybox-display-enhancements-v0.4.zip`
-- Description: For ToyBox 2.0.16 prerelease and game 1.6.1.514. Install with Modfinder or extract into the UMM mod directory. Enable the addon, select ToyBox's English or Simplified Chinese UI, and enable dialogue previews. Addon text follows ToyBox; official text follows the game.
-- Retained file: `toybox-chinese-display-enhancements-v0.3.zip` is Chinese-only and targets ToyBox 2.0.16.
+- File name `ToyBox Display Enhancements 0.5 Candidate`
+- Version `0.5.0`
+- Archive `toybox-display-enhancements-v0.5.zip`
+- For ToyBox 2.0.20 prerelease and game 1.6.1.514. Install with Modfinder or extract into the UMM mod directory. Enable the addon, select ToyBox's English or Simplified Chinese UI, and enable dialogue previews.
+- The retained `toybox-display-enhancements-v0.4.zip` targets ToyBox 2.0.16.
 - Legacy files: 0.1/0.2 ZIPs are for ToyBox 1.7.34 only.
 
 ## Images
 
-Old screenshots are not presented as the 2.0.16 interface. Use the text examples until new screenshots are available after in-game acceptance.
+Use ToyBox 2.0.20 screenshots of option checks, dialogue history, item previews or blueprint search to illustrate the current release.

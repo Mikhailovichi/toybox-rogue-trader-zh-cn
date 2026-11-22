@@ -30,10 +30,10 @@ try {
 
     $info = Get-Content -LiteralPath (Join-Path $project 'Info.json') -Raw | ConvertFrom-Json
     $dll = Join-Path $project 'bin\Release\net481\ToyBoxDisplayEnhancements.dll'
-    if ($info.Id -ne 'ToyBoxDisplayEnhancements' -or $info.DisplayName -ne 'ToyBox Display Enhancements' -or $info.Version -ne '0.4.0' -or
+    if ($info.Id -ne 'ToyBoxDisplayEnhancements' -or $info.DisplayName -ne 'ToyBox Display Enhancements' -or $info.Version -ne '0.5.0' -or
         $info.AssemblyName -ne 'ToyBoxDisplayEnhancements.dll' -or $info.EntryMethod -ne 'ToyBoxDisplayEnhancements.Main.Load' -or
         $info.Requirements.Count -ne 1 -or $info.Requirements[0] -ne '0ToyBox0' -or
-        [Reflection.AssemblyName]::GetAssemblyName($dll).Version -ne [version]'0.4.0.0') { throw 'Package metadata does not match the addon.' }
+        [Reflection.AssemblyName]::GetAssemblyName($dll).Version -ne [version]'0.5.0.0') { throw 'Package metadata does not match the addon.' }
     $files = [ordered]@{
         'ToyBoxDisplayEnhancements.dll' = $dll
         'Info.json' = Join-Path $project 'Info.json'
@@ -51,7 +51,7 @@ try {
     Add-Type -AssemblyName System.IO.Compression.FileSystem
     $release = Join-Path $repo 'release'
     New-Item -ItemType Directory -Path $release -Force | Out-Null
-    $zipPath = Join-Path $release 'toybox-display-enhancements-v0.4.zip'
+    $zipPath = Join-Path $release 'toybox-display-enhancements-v0.5.zip'
     $stream = [IO.File]::Open($zipPath, [IO.FileMode]::Create)
     $zip = [IO.Compression.ZipArchive]::new($stream, [IO.Compression.ZipArchiveMode]::Create)
     try {
